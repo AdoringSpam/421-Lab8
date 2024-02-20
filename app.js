@@ -3,8 +3,10 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//var favicon = require('serve-favicon');
+require('./app_server/models/db');
 
-var router = require('./routes/index');
+var router = require('./app_server/routes/index');
 
 
 var app = express();
@@ -12,7 +14,7 @@ var app = express();
 //app.set('port', process.env.PORT || 80);
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, './app_server/views'));
 app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
@@ -25,6 +27,7 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist'));
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/css', express.static(__dirname + '/public/stylesheets'));
 //app.use('/webfonts', express.static(__dirname + '/node_modules/bootstrap/dist/js'));
+//app.use('/webfonts', express.static(__dirname + '/public/fonts/webfonts/'));
 
 app.use('/', router);
 

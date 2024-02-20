@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+  </head>
+  <body>
+    <div class="container">
+      <% include ./partials/nav %>
+      <p>
+      <%  let blog = {}; %>
+
+         <% if (blogs.length == 0) { %>
+         
+         <h4> No blog to display. Add one above.</h4>
+         <%} else {%>
+          <% for(let i = 0; i < blogs.length; i++) { 
+              blog = blogs[i] %>
+              <% include ./partials/showBlog %>
+          <% } %> 
+        <% } %>
+    </div> 
+  </body>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+</html>
