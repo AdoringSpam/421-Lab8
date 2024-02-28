@@ -4,12 +4,14 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //var favicon = require('serve-favicon');
-require('./app_server/models/db');
+require('./app_api/models/db');
 
 var router = require('./app_server/routes/index');
+var routerApi = require('./app_api/routes/index');
 
 
 var app = express();
+app.locals.moment = require('moment');
 
 //app.set('port', process.env.PORT || 80);
 
@@ -30,7 +32,7 @@ app.use('/css', express.static(__dirname + '/public/stylesheets'));
 //app.use('/webfonts', express.static(__dirname + '/public/fonts/webfonts/'));
 
 app.use('/', router);
-
+app.use('/api', routerApi);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> Blog Add </title>
+    <title>< Add Blog ></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
   </head>
   <body>
-    <div class = "container">
+    <div class="container">
       <% include ./partials/nav %>
-      <h1> Blog Add </h1>
-      <p> This blog feature is under construction. </p>
-    </div>
+        <p></p>
+        <div class="card border-primary" style="width: 50%">
+        <form method="post" action="/blogAdd/" style="padding: 20px">
+            <div class="form-group">
+                <label for="summary" class="text-primary">Blog Title</label>
+                <input class="form-control" id="title" name="blogTitle"></textarea>
+
+                <label for="detail" class="text-primary">Blog Text</label>
+                <textarea class="form-control" id="text" rows="3" name="blogText"></textarea>
+            </div>
+                <input type="submit" class="btn btn-primary" value="Add Blog">
+        </form>
+        </div>
+    </div> <!-- container -->
   </body>
   <script src="/js/jquery.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
