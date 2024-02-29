@@ -9,35 +9,34 @@ var sendJSONresponse = function(res, status, content) {
 
 
 /* GET a blog by the id */
-module.exports.blogsReadOne = function(req, res) {
+module.exports.blogsReadOne = async (req, res) => {
     console.log('Reading one blog', req.params);
     if (req.params && req.params.id) {
-    blogModel
-	    .findById(req.params.id)
-	    .exec(function(err, blog) {
-		if (!blog) {
-		    sendJSONresponse(res, 404, {
-			"message": "id not found"
-		    });
-		    return;
-		} else if (err) {
-		    console.log(err);
-		    sendJSONresponse(res, 404, err);
-		    return;
+		try {
+			const blog = await blogModel.findById(req.params.id).exec();
+			if (!blog) {
+				sendJSONresponse(res, 404, {
+					"message": "id not found"
+				});
+			} else {
+				console.log(blog);
+				sendJSONresponse(res, 200, blog);
+			}
+		} catch (err) {
+			console.log(err); 
+			sendJSONresponse(res, 404, err);
 		}
-		console.log(blog);
-		sendJSONresponse(res, 200, blog);
-	    });
-    } else {
-	console.log('No id specified');
-	sendJSONresponse(res, 404, {
-	    "message": "No id in request"
-	});
+    } 
+	else {
+		console.log('No id specified');
+		sendJSONresponse(res, 404, {
+	    	"message": "No id in request"
+		});
     }
 };
 
 
-/* GET a list of all locations */
+/* GET a list of all blogs */
 module.exports.blogsList = function(req, res) {
     console.log('Getting blogs list');
     blogModel

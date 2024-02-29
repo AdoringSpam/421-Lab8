@@ -15,5 +15,5 @@ var blogSchema = new mongoose.Schema({
     }
 });
 
-// Compile the model (model, schema, collection)
-mongoose.model('Blog', blogSchema, 'blogs');
+
+mongoose.model('Blog', blogSchema);

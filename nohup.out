@@ -4615,3 +4615,23 @@ Port 80 is already in use
 [0mGET /css/fontawesome-all.css [33m404 [0m3.505 ms - 883[0m
 [0mGET /js/bootstrap.min.js [36m304 [0m2.865 ms - -[0m
 [0mGET /js/jquery.min.js [33m404 [0m3.237 ms - 883[0m
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+[0mGET / [36m304 [0m13.089 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.928 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m4.533 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.086 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m4.363 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m1.885 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.471 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.019 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.953 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.547 ms - 883[0m
+[0mGET / [36m304 [0m1.146 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.609 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m2.398 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.474 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.347 ms - 883[0m
