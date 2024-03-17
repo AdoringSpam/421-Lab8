@@ -4635,3 +4635,194 @@ Mongoose connected to mongodb://blogs:blogs@localhost/blogs
 [0mGET /js/bootstrap.min.js [36m304 [0m2.398 ms - -[0m
 [0mGET /css/bootstrap.min.css [36m304 [0m2.474 ms - -[0m
 [0mGET /js/jquery.min.js [33m404 [0m3.347 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m2.372 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.428 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.638 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.334 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m4.087 ms - 883[0m
+[0mGET / [36m304 [0m1.398 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.537 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.661 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.243 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.560 ms - 883[0m
+[0mGET / [32m200 [0m0.924 ms - 871[0m
+[0mGET /stylesheets/style.css [32m200 [0m3.048 ms - 111[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.653 ms - 883[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m4.359 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m3.379 ms - 232948[0m
+[0mGET / [36m304 [0m0.874 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.392 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.743 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.518 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.897 ms - 883[0m
+[0mGET /favicon.ico [33m404 [0m0.836 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m1.012 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.940 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.719 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m5.343 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m7.122 ms - 883[0m
+[0mGET / [36m304 [0m0.982 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.476 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.897 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.952 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.703 ms - 883[0m
+[0mGET / [32m200 [0m0.994 ms - 871[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.111 ms - 111[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.664 ms - 883[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m1.567 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.792 ms - 232948[0m
+[0mGET /favicon.ico [33m404 [0m1.280 ms - 883[0m
+[0mGET / [32m200 [0m0.957 ms - 871[0m
+[0mGET / [32m200 [0m0.903 ms - 871[0m
+[0mGET /.gitlab-ci.yml [33m404 [0m1.278 ms - 883[0m
+[0mGET /.env [33m404 [0m0.722 ms - 883[0m
+[0mPOST / [33m404 [0m14.709 ms - 883[0m
+[0mGET /.env [33m404 [0m0.724 ms - 883[0m
+[0mPOST / [33m404 [0m0.900 ms - 883[0m
+[0mGET /.env [33m404 [0m0.756 ms - 883[0m
+[0mPOST / [33m404 [0m0.933 ms - 883[0m
+[0mGET / [32m200 [0m0.798 ms - 871[0m
+[0mGET /.env [33m404 [0m0.707 ms - 883[0m
+[0mGET / [32m200 [0m0.790 ms - 871[0m
+[0mGET / [32m200 [0m1.007 ms - 871[0m
+[0mGET /.env [33m404 [0m0.743 ms - 883[0m
+[0mPOST / [33m404 [0m1.011 ms - 883[0m
+[0mGET / [32m200 [0m0.766 ms - 871[0m
+[0mGET / [32m200 [0m0.754 ms - 871[0m
+[0mGET /.env [33m404 [0m0.726 ms - 883[0m
+[0mPOST / [33m404 [0m245.386 ms - 883[0m
+[0mGET /.env [33m404 [0m0.730 ms - 883[0m
+[0mPOST / [33m404 [0m0.814 ms - 883[0m
+[0mGET / [32m200 [0m0.711 ms - 871[0m
+[0mGET / [32m200 [0m0.942 ms - 871[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.835 ms - 111[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.545 ms - 883[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m1.765 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m2.205 ms - 232948[0m
+[0mGET /favicon.ico [33m404 [0m0.756 ms - 883[0m
+Getting blogs list
+/home/bitnami/lab4/node_modules/mongoose/lib/query.js:4231
+    throw new MongooseError('Query.prototype.exec() no longer accepts a callback');
+          ^
+
+MongooseError: Query.prototype.exec() no longer accepts a callback
+    at model.Query.exec (/home/bitnami/lab4/node_modules/mongoose/lib/query.js:4231:11)
+    at module.exports.blogsList (/home/bitnami/lab4/app_api/controllers/blogs.js:44:3)
+    at Layer.handle [as handle_request] (/home/bitnami/lab4/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/bitnami/lab4/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/bitnami/lab4/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/bitnami/lab4/node_modules/express/lib/router/layer.js:95:5)
+    at /home/bitnami/lab4/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/bitnami/lab4/node_modules/express/lib/router/index.js:335:12)
+    at next (/home/bitnami/lab4/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/home/bitnami/lab4/node_modules/express/lib/router/index.js:174:3)
+
+Node.js v18.19.0
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m41.039 ms - 370[0m
+[0mGET /blogList [36m304 [0m101.909 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.939 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m4.274 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m4.170 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.144 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.517 ms - -[0m
+[0mGET /blogAdd [36m304 [0m2.298 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.848 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m8.023 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m7.793 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m8.728 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m6.271 ms - 370[0m
+[0mGET /blogList [36m304 [0m12.514 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.492 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.880 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m2.148 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m5.182 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.829 ms - 883[0m
+[0mGET / [36m304 [0m2.073 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.840 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.234 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m3.208 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.538 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.989 ms - 370[0m
+[0mGET /blogList [36m304 [0m8.145 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.403 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.309 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.810 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.080 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.251 ms - 883[0m

@@ -37,24 +37,22 @@ module.exports.blogsReadOne = async (req, res) => {
 
 
 /* GET a list of all blogs */
-module.exports.blogsList = function(req, res) {
+module.exports.blogsList = async (req, res) => {
     console.log('Getting blogs list');
-    blogModel
-	.find()
-	.exec(function(err, results) {
-            if (!results) {
-		sendJSONresponse(res, 404, {
-		    "message": "no blogs found"
-		});
-		return;
-            } else if (err) {
-		console.log(err);
-		sendJSONresponse(res, 404, err);
-		return;
-            }
-            console.log(results);
-            sendJSONresponse(res, 200, buildBlogList(req, res, results));
-	}); 
+    try {
+        const results = await blogModel.find().exec();
+        if (!results || results.length === 0) {
+            sendJSONresponse(res, 404, {
+                "message": "No blogs found"
+            });
+            return;
+        }
+        console.log(results);
+        sendJSONresponse(res, 200, buildBlogList(req, res, results));
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 404, err);
+    }
 };
 
 
@@ -74,56 +72,53 @@ var buildBlogList = function(req, res, results) {
 
 
 /* Create a new Blog */
-module.exports.blogsCreate = function(req, res) {
+module.exports.blogsCreate = async (req, res) => {
     console.log("Creating new blog entry");
     console.log(req.body);
-    blogModel
-	.create({
-	     blogTitle: req.body.blogTitle,
-	     blogText: req.body.blogText
-          }, function(err, blog) {
-	     if (err) {
-	         sendJSONresponse(res, 400, err);
-	     } else {
-	        sendJSONresponse(res, 201, blog);
- 	    }
-          }
-	);
+    try {
+        const blog = await blogModel.create({
+            blogTitle: req.body.blogTitle,
+            blogText: req.body.blogText
+        });
+        sendJSONresponse(res, 201, blog);
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 400, err);
+    }
 };
 
 /* Update one Blog */
-module.exports.blogsUpdateOne = function(req, res) {
+module.exports.blogsUpdateOne = async (req, res) => {
     console.log("Updating a blog entry with id of " + req.params.id);
     console.log(req.body);
-    blogModel
-	.findOneAndUpdate(
-	    { _id: req.params.id },
-	    { $set: { "blogTitle": req.body.blogTitle,
-	              "blogText": req.body.blogText } },
-	    //{ $set: {"createdOn": Date.now()}},
-	    function(err,response) {
-	       if (err) {
-	  	  sendJSONresponse(res, 400, err);
-	       } else {
-		  sendJSONresponse(res, 201, response);
-	       }
-	    }
+    try {
+        const response = await blogModel.findOneAndUpdate(
+            { _id: req.params.id },
+            { $set: { "blogTitle": req.body.blogTitle, "blogText": req.body.blogText } },
+			{ $set: {"createdOn": Date.now()}},
+            { new: true } 
         );
+        sendJSONresponse(res, 201, response);
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 400, err);
+    }
 };
 
 /* Delete one Blog */
-module.exports.blogsDeleteOne = function(req, res) {
-    console.log("Deleting  blog entry with id of " + req.params.id);
-    console.log(req.body);
-    blogModel
-        .findByIdAndRemove(req.params.id)
-        .exec (
-            function(err,response) {
-		if (err) {
-                    sendJSONresponse(res, 404, err);
-		} else {
-                    sendJSONresponse(res, 204, null);
-		}
-            }
-        );
+module.exports.blogsDeleteOne = async (req, res) => {
+    console.log("Deleting blog entry with id of " + req.params.id);
+    try {
+        const response = await blogModel.findByIdAndDelete(req.params.id);
+        if (!response) {
+            sendJSONresponse(res, 404, {
+                "message": "Blog not found"
+            });
+        } else {
+            sendJSONresponse(res, 204, null);
+        }
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 404, err);
+    }
 };

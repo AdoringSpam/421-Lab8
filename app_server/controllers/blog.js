@@ -185,21 +185,21 @@ module.exports.deletePost = function(req, res){
 
 
 /* _showError function */
-//var _showError = function (req, res, status) {
-    //var title, content;
-    //if (status === 404) {
-	//title = "404, page not found";
-	//content = "Oh dear. Looks like we can't find this page. Sorry.";
-    //} else if (status === 500) {
-	//title = "500, internal server error";
-	//content = "How embarrassing. There's a problem with our server.";
-    //} else {
-	//title = status + ", something's gone wrong";
-	//content = "Something, somewhere, has gone just a little bit wrong.";
-    //}
-    //res.status(status);
-    //res.render('generic-text', {
-	//title : title,
-	//content : content
-    //});
-//};
+var _showError = function (req, res, status) {
+    var title, content;
+    if (status === 404) {
+	title = "404, page not found";
+	content = "Sorry this page cannot be found..";
+    } else if (status === 500) {
+	title = "500, internal server error";
+	content = "There's something wrong with our server at the moment..";
+    } else {
+	title = status + ", something's gone wrong";
+	content = "An error has occurred.";
+    }
+    res.status(status);
+    res.render('generic', {
+	title : title,
+	content : content
+    });
+};
