@@ -40,16 +40,16 @@ app.config(function($routeProvider) {
 
 
 //*** REST Web API functions ***
-function getAllBooks($http) {
-    return $http.get('/api/books');
+function getAllBlogs($http) {
+    return $http.get('/api/blogs');
 }
 
-function getBookById($http, id) {
-    return $http.get('/api/books/' + id);
+function getBlogById($http, id) {
+    return $http.get('/api/blogs/' + id);
 }
 
-function updateBookById($http, id, data) {
-    return $http.put('/api/books/' + id, data);
+function updateBlogById($http, id, data) {
+    return $http.put('/api/blogs/' + id, data);
 }
 
 
@@ -70,9 +70,9 @@ app.controller('ListController', function ListController($http) {
         title: 'Blog List'
     };
     
-    getAllBooks($http)
+    getAllBlogs($http)
       .success(function(data) {
-        vm.books = data;
+        vm.blogs = data;
         vm.message = "Blog data found!";
       })
       .error(function (e) {
@@ -82,16 +82,16 @@ app.controller('ListController', function ListController($http) {
 
 app.controller('EditController', [ '$http', '$routeParams', '$state', function EditController($http, $routeParams, $state) {
     var vm = this;
-    vm.book = {};       // Start with a blank book
+    vm.blog = {};       // Start with a blank book
     vm.id = $routeParams.id;    // Get id from $routParams which must be injected and passed into controller
     vm.pageHeader = {
         title: 'Blog Edit'
     };
     
     // Get book data so it may be displayed on edit page
-    getBookById($http, vm.id)
+    getBlogById($http, vm.id)
       .success(function(data) {
-        vm.book = data;
+        vm.blog = data;
         vm.message = "Blog data found!";
       })
       .error(function (e) {
@@ -100,11 +100,11 @@ app.controller('EditController', [ '$http', '$routeParams', '$state', function E
     
     // Submit function attached to ViewModel for use in form
     vm.submit = function() {
-        var data = vm.book;
-        data.bookTitle = userForm.blogTitle.value;
-        data.bookText = userForm.blogText.value;
+        var data = vm.blog;
+        data.blogTitle = userForm.blogTitle.value;
+        data.blogText = userForm.blogText.value;
                
-        updateBookById($http, vm.id, data)
+        updateBlogById($http, vm.id, data)
           .success(function(data) {
             vm.message = "Blog data updated!";
             $state.go('blogList');   // Refer to book for info on StateProvder

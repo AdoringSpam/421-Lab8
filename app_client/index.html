@@ -32,12 +32,13 @@
             
           <script type="text/ng-template" id="pages/blogList.html">
             <p></p>
-            <div ng-repeat="book in vm.books">
+            <div ng-repeat="blog in vm.blogs">
             <div class="card border-primary" style="width: 50%"> 
                   <div class="card-header">
                   </div>
                   <div class="card-body">
                       <h5 class ="card-title">{{blog.blogTitle}}</h5>
+                      <p ng-bind="blog.createdOn | date: 'MM/dd/yyyy h:mm a'"></p>
                   </div>
                   <div class="card-footer">
                       <div class = "col-sm">
@@ -105,7 +106,7 @@
           <!-- Angular View (dynamic content goes here) -->  
           <div ng-view></div>
           
-      <script src="/js/app.js"></script>
+      <script src="/js/bloggerApp.js"></script>
       </body>
         
 </html>
