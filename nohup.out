@@ -4826,3 +4826,795 @@ Getting blogs list
 [0mGET /js/bootstrap.min.js [36m304 [0m1.810 ms - -[0m
 [0mGET /js/jquery.min.js [33m404 [0m3.080 ms - 883[0m
 [0mGET /css/fontawesome-all.css [33m404 [0m3.251 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m2.354 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.497 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.858 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.875 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.838 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.197 ms - 370[0m
+[0mGET /blogList [36m304 [0m9.048 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.735 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.778 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.235 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.889 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.523 ms - -[0m
+[0mGET / [36m304 [0m1.938 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.550 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.216 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.084 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.419 ms - 883[0m
+[0mGET /favicon.ico [33m404 [0m0.880 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m0.971 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.943 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.941 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.560 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.334 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.868 ms - 370[0m
+[0mGET /blogList [36m304 [0m8.837 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.483 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.826 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.548 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.017 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.546 ms - -[0m
+[0mGET /blogAdd [36m304 [0m1.667 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.696 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.786 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.109 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.439 ms - -[0m
+[0mGET / [36m304 [0m0.809 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.505 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.816 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.505 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.787 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.134 ms - 370[0m
+[0mGET /blogList [36m304 [0m7.517 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.666 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.726 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.412 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.593 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.530 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.576 ms - 370[0m
+[0mGET /blogList [36m304 [0m7.888 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.389 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.224 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.597 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.940 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.385 ms - 883[0m
+[0mGET / [36m304 [0m0.844 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.796 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.684 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.417 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.508 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m0.852 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.499 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.507 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.510 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.312 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.932 ms - 370[0m
+[0mGET /blogList [36m304 [0m6.902 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.512 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.376 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.133 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.354 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.345 ms - -[0m
+[0mGET / [36m304 [0m0.868 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.824 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m2.900 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.465 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.436 ms - 883[0m
+[0mGET / [36m304 [0m0.794 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.875 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.776 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.391 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.283 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.174 ms - 370[0m
+[0mGET /blogList [36m304 [0m9.334 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.882 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.441 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m5.588 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m6.015 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.526 ms - -[0m
+[0mGET /blogAdd [36m304 [0m1.117 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.451 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.529 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.592 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m4.176 ms - 883[0m
+[0mGET / [36m304 [0m0.911 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.366 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.060 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.010 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.417 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.322 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m1.513 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.818 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.952 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.331 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.449 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.004 ms - 370[0m
+[0mGET /blogList [36m304 [0m7.003 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.469 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.330 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.552 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.828 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.473 ms - -[0m
+[0mGET / [36m304 [0m0.858 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.191 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.193 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.239 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.478 ms - 883[0m
+[0mGET /.env [33m404 [0m0.820 ms - 883[0m
+[0mPOST / [33m404 [0m2.213 ms - 883[0m
+[0mGET / [32m200 [0m0.961 ms - 871[0m
+[0mGET /stylesheets/style.css [32m200 [0m2.965 ms - 111[0m
+[0mGET /js/jquery.min.js [33m404 [0m0.956 ms - 883[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m1.679 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m1.814 ms - 232948[0m
+[0mGET /favicon.ico [33m404 [0m1.065 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.959 ms - 370[0m
+[0mGET /blogList [32m200 [0m6.946 ms - 3226[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.041 ms - 883[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.396 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.156 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.226 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.505 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.694 ms - 370[0m
+[0mGET /blogList [32m200 [0m9.897 ms - 3226[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.646 ms - 111[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m0.898 ms - 60577[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m0.872 ms - 883[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.806 ms - 232948[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.042 ms - 883[0m
+[0mGET /blogAdd [32m200 [0m1.625 ms - 1433[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.387 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.926 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.990 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.415 ms - 883[0m
+[0mGET /blogAdd [32m200 [0m0.838 ms - 1433[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.618 ms - 883[0m
+[0mGET /stylesheets/style.css [32m200 [0m0.661 ms - 111[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m0.930 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m0.787 ms - 232948[0m
+Creating new blog entry
+{ blogTitle: 'Prof test', blogText: 'test' }
+[0mPOST /api/blogs/ [32m201 [0m13.607 ms - 123[0m
+[0mPOST /blogAdd/ [36m302 [0m19.035 ms - 62[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f73a2d7e37499a3d06dc66'),
+    blogTitle: 'Prof test',
+    blogText: 'test',
+    createdOn: 2024-03-17T18:45:01.979Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.115 ms - 486[0m
+[0mGET /blogList [32m200 [0m6.462 ms - 4007[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.377 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m2.671 ms - 883[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.388 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m0.906 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.513 ms - -[0m
+Reading one blog { id: '65f73a2d7e37499a3d06dc66' }
+{
+  _id: new ObjectId('65f73a2d7e37499a3d06dc66'),
+  blogTitle: 'Prof test',
+  blogText: 'test',
+  createdOn: 2024-03-17T18:45:01.979Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f73a2d7e37499a3d06dc66 [32m200 [0m6.880 ms - 123[0m
+[0mGET /blogDelete/65f73a2d7e37499a3d06dc66 [32m200 [0m10.495 ms - 1642[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.365 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.145 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.140 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.691 ms - 883[0m
+Deleting blog entry with id of 65f73a2d7e37499a3d06dc66
+[0mDELETE /api/blogs/65f73a2d7e37499a3d06dc66 [32m204 [0m4.850 ms - -[0m
+[0mPOST /blogDelete/65f73a2d7e37499a3d06dc66 [36m302 [0m9.660 ms - 62[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.789 ms - 370[0m
+[0mGET /blogList [32m200 [0m5.665 ms - 3226[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.517 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m2.930 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.671 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.562 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m2.748 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.739 ms - 370[0m
+[0mGET /blogList [36m304 [0m5.845 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.362 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.664 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.719 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.975 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.626 ms - 883[0m
+[0mGET /blogAdd [36m304 [0m0.807 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.370 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.096 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.063 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.611 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.538 ms - 370[0m
+[0mGET /blogList [36m304 [0m7.099 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.631 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.218 ms - 883[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.143 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.006 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.971 ms - 883[0m
+[0mGET /.env [33m404 [0m1.098 ms - 883[0m
+[0mPOST / [33m404 [0m1.018 ms - 883[0m
+[0mGET /.git/config [33m404 [0m1.268 ms - 883[0m
+[0mGET / [32m200 [0m0.823 ms - 871[0m
+[0mGET /.env [33m404 [0m0.728 ms - 883[0m
+[0mPOST / [33m404 [0m17.525 ms - 883[0m
+[0mGET /.env [33m404 [0m0.806 ms - 883[0m
+[0mPOST / [33m404 [0m0.905 ms - 883[0m
+[0mGET / [36m304 [0m0.743 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m0.992 ms - 883[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.360 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.558 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.495 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.770 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.282 ms - 370[0m
+[0mGET /blogList [36m304 [0m7.890 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.897 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.875 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m3.331 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m3.027 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.699 ms - -[0m
+[0mGET /blogAdd [36m304 [0m0.919 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.388 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.024 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.829 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.712 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog',
+    blogText: 'I am a blogger.',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.098 ms - 370[0m
+[0mGET /blogList [36m304 [0m5.944 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.355 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.983 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.103 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m2.446 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.633 ms - 883[0m
+Reading one blog { id: '65f726bf39c584828c3373af' }
+{
+  _id: new ObjectId('65f726bf39c584828c3373af'),
+  blogTitle: '1st Blog',
+  blogText: 'I am a blogger.',
+  createdOn: 2024-03-17T17:22:07.394Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f726bf39c584828c3373af [32m200 [0m2.880 ms - 133[0m
+[0mGET /blogEdit/65f726bf39c584828c3373af [32m200 [0m6.301 ms - 1480[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.485 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.861 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.857 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.781 ms - 883[0m
+Updating a blog entry with id of 65f726bf39c584828c3373af
+{ blogTitle: '1st Blog!', blogText: 'I am a blogger!' }
+[0mPUT /api/blogs/65f726bf39c584828c3373af [32m201 [0m11.899 ms - 133[0m
+[0mPOST /blogEdit/65f726bf39c584828c3373af [36m302 [0m14.205 ms - 62[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726bf39c584828c3373af'),
+    blogTitle: '1st Blog!',
+    blogText: 'I am a blogger!',
+    createdOn: 2024-03-17T17:22:07.394Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m24.586 ms - 371[0m
+[0mGET /blogList [32m200 [0m29.443 ms - 3227[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m0.979 ms - 883[0m
+[0mGET /js/jquery.min.js [33m404 [0m0.861 ms - 883[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.040 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.894 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.481 ms - -[0m
+Reading one blog { id: '65f726bf39c584828c3373af' }
+{
+  _id: new ObjectId('65f726bf39c584828c3373af'),
+  blogTitle: '1st Blog!',
+  blogText: 'I am a blogger!',
+  createdOn: 2024-03-17T17:22:07.394Z,
+  __v: 0
+}
+[0mGET /api/blogs/65f726bf39c584828c3373af [32m200 [0m2.114 ms - 134[0m
+[0mGET /blogDelete/65f726bf39c584828c3373af [32m200 [0m5.262 ms - 1653[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.355 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.738 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.224 ms - 883[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.359 ms - -[0m
+Deleting blog entry with id of 65f726bf39c584828c3373af
+[0mDELETE /api/blogs/65f726bf39c584828c3373af [32m204 [0m1.899 ms - -[0m
+[0mPOST /blogDelete/65f726bf39c584828c3373af [36m302 [0m4.276 ms - 62[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m3.023 ms - 244[0m
+[0mGET /blogList [32m200 [0m7.005 ms - 2445[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.594 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.446 ms - 883[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.776 ms - 883[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.800 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.633 ms - -[0m
+[0mGET /hudson [33m404 [0m0.966 ms - 883[0m
+[0mGET /auth/login.html [33m404 [0m1.075 ms - 883[0m
+[0mGET / [32m200 [0m0.921 ms - 871[0m
+[0mGET / [32m200 [0m0.858 ms - 871[0m
+[0mGET / [32m200 [0m1.304 ms - 871[0m
+[0mGET /ReportServer [33m404 [0m0.801 ms - 883[0m
+[0mGET / [32m200 [0m0.784 ms - 871[0m
+[0mGET / [32m200 [0m1.316 ms - 871[0m
+[0mGET / [32m200 [0m0.890 ms - 871[0m
+[0mGET / [32m200 [0m0.771 ms - 871[0m
+[0mGET /form.html [33m404 [0m0.778 ms - 883[0m
+[0mGET /upl.php [33m404 [0m1.360 ms - 883[0m
+[0mGET /geoip/ [33m404 [0m0.799 ms - 883[0m
+[0mGET /favicon.ico [33m404 [0m0.787 ms - 883[0m
+[0mGET /1.php [33m404 [0m0.789 ms - 883[0m
+[0mGET /bundle.js [33m404 [0m0.786 ms - 883[0m
+[0mGET /files/ [33m404 [0m0.731 ms - 883[0m
+[0mGET /systembc/password.php [33m404 [0m0.783 ms - 883[0m
+[0mGET /password.php [33m404 [0m0.790 ms - 883[0m
+[0mGET /info.php [33m404 [0m0.759 ms - 883[0m
+[0mGET / [32m200 [0m0.814 ms - 871[0m
+[0mGET / [32m200 [0m0.717 ms - 871[0m
+[0mGET /.env [33m404 [0m0.750 ms - 883[0m
+[0mPOST / [33m404 [0m1.599 ms - 883[0m
+[0mGET / [32m200 [0m0.827 ms - 871[0m
+[0mGET / [32m200 [0m0.724 ms - 871[0m
+[0mGET /.env [33m404 [0m1.265 ms - 883[0m
+[0mPOST / [33m404 [0m9.071 ms - 883[0m
+[0mOPTIONS / [32m200 [0m0.608 ms - 8[0m
+[0mGET /.env [33m404 [0m0.729 ms - 883[0m
+[0mPOST / [33m404 [0m0.791 ms - 883[0m
+[0mGET /.env [33m404 [0m0.712 ms - 883[0m
+[0mPOST / [33m404 [0m1.271 ms - 883[0m
+[0mGET /.git/HEAD [33m404 [0m0.751 ms - 883[0m
+[0mGET / [32m200 [0m0.839 ms - 871[0m
+[0mGET /druid/index.html [33m404 [0m0.773 ms - 883[0m
+[0mGET / [32m200 [0m1.849 ms - 871[0m
+[0mGET / [32m200 [0m1.296 ms - 871[0m
+[0mGET /favicon.ico [33m404 [0m1.646 ms - 883[0m
+[0mGET /.env [33m404 [0m0.715 ms - 883[0m
+[0mPOST / [33m404 [0m4.367 ms - 883[0m
+[0mGET / [32m200 [0m0.740 ms - 871[0m
+[0mGET / [32m200 [0m0.920 ms - 871[0m
+[0mGET /.env [33m404 [0m0.704 ms - 883[0m
+[0mPOST / [33m404 [0m1.094 ms - 883[0m
+[0mGET /actuator/health [33m404 [0m0.755 ms - 883[0m
+[0mGET /.env [33m404 [0m0.836 ms - 883[0m
+[0mPOST / [33m404 [0m0.858 ms - 883[0m
+[0mGET /favicon.ico [33m404 [0m0.805 ms - 883[0m
+[0mGET /manage/account/login [33m404 [0m0.972 ms - 883[0m
+[0mGET /admin/index.html [33m404 [0m0.758 ms - 883[0m
+[0mGET /aaa9 [33m404 [0m0.762 ms - 883[0m
+[0mGET /aab8 [33m404 [0m0.803 ms - 883[0m
+[0mGET / [32m200 [0m0.780 ms - 871[0m
+[0mGET /+CSCOE+/logon.html [33m404 [0m0.740 ms - 883[0m
+[0mGET /cgi-bin/login.cgi [33m404 [0m0.757 ms - 883[0m
+[0mGET /logon.htm [33m404 [0m0.804 ms - 883[0m
+[0mGET /login.jsp [33m404 [0m0.751 ms - 883[0m
+[0mGET /doc/index.html [33m404 [0m0.836 ms - 883[0m
+[0mGET / [32m200 [0m0.712 ms - 871[0m
+[0mGET / [32m200 [0m0.713 ms - 871[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.363 ms - 111[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.066 ms - 883[0m
+[0mGET /js/bootstrap.min.js [32m200 [0m0.662 ms - 60577[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m1.346 ms - 232948[0m
+[0mGET /favicon.ico [33m404 [0m0.801 ms - 883[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog',
+    blogText: 'I AM A BLOGGER!',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog',
+    blogText: 'Blogs.',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m2.283 ms - 244[0m
+[0mGET /blogList [32m200 [0m6.187 ms - 2445[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.369 ms - -[0m
+[0mGET /css/fontawesome-all.css [33m404 [0m1.050 ms - 883[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.359 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.460 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.683 ms - 883[0m
+[0mGET / [36m304 [0m0.880 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.781 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.728 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m0.857 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m2.576 ms - 883[0m
+[0mGET /blogAdd [32m200 [0m1.730 ms - 1433[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.395 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.200 ms - -[0m
+[0mGET /js/bootstrap.min.js [36m304 [0m1.249 ms - -[0m
+[0mGET /js/jquery.min.js [33m404 [0m1.736 ms - 883[0m
