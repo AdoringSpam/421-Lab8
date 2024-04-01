@@ -1,5 +1,7 @@
 var app = angular.module('bloggerApp', ['ngRoute']);
 
+
+
 //*** Router Provider ***
 app.config(function($routeProvider,$locationProvider) {
   $routeProvider
@@ -34,7 +36,11 @@ app.config(function($routeProvider,$locationProvider) {
       })
 
       .otherwise({redirectTo: '/'});
-      $locationProvider.html5Mode(true);
+      $locationProvider.hashPrefix('');
+      $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+      });
     });
 
 // State Provider
@@ -73,7 +79,7 @@ function deleteBlog($http,id){
 app.controller('HomeController', function HomeController() {
   var vm = this;
   vm.pageHeader = {
-      title: "My Blog Site"
+      title: "Nicholas Wilson's Blog Site"
   };
   vm.message = "Welcome to my blog site!";
 });
@@ -117,7 +123,7 @@ app.controller('EditController', [ '$http', '$routeParams', '$location', functio
       var data = vm.blog;
       data.title = userForm.blogTitle.value;
       data.text = userForm.blogText.value;
-      $location.path(['/blog-list']);
+      $location.path(['/blogList']);
   updateBlogById($http,vm.id,data)
       .then(function successCallBack(response){
           vm.message="Blog data updated!";
