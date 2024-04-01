@@ -1,7 +1,7 @@
 var app = angular.module('bloggerApp', ['ngRoute']);
 
 //*** Router Provider ***
-app.config(function($routeProvider) {
+app.config(function($routeProvider,$locationProvider) {
   $routeProvider
       .when('/', {
 	      templateUrl: 'pages/home.html',
@@ -34,17 +34,18 @@ app.config(function($routeProvider) {
       })
 
       .otherwise({redirectTo: '/'});
+      $locationProvider.html5Mode(true);
     });
 
 // State Provider
-app.config(function($stateProvider){
-  $stateProvider
-    .state('blogList', {
-      url: '/blogList',
-      templateUrl: 'pages/blogList.html',
-      controller: 'ListController'
-    });
-});
+//bloggerApp.config(function($stateProvider){
+  //$stateProvider
+    //.state('blogList', {
+      //url: '/blogList',
+      //templateUrl: 'pages/blogList.html',
+      //controller: 'ListController'
+    //});
+//});
 
 
 //*** REST Web API functions ***
@@ -93,7 +94,7 @@ app.controller('ListController', function ListController($http) {
       });
 });
 
-app.controller('EditController', [ '$http', '$routeParams', '$state', function EditController($http, $routeParams, $state) {
+app.controller('EditController', [ '$http', '$routeParams', '$location', function EditController($http, $routeParams, $location) {
     var vm = this;
     vm.blog = {};       // Start with a blank book
     vm.id = $routeParams.id;    // Get id from $routParams which must be injected and passed into controller
@@ -112,23 +113,21 @@ app.controller('EditController', [ '$http', '$routeParams', '$state', function E
       });
     
     // Submit function attached to ViewModel for use in form
-    vm.submit = function() {
-        var data = vm.blog;
-        data.blogTitle = userForm.blogTitle.value;
-        data.blogText = userForm.blogText.value;
-               
-        updateBlogById($http, vm.id, data)
-          .success(function(data) {
-            vm.message = "Blog data updated!";
-            $state.go('blogList');   // Refer to book for info on StateProvder
-          })
-          .error(function (e) {
-            vm.message = "Could not update book given id of " + vm.id + userForm.blogTitle.text + " " + userForm.blogText.text;
-          });
-    }
+    vm.submit = function(){
+      var data = vm.blog;
+      data.title = userForm.blogTitle.value;
+      data.text = userForm.blogText.value;
+      $location.path(['/blog-list']);
+  updateBlogById($http,vm.id,data)
+      .then(function successCallBack(response){
+          vm.message="Blog data updated!";
+      }),function errorCallBack(response){
+          vm.message = "Could not update book given id of " + vm.id + userForm.blogTitle.text + " " + userForm.blogText.text ;
+      }
+  }
 }]);
 
-blogApp.controller('DeleteController',['$http','$state','$routeParams',function DeleteController($http,$state,$routeParams) {
+app.controller('DeleteController',['$http','$location','$routeParams',function DeleteController($http,$location,$routeParams) {
   var vm = this;
   vm.blog ={};
   vm.id = $routeParams.id;
@@ -145,18 +144,17 @@ blogApp.controller('DeleteController',['$http','$state','$routeParams',function 
   });
 
   vm.delete = function(){
-      $state.go('blogList');
+      $location.path(['/blogList']);
       deleteBlog($http,vm.id)
-        .success(function(data){
-          vm.message="Blog Deleted!";
-      })
-        .error(function (e) {
-          vm.message = "Failed to delete Blog" ;
-      });
-  }
+      .then(function successCallBack(response){
+        vm.message="Blog Deleted!";
+    }),function errorCallBack(response){
+        vm.message = "Failed to delete Blog" ;
+    }
+}
 }]);
 
-blogApp.controller('AddController',['$http','$state',function AddController($http,$state) {
+app.controller('AddController',['$http','$location',function AddController($http,$location) {
   var vm = this;
   vm.pageHeader = {
       title: "Blog Add"
@@ -170,9 +168,13 @@ blogApp.controller('AddController',['$http','$state',function AddController($htt
   addBlog($http,data)
       .then(function successCallBack(response) {
           vm.message = "Blog Added";
-          $state.go('blogList');
+          $location.path(['/blogList']);
       }),function errorCallBack(response){
           vm.message = "Blog failed to add"; 
       }
   }
 }]);
+
+angular
+.module('bloggerApp')
+.config(['$routeProvider','$locationProvider', app.config]);
