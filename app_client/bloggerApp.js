@@ -1,9 +1,16 @@
 var app = angular.module('bloggerApp', ['ngRoute']);
 
 
-
+//appModule.config(['$locationProvider', function($locationProvider) {
+  //$locationProvider.hashPrefix('');
+//}]);
 //*** Router Provider ***
 app.config(function($routeProvider,$locationProvider) {
+  $locationProvider.hashPrefix('');
+  $locationProvider.html5Mode({
+    enabled: false,
+    requireBase: false
+  });
   $routeProvider
       .when('/', {
 	      templateUrl: 'pages/home.html',
@@ -36,11 +43,7 @@ app.config(function($routeProvider,$locationProvider) {
       })
 
       .otherwise({redirectTo: '/'});
-      $locationProvider.hashPrefix('');
-      $locationProvider.html5Mode({
-        enabled: true,
-        requireBase: false
-      });
+
     });
 
 // State Provider
