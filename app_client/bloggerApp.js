@@ -1,9 +1,5 @@
 var app = angular.module('bloggerApp', ['ngRoute']);
 
-
-//appModule.config(['$locationProvider', function($locationProvider) {
-  //$locationProvider.hashPrefix('');
-//}]);
 //*** Router Provider ***
 app.config(function($routeProvider,$locationProvider) {
   $locationProvider.hashPrefix('');
@@ -46,15 +42,6 @@ app.config(function($routeProvider,$locationProvider) {
 
     });
 
-// State Provider
-//bloggerApp.config(function($stateProvider){
-  //$stateProvider
-    //.state('blogList', {
-      //url: '/blogList',
-      //templateUrl: 'pages/blogList.html',
-      //controller: 'ListController'
-    //});
-//});
 
 
 //*** REST Web API functions ***
@@ -124,8 +111,8 @@ app.controller('EditController', [ '$http', '$routeParams', '$location', functio
     // Submit function attached to ViewModel for use in form
     vm.submit = function(){
       var data = vm.blog;
-      data.title = userForm.blogTitle.value;
-      data.text = userForm.blogText.value;
+      data.blogTitle = userForm.blogTitle.value;
+      data.blogText = userForm.blogText.value;
       $location.path(['/blogList']);
   updateBlogById($http,vm.id,data)
       .then(function successCallBack(response){
@@ -143,16 +130,18 @@ app.controller('DeleteController',['$http','$location','$routeParams',function D
   vm.pageHeader = {
       title: "Blog Delete"
   };
+  console.log("Delete Controller initialized.");
   getBlogById($http,vm.id)
     .success(function(data) {
-      vm.blog = response.data;
+      vm.blog = data;
       vm.message ="Blog data found!"
+      console.log("Blog data found:", data);
   })
     .error(function (e){
       vm.message = "Could not find Blog with id of " + vm.id;
   });
 
-  vm.delete = function(){
+  vm.submit = function(){
       $location.path(['/blogList']);
       deleteBlog($http,vm.id)
       .then(function successCallBack(response){
@@ -168,7 +157,7 @@ app.controller('AddController',['$http','$location',function AddController($http
   vm.pageHeader = {
       title: "Blog Add"
   };
-  vm.add = function(){
+  vm.submit = function(){
       var data = {};
       data.blogTitle = userForm.blogTitle.value;
       data.blogText = userForm.blogText.value;
