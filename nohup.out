@@ -19887,3 +19887,38 @@ SetOptionError: useNewUrlParser: "useNewUrlParser" is not a valid option to set
 }
 
 Node.js v18.19.0
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+/home/bitnami/lab06/node_modules/mongoose/lib/mongoose.js:274
+    throw error;
+    ^
+
+SetOptionError: useNewUrlParser: "useNewUrlParser" is not a valid option to set
+    at Mongoose.set (/home/bitnami/lab06/node_modules/mongoose/lib/mongoose.js:250:17)
+    at Object.<anonymous> (/home/bitnami/lab06/app_api/models/users.js:2:10)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/home/bitnami/lab06/app_api/models/db.js:51:1)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14) {
+  errors: {
+    useNewUrlParser: SetOptionInnerError [MongooseError]: "useNewUrlParser" is not a valid option to set
+        at Mongoose.set (/home/bitnami/lab06/node_modules/mongoose/lib/mongoose.js:252:33)
+        at Object.<anonymous> (/home/bitnami/lab06/app_api/models/users.js:2:10)
+        at Module._compile (node:internal/modules/cjs/loader:1356:14)
+        at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+        at Module.load (node:internal/modules/cjs/loader:1197:32)
+        at Module._load (node:internal/modules/cjs/loader:1013:12)
+        at Module.require (node:internal/modules/cjs/loader:1225:19)
+        at require (node:internal/modules/helpers:177:18)
+        at Object.<anonymous> (/home/bitnami/lab06/app_api/models/db.js:51:1)
+        at Module._compile (node:internal/modules/cjs/loader:1356:14)
+  }
+}
+
+Node.js v18.19.0

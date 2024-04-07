@@ -39,13 +39,13 @@ app.config(function($routeProvider,$locationProvider) {
       })
 
         .when('/login', {
-        templateUrl: 'pages/login.html',
+        templateUrl: 'common/auth/login.html',
         controller: 'LoginController',
         controllerAs: 'vm'
       }) 
 
         .when('/register', {
-        templateUrl: 'pages/register.html',
+        templateUrl: 'common/auth/register.html',
         controller: 'RegisterController',
         controllerAs: 'vm'
       }) 
@@ -61,8 +61,11 @@ function getAllBlogs($http) {
     return $http.get('/api/blogs');
 }
 
-function getBlogById($http, id) {
-    return $http.get('/api/blogs/' + id);
+//function getBlogById($http, id) {
+    //return $http.get('/api/blogs/' + id);
+//}
+function getBlogById($http, authentication, id) {
+    return $http.get('/api/edit/' + id, { headers: { Authorization: 'Bearer ' + authentication.getToken() } });
 }
 
 function updateBlogById($http, authentication, id, data) {
@@ -86,10 +89,16 @@ app.controller('HomeController', function HomeController() {
   vm.message = "Welcome to my blog site!";
 });
 
-app.controller('ListController', function ListController($http) {
+app.controller('ListController', ['$http', 'authentication', function ListController($http, authentication) {
     var vm = this;
     vm.pageHeader = {
         title: 'Blog List'
+    };
+    vm.isLoggedIn = function () {
+        return authentication.isLoggedIn();
+    };
+    vm.isUser = function () {
+        return authentication.currentUser().email;
     };
     
     getAllBlogs($http)
@@ -100,7 +109,7 @@ app.controller('ListController', function ListController($http) {
       .error(function (e) {
         vm.message = "Could not get list of blogs";
       });
-});
+}]);
 
 app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {
     var vm = this;
@@ -118,7 +127,7 @@ app.controller('EditController', [ '$http', '$routeParams', '$location', 'authen
     };
     
     // Get book data so it may be displayed on edit page
-    getBlogById($http, vm.id)
+    getBlogById($http, authentication, vm.id)
       .success(function(data) {
         vm.blog = data;
         vm.message = "Blog data found!";
@@ -195,7 +204,7 @@ app.controller('AddController',['$http','$location', 'authentication', function 
   }
 }]);
 
-blogApp.controller('LoginController', ['$http', '$location', 'authentication', function LoginController($http, $location, authentication) {
+app.controller('LoginController', ['$http', '$location', 'authentication', function LoginController($http, $location, authentication) {
   var vm = this;
 
   vm.pageHeader = {
@@ -234,7 +243,7 @@ blogApp.controller('LoginController', ['$http', '$location', 'authentication', f
   };
 }]);
 
-blogApp.controller('RegisterController', ['$http', '$location', 'authentication', function RegisterController($http, $location, authentication) {
+app.controller('RegisterController', ['$http', '$location', 'authentication', function RegisterController($http, $location, authentication) {
   var vm = this;
 
   vm.pageHeader = {
@@ -272,7 +281,7 @@ blogApp.controller('RegisterController', ['$http', '$location', 'authentication'
   };
 }]);
 
-blogApp.controller('NavigationController', ['$location', 'authentication', function NavigationController($location, authentication) {
+app.controller('NavigationController', ['$location', 'authentication', function NavigationController($location, authentication) {
   var vm = this;
   vm.currentPath = $location.path();
   vm.currentUser = function () {
@@ -288,7 +297,7 @@ blogApp.controller('NavigationController', ['$location', 'authentication', funct
 }]);
 
 //*** Directives ***
-blogApp.directive('navigation', function () {
+app.directive('navigation', function () {
   return {
       restrict: 'EA',
       templateUrl: 'nav/navigation.html',
@@ -298,7 +307,7 @@ blogApp.directive('navigation', function () {
 });
 
 //*** Authentication Service and Methods **
-blogApp.service('authentication', authentication);
+app.service('authentication', authentication);
 authentication.$inject = ['$window', '$http'];
 function authentication($window, $http) {
   var vm = this;

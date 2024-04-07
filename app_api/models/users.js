@@ -1,7 +1,7 @@
 var mongoose = require( 'mongoose' );
-mongoose.set('useNewUrlParser', true);    // Included to avoid warnings
-mongoose.set('useFindAndModify', false);  // Included to avoid warnings
-mongoose.set('useCreateIndex', true);     // Included to avoid warnings
+//mongoose.set('useNewUrlParser', true);    // Included to avoid warnings
+//mongoose.set('useFindAndModify', false);  // Included to avoid warnings
+//mongoose.set('useCreateIndex', true);     // Included to avoid warnings
 var crypto = require('crypto');
 var jwt = require('jsonwebtoken');
 
