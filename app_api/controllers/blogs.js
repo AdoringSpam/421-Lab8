@@ -63,7 +63,7 @@ var buildBlogList = function(req, res, results) {
 	blogs.push({
 	    blogTitle: obj.blogTitle,
 	    blogText: obj.blogText,
-        createdBy: doc.createdBy,
+        createdBy: obj.createdBy,
 	    createdOn: obj.createdOn,
 	    _id: obj._id
 	});

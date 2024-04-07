@@ -7,43 +7,42 @@ var sendJSONresponse = function(res, status, content) {
   res.json(content);
 };
 
-module.exports.register = function(req, res) {
-  if(!req.body.name || !req.body.email || !req.body.password) {
-    sendJSONresponse(res, 400, {
-      "message": "All fields required"
-    });
-    return;
-  }
-
-  var user = new User();
-
-  user.name = req.body.name;
-  user.email = req.body.email;
-
-  user.setPassword(req.body.password);
-
-  user.save(function(err) {
-    var token;
-    if (err) {
-      sendJSONresponse(res, 404, err);
-    } else {
-      token = user.generateJwt();
-      sendJSONresponse(res, 200, {
-        "token" : token
+module.exports.register = async function(req, res) {
+  try {
+    if (!req.body.name || !req.body.email || !req.body.password) {
+      sendJSONresponse(res, 400, {
+        "message": "All fields required"
       });
+      return;
     }
-  });
+
+    var user = new User({
+      name: req.body.name,
+      email: req.body.email
+    });
+
+    user.setPassword(req.body.password);
+
+    await user.save();
+
+    var token = user.generateJwt();
+    sendJSONresponse(res, 200, {
+      "token": token
+    });
+  } catch (err) {
+    sendJSONresponse(res, 404, err);
+  }
 };
 
 module.exports.login = function(req, res) {
-  if(!req.body.email || !req.body.password) {      
+  if (!req.body.email || !req.body.password) {
     sendJSONresponse(res, 400, {
       "message": "All fields required"
     });
     return;
   }
 
-  passport.authenticate('local', function(err, user, info){
+  passport.authenticate('local', function(err, user, info) {
     var token;
 
     if (err) {
@@ -51,14 +50,13 @@ module.exports.login = function(req, res) {
       return;
     }
 
-    if(user){
+    if (user) {
       token = user.generateJwt();
       sendJSONresponse(res, 200, {
-        "token" : token
+        "token": token
       });
     } else {
       sendJSONresponse(res, 401, info);
     }
   })(req, res);
-
 };

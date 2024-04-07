@@ -275,8 +275,8 @@ app.controller('RegisterController', ['$http', '$location', 'authentication', fu
           .register(vm.credentials)
           .then(function () {
               $location.search('page', null);
-              //$location.path(vm.returnPage);
-              $location.path(['/']);
+              $location.path(vm.returnPage);
+              //$location.path(['/']);
               console.log("Successfulyy registered.");
           }, function errorCallBack(response) {
               vm.formError = "Error registering. Try again with a different email address."

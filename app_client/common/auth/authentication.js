@@ -1,4 +1,4 @@
-var app = angular.module('bloggerApp');
+/* var app = angular.module('bloggerApp');
 
 //*** Authentication Service and Methods **
 app.service('authentication', authentication);
@@ -143,4 +143,4 @@ app.controller('RegisterController', [ '$http', '$location', 'authentication', f
           $location.path(vm.returnPage);
         });
     };
-}]);   
+}]);   */
