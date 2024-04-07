@@ -236,8 +236,8 @@ app.controller('LoginController', ['$http', '$location', 'authentication', funct
           .login(vm.credentials)
           .then(function () {
               $location.search('page', null);
-              //$location.path(vm.returnPage);
-              $location.path(['/blogList']);
+              $location.path(vm.returnPage);
+              //$location.path(['/']);
           }, function errorCallBack(response) {
               vm.formError = response.message;
           });
@@ -276,7 +276,7 @@ app.controller('RegisterController', ['$http', '$location', 'authentication', fu
           .then(function () {
               $location.search('page', null);
               //$location.path(vm.returnPage);
-              $location.path(['/blogList']);
+              $location.path(['/']);
               console.log("Successfulyy registered.");
           }, function errorCallBack(response) {
               vm.formError = "Error registering. Try again with a different email address."

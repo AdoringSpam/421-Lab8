@@ -1,9 +1,10 @@
-require('dotenv').config();   // Lab6
+require('dotenv').config({path:'./.env'});   // Lab6
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//var mongoose = require('mongoose');
 //var favicon = require('serve-favicon');
 var passport = require('passport');
 require('./app_api/models/db');
