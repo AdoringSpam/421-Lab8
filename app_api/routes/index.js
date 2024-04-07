@@ -1,12 +1,20 @@
 var express = require('express');
 var router = express.Router();
+var jwt = require('express-jwt'); 
+var auth = jwt({   // Lab 6
+  secret: process.env.JWT_SECRET,
+  userProperty: 'payload'
+});
 var ctrlBlogs = require('../controllers/blogs');
+var ctrlAuth = require('../controllers/authentication');  // Lab 6
 
 /* Setup routes to API URLs */
 router.get('/blogs', ctrlBlogs.blogsList);
-router.post('/blogs', ctrlBlogs.blogsCreate);
+router.post('/blogs', auth, ctrlBlogs.blogsCreate);
 router.get('/blogs/:id', ctrlBlogs.blogsReadOne);
-router.put('/blogs/:id', ctrlBlogs.blogsUpdateOne);
-router.delete('/blogs/:id', ctrlBlogs.blogsDeleteOne);
+router.put('/blogs/:id', auth, ctrlBlogs.blogsUpdateOne);
+router.delete('/blogs/:id', auth, ctrlBlogs.blogsDeleteOne);
+router.post('/register', ctrlAuth.register);  // Lab 6
+router.post('/login', ctrlAuth.login);  // Lab 6
 
 module.exports = router;

@@ -38,6 +38,18 @@ app.config(function($routeProvider,$locationProvider) {
         controllerAs: 'vm'
       })
 
+        .when('/login', {
+        templateUrl: 'pages/login.html',
+        controller: 'LoginController',
+        controllerAs: 'vm'
+      }) 
+
+        .when('/register', {
+        templateUrl: 'pages/register.html',
+        controller: 'RegisterController',
+        controllerAs: 'vm'
+      }) 
+
       .otherwise({redirectTo: '/'});
 
     });
@@ -53,16 +65,16 @@ function getBlogById($http, id) {
     return $http.get('/api/blogs/' + id);
 }
 
-function updateBlogById($http, id, data) {
-    return $http.put('/api/blogs/' + id, data);
+function updateBlogById($http, authentication, id, data) {
+    return $http.put('/api/blogs/' + id, data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
 }
 
-function addBlog($http,data){
-    return $http.post('/api/blogs',data);
+function addBlog($http, authentication, data){
+    return $http.post('/api/blogs',data, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
 }
 
-function deleteBlog($http,id){
-    return $http.delete('/api/blogs/' + id);
+function deleteBlog($http, authentication, id){
+    return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
 }
 
 //*** Controllers ***
@@ -90,12 +102,19 @@ app.controller('ListController', function ListController($http) {
       });
 });
 
-app.controller('EditController', [ '$http', '$routeParams', '$location', function EditController($http, $routeParams, $location) {
+app.controller('EditController', [ '$http', '$routeParams', '$location', 'authentication', function EditController($http, $routeParams, $location, authentication) {
     var vm = this;
     vm.blog = {};       // Start with a blank book
     vm.id = $routeParams.id;    // Get id from $routParams which must be injected and passed into controller
     vm.pageHeader = {
         title: 'Blog Edit'
+    };
+
+    vm.isLoggedIn = function () {
+      return authentication.isLoggedIn();
+    };
+    vm.getToken = function () {
+      return authentication.getToken();
     };
     
     // Get book data so it may be displayed on edit page
@@ -114,7 +133,7 @@ app.controller('EditController', [ '$http', '$routeParams', '$location', functio
       data.blogTitle = userForm.blogTitle.value;
       data.blogText = userForm.blogText.value;
       $location.path(['/blogList']);
-  updateBlogById($http,vm.id,data)
+  updateBlogById($http, authentication, vm.id,data)
       .then(function successCallBack(response){
           vm.message="Blog data updated!";
       }),function errorCallBack(response){
@@ -123,7 +142,7 @@ app.controller('EditController', [ '$http', '$routeParams', '$location', functio
   }
 }]);
 
-app.controller('DeleteController',['$http','$location','$routeParams',function DeleteController($http,$location,$routeParams) {
+app.controller('DeleteController',['$http','$location','$routeParams', 'authentication', function DeleteController($http,$location,$routeParams,authentication) {
   var vm = this;
   vm.blog ={};
   vm.id = $routeParams.id;
@@ -143,7 +162,7 @@ app.controller('DeleteController',['$http','$location','$routeParams',function D
 
   vm.submit = function(){
       $location.path(['/blogList']);
-      deleteBlog($http,vm.id)
+      deleteBlog($http,vm.id,authentication)
       .then(function successCallBack(response){
         vm.message="Blog Deleted!";
     }),function errorCallBack(response){
@@ -152,7 +171,7 @@ app.controller('DeleteController',['$http','$location','$routeParams',function D
 }
 }]);
 
-app.controller('AddController',['$http','$location',function AddController($http,$location) {
+app.controller('AddController',['$http','$location', 'authentication', function AddController($http,$location,authentication) {
   var vm = this;
   vm.pageHeader = {
       title: "Blog Add"
@@ -161,9 +180,12 @@ app.controller('AddController',['$http','$location',function AddController($http
       var data = {};
       data.blogTitle = userForm.blogTitle.value;
       data.blogText = userForm.blogText.value;
+      data.createdBy = {}
+      data.createdBy.userEmail = authentication.currentUser().email;
+      data.createdBy.name = authentication.currentUser().name;
       data.createdOn = Date.now();
 
-  addBlog($http,data)
+  addBlog($http,data,authentication)
       .then(function successCallBack(response) {
           vm.message = "Blog Added";
           $location.path(['/blogList']);
@@ -172,6 +194,179 @@ app.controller('AddController',['$http','$location',function AddController($http
       }
   }
 }]);
+
+blogApp.controller('LoginController', ['$http', '$location', 'authentication', function LoginController($http, $location, authentication) {
+  var vm = this;
+
+  vm.pageHeader = {
+      title: 'Sign in to Blogger'
+  };
+
+  vm.credentials = {
+      email: "",
+      password: ""
+  };
+
+  vm.returnPage = $location.search().page || '/';
+
+  vm.onSubmit = function () {
+      vm.credentials.email = userForm.email.value;
+      vm.credentials.password = userForm.password.value;
+      vm.formError = "";
+      if (!vm.credentials.email || !vm.credentials.password) {
+          vm.formError = "All fields required, please try again";
+          return false;
+      } else {
+          vm.doLogin();
+      }
+  };
+
+  vm.doLogin = function () {
+      vm.formError = "";
+      authentication
+          .login(vm.credentials)
+          .then(function () {
+              $location.search('page', null);
+              $location.path(vm.returnPage);
+          }, function errorCallBack(response) {
+              vm.formError = response.message;
+          });
+  };
+}]);
+
+blogApp.controller('RegisterController', ['$http', '$location', 'authentication', function RegisterController($http, $location, authentication) {
+  var vm = this;
+
+  vm.pageHeader = {
+      title: 'Create a new Bloger account'
+  };
+
+  vm.credentials = {
+      name: "",
+      email: "",
+      password: ""
+  };
+
+  vm.returnPage = $location.search().page || '/';
+
+  vm.onSubmit = function () {
+      vm.formError = "";
+      if (!vm.credentials.name || !vm.credentials.email || !vm.credentials.password) {
+          vm.formError = "All fields required, please try again";
+          return false;
+      } else {
+          vm.doRegister();
+      }
+  };
+
+  vm.doRegister = function () {
+      vm.formError = "";
+      authentication
+          .register(vm.credentials)
+          .then(function () {
+              $location.search('page', null);
+              $location.path(vm.returnPage);
+          }, function errorCallBack(response) {
+              vm.formError = "Error registering. Try again with a different email address."
+          });
+  };
+}]);
+
+blogApp.controller('NavigationController', ['$location', 'authentication', function NavigationController($location, authentication) {
+  var vm = this;
+  vm.currentPath = $location.path();
+  vm.currentUser = function () {
+      return authentication.currentUser();
+  }
+  vm.isLoggedIn = function () {
+      return authentication.isLoggedIn();
+  }
+  vm.logout = function () {
+      authentication.logout();
+      $location.path('/');
+  };
+}]);
+
+//*** Directives ***
+blogApp.directive('navigation', function () {
+  return {
+      restrict: 'EA',
+      templateUrl: 'nav/navigation.html',
+      controller: 'NavigationController',
+      controllerAs: 'vm'
+  };
+});
+
+//*** Authentication Service and Methods **
+blogApp.service('authentication', authentication);
+authentication.$inject = ['$window', '$http'];
+function authentication($window, $http) {
+  var vm = this;
+
+  function saveToken(token) {
+      $window.localStorage['blog-token'] = token;
+  };
+
+  function getToken() {
+      return $window.localStorage['blog-token'];
+  };
+
+  var register = function (user) {
+      console.log('Registering user ' + user.email + ' ' + user.password);
+      return $http.post('/api/register', user).then(function successCallBack(response) {
+          saveToken(response.data.token);
+      }, function errorCallBack(error) {
+          vm.message = "failed to register";
+      });
+  };
+
+  var login = function (user) {
+      console.log('Attempting to login user ' + user.email + ' ' + user.password);
+      //$http.defaults.headers.post["Content-Type"] = "application/x-www-form-urlencoded";
+      return $http.post('/api/login', user).then(function (response) {
+          saveToken(response.data.token);
+      }, function errorCallBack(error) {
+          vm.message = "Failed to login";
+      });
+  };
+
+  var logout = function () {
+      $window.localStorage.removeItem('blog-token');
+  };
+
+  var isLoggedIn = function () {
+      var token = getToken();
+
+      if (token) {
+          var payload = JSON.parse($window.atob(token.split('.')[1]));
+
+          return payload.exp > Date.now() / 1000;
+      } else {
+          return false;
+      }
+  };
+
+  var currentUser = function () {
+      if (isLoggedIn()) {
+          var token = getToken();
+          var payload = JSON.parse($window.atob(token.split('.')[1]));
+          return {
+              email: payload.email,
+              name: payload.name
+          };
+      }
+  };
+
+  return {
+      saveToken: saveToken,
+      getToken: getToken,
+      register: register,
+      login: login,
+      logout: logout,
+      isLoggedIn: isLoggedIn,
+      currentUser: currentUser
+  };
+}
 
 angular
 .module('bloggerApp')

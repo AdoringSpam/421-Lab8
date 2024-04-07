@@ -1,11 +1,13 @@
+require('dotenv').config();   // Lab6
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 //var favicon = require('serve-favicon');
+var passport = require('passport');
 require('./app_api/models/db');
-
+require('./app_api/config/passport');   // Lab6
 var router = require('./app_server/routes/index');
 var routerApi = require('./app_api/routes/index');
 
@@ -33,6 +35,7 @@ app.use('/css', express.static(__dirname + '/public/stylesheets'));
 app.use('/webfonts', express.static(__dirname + '/public/fonts/webfonts/'));
 
 app.use('/', router);
+app.use(passport.initialize()); // Lab6
 app.use('/api', routerApi);
 // Lab 5 Angular
 app.use(function(req, res) {

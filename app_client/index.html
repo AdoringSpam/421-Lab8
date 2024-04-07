@@ -16,17 +16,10 @@
     </body>
         <!-- Partials -->
         <base href="/"> 
-        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
-            <a class="navbar-brand" href="#/">My Blog</a>
-            
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                
-                <a class="nav-item nav-link active" href="#/blogList">List Blogs</a>
-                <a class="nav-item nav-link active" href="#/blogAdd">Add Blog</a>
-                </div>
-            </div>
-        </nav>
+        <!-- Navigation -->
+        <div ng-controller="NavigationController">
+            <navigation></navigation>  
+        </div>  
 
         
         <!-- Angular templates --> 
@@ -107,7 +100,10 @@
                       <a class="btn btn-primary float-right" style="margin-right: 25px" href="#/blogList" role="button">Cancel</a>
               </form> 
               </div>
-        </script>
+         </script>
+          <!-- <script type="text/ng-template" id="pages/blogDelete.html">
+              <p></p>
+              <div class="card border-primary" style="width: 50%">  -->
       
           <!-- Angular View (dynamic content goes here) -->  
           <div ng-view></div>
