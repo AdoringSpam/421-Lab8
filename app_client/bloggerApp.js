@@ -65,7 +65,7 @@ function getAllBlogs($http) {
     //return $http.get('/api/blogs/' + id);
 //}
 function getBlogById($http, authentication, id) {
-    return $http.get('/api/edit/' + id, { headers: { Authorization: 'Bearer ' + authentication.getToken() } });
+    return $http.get('/api/blogs/' + id, { headers: { Authorization: 'Bearer ' + authentication.getToken() } });
 }
 
 function updateBlogById($http, authentication, id, data) {
@@ -159,7 +159,7 @@ app.controller('DeleteController',['$http','$location','$routeParams', 'authenti
       title: "Blog Delete"
   };
   console.log("Delete Controller initialized.");
-  getBlogById($http,vm.id)
+  getBlogById($http,authentication,vm.id)
     .success(function(data) {
       vm.blog = data;
       vm.message ="Blog data found!"
@@ -236,7 +236,8 @@ app.controller('LoginController', ['$http', '$location', 'authentication', funct
           .login(vm.credentials)
           .then(function () {
               $location.search('page', null);
-              $location.path(vm.returnPage);
+              //$location.path(vm.returnPage);
+              $location.path(['/blogList']);
           }, function errorCallBack(response) {
               vm.formError = response.message;
           });
@@ -274,7 +275,9 @@ app.controller('RegisterController', ['$http', '$location', 'authentication', fu
           .register(vm.credentials)
           .then(function () {
               $location.search('page', null);
-              $location.path(vm.returnPage);
+              //$location.path(vm.returnPage);
+              $location.path(['/blogList']);
+              console.log("Successfulyy registered.");
           }, function errorCallBack(response) {
               vm.formError = "Error registering. Try again with a different email address."
           });

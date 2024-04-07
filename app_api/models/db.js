@@ -3,6 +3,8 @@ var gracefulShutdown;
 //var dbURI = 'mongodb://localhost/blogs';
 //var dbURI = 'DB_URL=mongodb://blogs:blogs@localhost/blogs'
 var dbURI = 'mongodb://blogs:blogs@localhost/blogs'
+//var dbURI = `mongodb://blogs:blogs@0.0.0.0:27017/blogs`
+//var dbURI = `mongodb://blogs:blogs@127.0.0.1:27017/blogs`
 mongoose.connect(dbURI);
 
 

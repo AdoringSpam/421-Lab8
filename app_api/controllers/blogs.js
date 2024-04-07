@@ -63,6 +63,7 @@ var buildBlogList = function(req, res, results) {
 	blogs.push({
 	    blogTitle: obj.blogTitle,
 	    blogText: obj.blogText,
+        createdBy: doc.createdBy,
 	    createdOn: obj.createdOn,
 	    _id: obj._id
 	});
@@ -78,7 +79,8 @@ module.exports.blogsCreate = async (req, res) => {
     try {
         const blog = await blogModel.create({
             blogTitle: req.body.blogTitle,
-            blogText: req.body.blogText
+            blogText: req.body.blogText,
+            createdBy: req.body.createdBy
         });
         sendJSONresponse(res, 201, blog);
     } catch (err) {

@@ -8,6 +8,16 @@ var blogSchema = new mongoose.Schema({
     blogText: {
 	type: String,
 	required: true
+    },
+    createdBy: {
+        userEmail: {
+            type: String,
+            required: true
+          },
+          name: {
+            type: String,
+            required: true
+          }
     },	
     createdOn: {
         type: Date,
