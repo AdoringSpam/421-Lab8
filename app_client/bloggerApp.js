@@ -315,11 +315,11 @@ authentication.$inject = ['$window', '$http'];
 function authentication($window, $http) {
   var vm = this;
 
-  function saveToken(token) {
+  var saveToken = function (token) {
       $window.localStorage['blog-token'] = token;
   };
 
-  function getToken() {
+  var getToken = function () {
       return $window.localStorage['blog-token'];
   };
 
@@ -343,7 +343,7 @@ function authentication($window, $http) {
   };
 
   var logout = function () {
-      $window.localStorage.removeItem('blog-token');
+      $window.localStorage.removeItem('blog-token'); 
   };
 
   var isLoggedIn = function () {
