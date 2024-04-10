@@ -6,9 +6,9 @@ var User = mongoose.model('User');
 passport.use(new LocalStrategy({
     usernameField: 'email'
   },
-  function(username, password, done) {
-    User.findOne({ email: username }, function (err, user) {
-      if (err) { return done(err); }
+  async function(username, password, done) {
+    try {
+      const user = await User.findOne({ email: username }).exec();
       if (!user) {
         return done(null, false, {
           message: 'Incorrect username.'
@@ -20,6 +20,8 @@ passport.use(new LocalStrategy({
         });
       }
       return done(null, user);
-    });
+    } catch (err) {
+      return done(err);
+    }
   }
 ));

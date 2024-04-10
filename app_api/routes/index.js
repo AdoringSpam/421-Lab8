@@ -16,5 +16,6 @@ router.put('/blogs/:id', auth, ctrlBlogs.blogsUpdateOne);
 router.delete('/blogs/:id', auth, ctrlBlogs.blogsDeleteOne);
 router.post('/register', ctrlAuth.register);  // Lab 6
 router.post('/login', ctrlAuth.login);  // Lab 6
+//router.post('/api/login', ctrlAuth.login);
 
 module.exports = router;

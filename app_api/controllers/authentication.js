@@ -7,7 +7,7 @@ var sendJSONresponse = function(res, status, content) {
   res.json(content);
 };
 
-/* module.exports.register = async function(req, res) {
+module.exports.register = async function(req, res) {
   try {
     if (!req.body.name || !req.body.email || !req.body.password) {
       sendJSONresponse(res, 400, {
@@ -32,8 +32,8 @@ var sendJSONresponse = function(res, status, content) {
   } catch (err) {
     sendJSONresponse(res, 404, err);
   }
-}; */
-
+}; 
+/*
 module.exports.register = function(req, res) {
   if(!req.body.name || !req.body.email || !req.body.password) {
     sendJSONresponse(res, 400, {
@@ -60,7 +60,7 @@ module.exports.register = function(req, res) {
       });
     }
   });
-};
+}; */
 
 module.exports.login = function(req, res) {
   if (!req.body.email || !req.body.password) {
@@ -74,6 +74,7 @@ module.exports.login = function(req, res) {
     var token;
 
     if (err) {
+      console.log(err);
       sendJSONresponse(res, 404, err);
       return;
     }

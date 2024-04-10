@@ -171,7 +171,7 @@ app.controller('DeleteController',['$http','$location','$routeParams', 'authenti
 
   vm.submit = function(){
       $location.path(['/blogList']);
-      deleteBlog($http,vm.id,authentication)
+      deleteBlog($http,authentication,vm.id)
       .then(function successCallBack(response){
         vm.message="Blog Deleted!";
     }),function errorCallBack(response){
@@ -185,6 +185,12 @@ app.controller('AddController',['$http','$location', 'authentication', function 
   vm.pageHeader = {
       title: "Blog Add"
   };
+  //vm.isLoggedIn = function () {
+    //return authentication.isLoggedIn();
+  //};
+  //vm.getToken = function () {
+    //return authentication.getToken();
+  //};
   vm.submit = function(){
       var data = {};
       data.blogTitle = userForm.blogTitle.value;
@@ -194,7 +200,7 @@ app.controller('AddController',['$http','$location', 'authentication', function 
       data.createdBy.name = authentication.currentUser().name;
       data.createdOn = Date.now();
 
-  addBlog($http,data,authentication)
+  addBlog($http,authentication,data)
       .then(function successCallBack(response) {
           vm.message = "Blog Added";
           $location.path(['/blogList']);
@@ -226,22 +232,31 @@ app.controller('LoginController', ['$http', '$location', 'authentication', funct
           vm.formError = "All fields required, please try again";
           return false;
       } else {
-          vm.doLogin();
+          //vm.doLogin();
+          authentication.login(vm.credentials)
+            .then(function () {
+                $location.path(vm.returnPage);
+
+            }, function errorCallBack(response) {
+                vm.formError = response.data.message;
+            });
+        
       }
   };
-
+  /*
   vm.doLogin = function () {
       vm.formError = "";
       authentication
           .login(vm.credentials)
-          .then(function () {
+          authentication
+          .login(vm.credentials)
               $location.search('page', null);
               $location.path(vm.returnPage);
               //$location.path(['/']);
           }, function errorCallBack(response) {
               vm.formError = response.message;
           });
-  };
+  }; */
 }]);
 
 app.controller('RegisterController', ['$http', '$location', 'authentication', function RegisterController($http, $location, authentication) {
@@ -318,10 +333,16 @@ function authentication($window, $http) {
   var saveToken = function (token) {
       $window.localStorage['blog-token'] = token;
   };
+  //function saveToken(token) {
+      //$window.localStorage['blog-token'] = token;
+  //};
 
   var getToken = function () {
       return $window.localStorage['blog-token'];
   };
+  //function getToken() {
+      //return $window.localStorage['blog-token'];
+  //};
 
   var register = function (user) {
       console.log('Registering user ' + user.email + ' ' + user.password);

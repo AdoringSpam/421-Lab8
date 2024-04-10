@@ -19996,3 +19996,269 @@ Getting blogs list
 [0mGET /css/fontawesome-all.css [36m304 [0m0.792 ms - -[0m
 [0mGET /css/bootstrap.min.css.map [36m304 [0m3.562 ms - -[0m
 [0mGET /css/bootstrap.min.css.map [36m304 [0m34.564 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m179.990 ms - -[0m
+[0mGET / [36m304 [0m3.817 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.153 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.119 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m13.150 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m20.597 ms - 11186[0m
+[0mGET /nav/navigation.html [36m304 [0m0.585 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m4.706 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m2.262 ms - -[0m
+[0mGET / [32m200 [0m4.214 ms - 6375[0m
+[0mGET /favicon.ico [36m304 [0m78.476 ms - -[0m
+[0mGET /common/auth/login.html [36m304 [0m1.705 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.658 ms - -[0m
+[0mPOST /api/login [33m404 [0m118.188 ms - 2[0m
+[0mGET /favicon.ico [36m304 [0m1.010 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.309 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m2.541 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m2.584 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m4.381 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m1.877 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m2.311 ms - -[0m
+[0mPOST /api/login [33m404 [0m9.664 ms - 2[0m
+[0mGET /favicon.ico [36m304 [0m1.364 ms - -[0m
+Getting blogs list
+[0mGET /favicon.ico [36m304 [0m341.840 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m540.633 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.297 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m14.026 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.599 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.771 ms - -[0m
+[0mGET /common/auth/register.html [36m304 [0m0.558 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.790 ms - -[0m
+[0mPOST /api/register [32m200 [0m194.531 ms - 235[0m
+[0mGET /favicon.ico [36m304 [0m0.710 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.719 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m1.914 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m108.773 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m4.504 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.974 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m5.807 ms - -[0m
+[0mPOST /api/login [33m404 [0m135.755 ms - 2[0m
+[0mGET /favicon.ico [36m304 [0m1.391 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.755 ms - -[0m
+[0mPOST /api/login [33m404 [0m3.093 ms - 2[0m
+[0mGET /favicon.ico [36m304 [0m0.693 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m0.652 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.726 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m0.826 ms - -[0m
+Getting blogs list
+[0mGET /favicon.ico [36m304 [0m0.904 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m258.575 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.732 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m19.219 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.878 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.697 ms - -[0m
+[0mPOST /api/login [33m404 [0m124.687 ms - 2[0m
+[0mGET /favicon.ico [36m304 [0m35.286 ms - -[0m
+Getting blogs list
+[0mGET /favicon.ico [36m304 [0m2.526 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m218.590 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.705 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m9.319 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.662 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.712 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m5.734 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.588 ms - -[0m
+[0mGET / [36m304 [0m14.884 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.135 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.873 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m1.167 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m8.245 ms - 11277[0m
+[0mGET /nav/navigation.html [36m304 [0m4.900 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m6.431 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m3.454 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.978 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m10.322 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.647 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.934 ms - -[0m
+[0mGET /common/auth/login.html [36m304 [0m99.142 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m72.509 ms - -[0m
+[0mGET /common/auth/register.html [36m304 [0m0.588 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.275 ms - -[0m
+[0mPOST /api/register [32m200 [0m382.894 ms - 235[0m
+[0mGET /favicon.ico [36m304 [0m2.659 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.677 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m18.242 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m18.324 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.984 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m1.321 ms - -[0m
+[0mGET / [36m304 [0m1.949 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.419 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.578 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.873 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m8.394 ms - 11427[0m
+[0mGET /nav/navigation.html [36m304 [0m3.061 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.897 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.000 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m3.000 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m3.802 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m0.611 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m0.835 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m123.269 ms - -[0m
+[0mGET / [36m304 [0m15.725 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m5.772 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m6.225 ms - -[0m
+[0mGET /bloggerApp.js [32m200 [0m42.457 ms - 11439[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m50.694 ms - -[0m
+[0mGET /css/bootstrap.min.css.map [36m304 [0m0.605 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m2.909 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.647 ms - -[0m
+[0mGET / [0m- [0m- ms - -[0m
+
+> blogger@0.0.0 start
+> node ./bin/www
+
+Mongoose connected to mongodb://blogs:blogs@localhost/blogs
