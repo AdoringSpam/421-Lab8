@@ -125,29 +125,31 @@ module.exports.blogsDeleteOne = async (req, res) => {
     }
 };
 
-/* GET comments for a blog */
+/* Get comments for a specific blog */
 module.exports.blogsComments = async (req, res) => {
-    console.log('Getting comments for blog with id', req.params.id);
     try {
-        const blog = await blogModel.findById(req.params.id).populate('comments').exec();      // Lab8
-        if (!blog) {
+        const blogId = req.params.id;
+        const comments = await blogModel.find({ blogId: blogId }).populate('author').exec();
+        if (!comments) {
             sendJSONresponse(res, 404, {
-                "message": "Blog not found"
+                "message": "No comments found for this blog"
             });
-        } else {
-            sendJSONresponse(res, 200, blog.comments);
+            return;
         }
+        sendJSONresponse(res, 200, comments);
     } catch (err) {
         console.log(err);
-        sendJSONresponse(res, 404, err);
+        sendJSONresponse(res, 500, err);
     }
 };
+
+
 
 /* Add a comment to a blog */
 module.exports.addCommentToBlog = async (req, res) => {
     console.log('Adding comment to blog with id', req.params.id);
     try {
-        const blog = await blogModel.findById(req.params.id).exec();     // Lab8
+        const blog = await blogModel.findById(req.params.id).exec();
         if (!blog) {
             sendJSONresponse(res, 404, {
                 "message": "Blog not found"
@@ -156,14 +158,14 @@ module.exports.addCommentToBlog = async (req, res) => {
         }
         
         const newComment = {
-            text: req.body.text,
-            user: req.body.user // Assuming user information is included in the request body
+            blogId: req.params.id,
+            author: req.payload.userId, // Assuming the user ID is available in req.payload.userId after authentication
+            content: req.body.content
         };
         
-        blog.comments.push(newComment);
-        await blog.save();
+        const comment = await blogModel.create(newComment);
         
-        sendJSONresponse(res, 201, newComment); // Sending back the newly added comment
+        sendJSONresponse(res, 201, comment); // Sending back the newly added comment
     } catch (err) {
         console.log(err);
         sendJSONresponse(res, 400, err);
