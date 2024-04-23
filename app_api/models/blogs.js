@@ -22,7 +22,11 @@ var blogSchema = new mongoose.Schema({
     createdOn: {
         type: Date,
 	    "default": Date.now
-    }
+    },
+    comments: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Comment'
+      }]
 });
 
 

@@ -124,3 +124,48 @@ module.exports.blogsDeleteOne = async (req, res) => {
         sendJSONresponse(res, 404, err);
     }
 };
+
+/* GET comments for a blog */
+module.exports.blogsComments = async (req, res) => {
+    console.log('Getting comments for blog with id', req.params.id);
+    try {
+        const blog = await blogModel.findById(req.params.id).populate('comments').exec();      // Lab8
+        if (!blog) {
+            sendJSONresponse(res, 404, {
+                "message": "Blog not found"
+            });
+        } else {
+            sendJSONresponse(res, 200, blog.comments);
+        }
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 404, err);
+    }
+};
+
+/* Add a comment to a blog */
+module.exports.addCommentToBlog = async (req, res) => {
+    console.log('Adding comment to blog with id', req.params.id);
+    try {
+        const blog = await blogModel.findById(req.params.id).exec();     // Lab8
+        if (!blog) {
+            sendJSONresponse(res, 404, {
+                "message": "Blog not found"
+            });
+            return;
+        }
+        
+        const newComment = {
+            text: req.body.text,
+            user: req.body.user // Assuming user information is included in the request body
+        };
+        
+        blog.comments.push(newComment);
+        await blog.save();
+        
+        sendJSONresponse(res, 201, newComment); // Sending back the newly added comment
+    } catch (err) {
+        console.log(err);
+        sendJSONresponse(res, 400, err);
+    }
+};

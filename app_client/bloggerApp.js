@@ -50,6 +50,17 @@ app.config(function($routeProvider,$locationProvider) {
         controllerAs: 'vm'
       }) 
 
+        .when('/blogComments/:id', {
+        templateUrl: 'pages/blogComments.html',    //Lab8
+        controller: 'BlogCommentsController',
+        controllerAs: 'vm'
+      })
+        .when('/addComment/:id', {
+        templateUrl: 'pages/addComment.html',   //Lab8
+        controller: 'AddCommentController',
+        controllerAs: 'vm'
+      })
+
       .otherwise({redirectTo: '/'});
 
     });
@@ -79,6 +90,15 @@ function addBlog($http, authentication, data){
 function deleteBlog($http, authentication, id){
     return $http.delete('/api/blogs/' + id, { headers: { Authorization: 'Bearer '+ authentication.getToken() }} );
 }
+
+function getAllCommentsForBlog($http, blogId) {
+    return $http.get('/api/blogs/' + blogId + '/comments');
+}
+
+function addCommentToBlog($http, authentication, blogId, commentData) {
+    return $http.post('/api/blogs/' + blogId + '/comments', commentData, { headers: { Authorization: 'Bearer '+ authentication.getToken() } });
+}
+
 
 //*** Controllers ***
 app.controller('HomeController', function HomeController() {
@@ -312,6 +332,45 @@ app.controller('NavigationController', ['$location', 'authentication', function 
       authentication.logout();
       $location.path('/');
   };
+}]);
+
+app.controller('CommentListController', ['$http', '$routeParams', function CommentListController($http, $routeParams) {
+    var vm = this;
+    var blogId = $routeParams.id;
+
+    // Function to get all comments for a blog
+    getAllCommentsForBlog($http, blogId)
+        .then(function(response) {
+            vm.comments = response.data;
+        })
+        .catch(function(error) {
+            console.error('Error fetching comments:', error);
+        });
+}]);
+
+app.controller('AddCommentController', ['$http', '$routeParams', 'authentication', function AddCommentController($http, $routeParams, authentication) {
+    var vm = this;
+    var blogId = $routeParams.id;
+
+    vm.comment = {};
+
+    // Function to add a comment to a blog
+    vm.addComment = function() {
+        vm.comment.blogId = blogId; // Set the blogId for the comment
+        vm.comment.userEmail = authentication.currentUser().email; // Get the current user's email
+        vm.comment.createdAt = new Date(); // Set the current date as the creation date
+
+        addCommentToBlog($http, authentication, blogId, vm.comment)
+            .then(function(response) {
+                // Handle success
+                console.log('Comment added:', response.data);
+                // Optionally, you can redirect the user to the blog page or perform any other action
+            })
+            .catch(function(error) {
+                // Handle error
+                console.error('Error adding comment:', error);
+            });
+    };
 }]);
 
 //*** Directives ***

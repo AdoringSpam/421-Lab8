@@ -52,3 +52,4 @@ process.on('SIGTERM', function() {
 // BRING IN YOUR SCHEMAS & MODELS
 require('./blogs');
 require('./users'); // Lab6
+require('./comments'); //Lab8

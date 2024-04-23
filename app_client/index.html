@@ -53,6 +53,14 @@
                                <a ng-show="vm.isLoggedIn() && vm.isUser() == '{{blog.createdBy.userEmail}}'" ng-Href="#/blogDelete/{{blog._id}}" class="nav-link"
                                     style="color: #198754;"><i class="icon-remove"></i> Delete</a>
                            </li>
+                           <li class="nav-item">
+                            <!-- <a class="nav-link" href="#/blogDelete/{{blog._id}}"> <i class="icon-remove"></i> Delete</a> -->
+                               <a ng-show="vm.isLoggedIn()" ng-Href="#/blogComments/{{blog._id}}" class="nav-link"
+                                    style="color: #198754;"><i class="icon-remove"></i> Comments</a>
+                           </li>
+                           <li class="nav-item">
+                               <a class="nav-link" href="#/addComment/{{blog._id}}"> <i class="icon-remove"></i> Add Comment</a>
+                           </li>
                          </ul>
                   </div>	
                   </div>
@@ -91,6 +99,21 @@
               </div>
           </script>
 
+         <!-- <script type="text/ng-template" id="pages/addComment.html">
+              <p></p>
+              <div class="card border-primary" style="width: 50%">  
+              <form name="userForm" ng-submit="vm.submit()" ng-controller="AddCommentController" style="padding: 20px">
+                  <div class="form-group">
+                      <label for="summary" class="text-primary">Blog Title</label>
+                      <input class="form-control" id="title" name="blogTitle" value="{{vm.blog.blogTitle}}">
+                      <label for="detail" class="text-primary">Content</label>
+                      <textarea class="form-control" id="text" name="content" rows="3"></textarea>
+                  </div>
+                      <input type="submit" class="btn btn-primary" value="Add Comment">
+              </form> 
+              </div>
+          </script> -->
+
           <script type="text/ng-template" id="pages/blogDelete.html">
               <p></p>
               <div class="card border-primary" style="width: 50%">  
@@ -106,9 +129,46 @@
               </form> 
               </div>
          </script>
-          <!-- <script type="text/ng-template" id="pages/blogDelete.html">
-              <p></p>
-              <div class="card border-primary" style="width: 50%">  -->
+
+         <!-- <script type="text/ng-template" id="pages/blogComments.html">
+            <p></p>
+            <div ng-repeat="comment in vm.comments">
+            <div class="card border-primary" style="width: 50%"> 
+                  <div class="card-header">
+                  </div>
+                  <div class="card-body">
+                       <h5 class ="card-title">{{blog.blogTitle}}</h5>
+                       <p ng-bind="blog.createdOn | date: 'MM/dd/yyyy h:mm a'"></p> 
+                      <p class="card-text2" style="font-size: 12px">Published by: {{blog.createdBy.name}} on {{blog.createdOn | date : 'MMM d, y h:mm a' }}</p> 
+                      <p>{{ comment.content }}</p>
+                  </div>
+                </div>
+         </script> -->
+         <script type="text/ng-template" id="pages/addComment.html">
+            <p></p>
+            <div class="card border-primary" style="width: 50%">  
+                <form name="commentForm" ng-submit="vm.submit()" ng-controller="AddCommentController" style="padding: 20px">
+                    <div class="form-group">
+                        <label for="comment" class="text-primary">Add Comment</label>
+                        <textarea class="form-control" id="comment" name="comment" rows="3" ng-model="vm.commentText" required></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Add Comment">
+                </form> 
+            </div>
+        </script>
+        
+        <script type="text/ng-template" id="pages/blogComments.html">
+            <p></p>
+            <div class="card border-primary" style="width: 50%">  
+                <div ng-repeat="comment in vm.comments">
+                    <div class="card-body">
+                        <p class="card-text">{{ comment.text }}</p>
+                        <p class="card-text2" style="font-size: 12px">Posted by: {{ comment.author }} on {{ comment.date | date : 'MMM d, y h:mm a' }}</p>
+                    </div>
+                </div>
+            </div>
+        </script>
+                
       
           <!-- Angular View (dynamic content goes here) -->  
           <div ng-view></div>

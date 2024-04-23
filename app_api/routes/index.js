@@ -17,5 +17,7 @@ router.delete('/blogs/:id', auth, ctrlBlogs.blogsDeleteOne);
 router.post('/register', ctrlAuth.register);  // Lab 6
 router.post('/login', ctrlAuth.login);  // Lab 6
 //router.post('/api/login', ctrlAuth.login);
+router.get('/blogs/:id/comments', ctrlBlogs.blogComments); // Get comments for a blog
+router.post('/blogs/:id/comments', auth, ctrlBlogs.addCommentToBlog); // Add a comment to a blog
 
 module.exports = router;
