@@ -162,7 +162,7 @@
             <div class="card border-primary" style="width: 50%">  
                 <div ng-repeat="comment in vm.comments">
                     <div class="card-body">
-                        <p class="card-text">{{ comment.text }}</p>
+                        <p class="card-text">{{ comment.content }}</p>
                         <p class="card-text2" style="font-size: 12px">Posted by: {{ comment.author }} on {{ comment.date | date : 'MMM d, y h:mm a' }}</p>
                     </div>
                 </div>

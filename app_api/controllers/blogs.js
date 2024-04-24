@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var blogModel = mongoose.model('Blog');
-
+var commentModel = mongoose.model('Comment');
 /* Set HTTP status and send JSON response */
 var sendJSONresponse = function(res, status, content) {
     res.status(status);
@@ -129,7 +129,7 @@ module.exports.blogsDeleteOne = async (req, res) => {
 module.exports.blogsComments = async (req, res) => {
     try {
         const blogId = req.params.id;
-        const comments = await blogModel.find({ blogId: blogId }).populate('author').exec();
+        const comments = await commentModel.find({ blogId: blogId }).populate('author').exec();
         if (!comments) {
             sendJSONresponse(res, 404, {
                 "message": "No comments found for this blog"
@@ -163,7 +163,7 @@ module.exports.addCommentToBlog = async (req, res) => {
             content: req.body.content
         };
         
-        const comment = await blogModel.create(newComment);
+        const comment = await commentModel.create(newComment);
         
         sendJSONresponse(res, 201, comment); // Sending back the newly added comment
     } catch (err) {

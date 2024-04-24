@@ -359,6 +359,7 @@ app.controller('AddCommentController', ['$http', '$routeParams', 'authentication
         vm.comment.blogId = blogId; // Set the blogId for the comment
         vm.comment.content = vm.commentText; // Assuming the comment text is stored in vm.commentText
         // No need to set userEmail and createdOn here as they are handled on the server side
+        vm.comment.author = authentication.currentUser();
 
         addCommentToBlog($http, authentication, blogId, vm.comment)
             .then(function(response) {
