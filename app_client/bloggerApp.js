@@ -348,7 +348,7 @@ app.controller('CommentListController', ['$http', '$routeParams', function Comme
         });
 }]);
 
-app.controller('AddCommentController', ['$http', '$routeParams', 'authentication', function AddCommentController($http, $routeParams, authentication) {
+app.controller('AddCommentController', ['$http','$location', '$routeParams', 'authentication', function AddCommentController($http, $location, $routeParams, authentication) {
     var vm = this;
     var blogId = $routeParams.id;
 
@@ -365,7 +365,7 @@ app.controller('AddCommentController', ['$http', '$routeParams', 'authentication
             .then(function(response) {
                 // Handle success
                 console.log('Comment added:', response.data);
-                // Optionally, you can redirect the user to the blog page or perform any other action
+                $location.path(['/blogList']);
             })
             .catch(function(error) {
                 // Handle error

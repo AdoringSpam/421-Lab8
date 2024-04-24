@@ -159,7 +159,8 @@ module.exports.addCommentToBlog = async (req, res) => {
         
         const newComment = {
             blogId: req.params.id,
-            author: req.payload.userId, // Assuming the user ID is available in req.payload.userId after authentication
+            //author: req.payload.userId, // Assuming the user ID is available in req.payload.userId after authentication
+            author: req.body.author,
             content: req.body.content
         };
         

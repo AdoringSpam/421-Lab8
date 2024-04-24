@@ -8,9 +8,17 @@ var commentSchema = new mongoose.Schema({
     },
     author: {
       //type: String,
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'User', // Reference to the User schema
-      required: true
+      //type: mongoose.Schema.Types.ObjectId,
+      //ref: 'User', // Reference to the User schema
+      email: {
+        type: String,
+        required: true
+      },
+      name: {
+        type: String,
+        required: true
+      }
+      //required: true
     },
     content: {
       type: String,
