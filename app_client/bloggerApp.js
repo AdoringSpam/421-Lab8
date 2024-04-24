@@ -52,7 +52,7 @@ app.config(function($routeProvider,$locationProvider) {
 
         .when('/blogComments/:id', {
         templateUrl: 'pages/blogComments.html',    //Lab8
-        controller: 'BlogCommentsController',
+        controller: 'CommentListController',
         controllerAs: 'vm'
       })
         .when('/addComment/:id', {
